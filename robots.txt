@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://quiet-days-books.github.io/sitemap.xml
+Sitemap: https://books.clovermoor.com/sitemap.xml
