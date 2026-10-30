@@ -16,6 +16,7 @@
 <link rel="alternate" type="application/rss+xml" title="Quiet Days Books" href="/feed.xml">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="preload" href="/fonts/literata.woff2" as="font" type="font/woff2" crossorigin>
+<script>try{var t=localStorage.getItem("theme");if(t==="light"||t==="dark")document.documentElement.dataset.theme=t}catch(e){}</script>
 
 <style>/* Quiet Days Books — the plan of a house.
    Day: drafting film, green-black ink, cobalt markup. Night: the blueprint.
@@ -33,10 +34,16 @@
   --measure:40rem;--sheet:64rem;--gap:clamp(16px,4vw,40px);
   color-scheme:light dark;
 }
-@media (prefers-color-scheme:dark){:root{
+/* Night: by the system setting, unless the reader chose day; or by the reader's choice. */
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){color-scheme:dark;
   --ground:#0f2340;--film:#14305a;--ink:#e8eef8;--ink-2:#bccadf;--line:#6f88ad;--rule:#2d4a74;
   --mark:#a6d8ff;--mark-ink:#0f2340;
 }}
+:root[data-theme=dark]{color-scheme:dark;
+  --ground:#0f2340;--film:#14305a;--ink:#e8eef8;--ink-2:#bccadf;--line:#6f88ad;--rule:#2d4a74;
+  --mark:#a6d8ff;--mark-ink:#0f2340;
+}
+:root[data-theme=light]{color-scheme:light}
 
 *,*::before,*::after{box-sizing:border-box}
 html{-webkit-text-size-adjust:100%;text-size-adjust:100%;scrollbar-color:var(--line) var(--ground);accent-color:var(--mark)}
@@ -188,13 +195,22 @@ header.site nav a[aria-current]::before{content:"";width:8px;height:11px;flex:no
 /* narrow phones: the room stacks, cover above the text */
 @media (max-width:420px){.room{grid-template-columns:1fr;gap:14px}.room-img{width:96px}.room>div:last-child{padding-right:0}.room-title{padding-right:34px}}
 /* night: the blueprint keeps its faint drafting grid */
-@media (prefers-color-scheme:dark){body{background-image:linear-gradient(color-mix(in srgb,var(--mark) 5%,transparent) 1px,transparent 1px),linear-gradient(90deg,color-mix(in srgb,var(--mark) 5%,transparent) 1px,transparent 1px);background-size:24px 24px}}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]) body{background-image:linear-gradient(color-mix(in srgb,var(--mark) 5%,transparent) 1px,transparent 1px),linear-gradient(90deg,color-mix(in srgb,var(--mark) 5%,transparent) 1px,transparent 1px);background-size:24px 24px}}
+:root[data-theme=dark] body{background-image:linear-gradient(color-mix(in srgb,var(--mark) 5%,transparent) 1px,transparent 1px),linear-gradient(90deg,color-mix(in srgb,var(--mark) 5%,transparent) 1px,transparent 1px);background-size:24px 24px}
+
+/* day / night switch in the masthead: a drawn half-filled circle, shown only when the script runs */
+.theme{display:inline-flex;align-items:center;justify-content:center;width:44px;height:44px;margin:-10px -12px -10px -16px;padding:0;background:none;border:0;color:var(--ink-2);cursor:pointer}
+.theme:hover{color:var(--ink)}
+.theme svg{width:20px;height:20px}
+@media (max-width:719px){header.site .bar{row-gap:0}.brand{order:1}.theme{order:2}header.site nav{order:3;flex-basis:100%}}
+@media (min-width:720px){header.site nav{margin-left:auto}}
 </style>
 <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://quiet-days-books.github.io/#website","url":"https://quiet-days-books.github.io/","name":"Quiet Days Books","inLanguage":"en","publisher":{"@id":"https://quiet-days-books.github.io/#org"}},{"@type":"Organization","@id":"https://quiet-days-books.github.io/#org","name":"Quiet Days Books","url":"https://quiet-days-books.github.io/"}]}</script>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
-<header class="site"><div class="bar"><a class="brand" href="/"><svg class="north" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10.5" fill="none" stroke="currentColor" stroke-width="1.2"/><path d="M12 3.5 16 17l-4-2.6L8 17Z" fill="currentColor"/></svg><span>Quiet Days Books</span></a><nav aria-label="Sections"><a href="/dogs/">Life with an older dog</a><a href="/cats/">Noticing your cat</a><a href="/about/">About</a></nav></div></header>
+<header class="site"><div class="bar"><a class="brand" href="/"><svg class="north" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10.5" fill="none" stroke="currentColor" stroke-width="1.2"/><path d="M12 3.5 16 17l-4-2.6L8 17Z" fill="currentColor"/></svg><span>Quiet Days Books</span></a><nav aria-label="Sections"><a href="/dogs/">Life with an older dog</a><a href="/cats/">Noticing your cat</a><a href="/about/">About</a></nav><button class="theme" type="button" hidden aria-label="Dark theme" aria-pressed="false"><svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="8.4" fill="none" stroke="currentColor" stroke-width="1.3"/><path d="M10 1.6a8.4 8.4 0 0 1 0 16.8Z" fill="currentColor"/></svg></button></div></header>
+<script>(function(){var b=document.querySelector(".theme");if(!b)return;var r=document.documentElement,m=matchMedia("(prefers-color-scheme: dark)");function cur(){return r.dataset.theme||(m.matches?"dark":"light")}function show(){b.setAttribute("aria-pressed",cur()==="dark"?"true":"false")}b.hidden=false;show();m.addEventListener&&m.addEventListener("change",show);b.addEventListener("click",function(){var t=cur()==="dark"?"light":"dark";r.dataset.theme=t;try{localStorage.setItem("theme",t)}catch(e){}show()})})();</script>
 
 <main id="main"><div class="sheet"><h1>This page is not here</h1><p><a href="/">Go to the home page</a>.</p></div></main>
 <footer class="site"><div class="bar">
