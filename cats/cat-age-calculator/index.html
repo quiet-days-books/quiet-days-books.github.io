@@ -1,0 +1,393 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cat Age Calculator: Your Cat's Age in Human Years</title>
+<meta name="description" content="Enter your cat's age to see it in human years and its life stage. Two years make about 24, then each year adds 4, so a cat of 10 is about 56.">
+<link rel="canonical" href="https://books.clovermoor.com/cats/cat-age-calculator/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_GB">
+<meta property="og:title" content="Cat Age Calculator: Your Cat's Age in Human Years">
+<meta property="og:description" content="Enter your cat's age to see it in human years and its life stage. Two years make about 24, then each year adds 4, so a cat of 10 is about 56.">
+<meta property="og:url" content="https://books.clovermoor.com/cats/cat-age-calculator/">
+<meta property="og:site_name" content="Quiet Days Books">
+<meta property="og:image" content="https://books.clovermoor.com/img/books/cat/01_cover.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="color-scheme" content="light dark">
+<link rel="alternate" type="application/rss+xml" title="Quiet Days Books" href="/feed.xml">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="/fonts/literata.woff2" as="font" type="font/woff2" crossorigin>
+<script>try{var t=localStorage.getItem("theme");if(t==="light"||t==="dark")document.documentElement.dataset.theme=t}catch(e){}</script>
+<script data-goatcounter="https://quietdays.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+<meta name="google-site-verification" content="hHBGjlz6LvtyxdP3x3sWT5arWOdvQq0RpVLMBuHod_0">
+<meta name="google-site-verification" content="xf8LYssisbsEb_zO68Vfdsqkq7o0FOpAd0k9LcDhvv8">
+<meta name="msvalidate.01" content="74194B63F367EB355F843A035E6E6554">
+<meta name="yandex-verification" content="c46241a076187e57">
+<meta name="p:domain_verify" content="16ff5edbd4738a43bf460ee40d3b109b">
+<style>/* Quiet Days Books — the plan of a house.
+   Day: drafting film, green-black ink, cobalt markup. Night: the blueprint.
+   Two inks and a ground; every other colour is a step of the ink. */
+@font-face{font-family:"Literata";src:url(/fonts/literata.woff2) format("woff2");font-weight:200 900;font-style:normal;font-display:swap}
+@font-face{font-family:"Literata";src:url(/fonts/literata-italic.woff2) format("woff2");font-weight:200 900;font-style:italic;font-display:swap}
+@font-face{font-family:"Archivo Narrow";src:url(/fonts/archivo-narrow-500.woff2) format("woff2");font-weight:500;font-display:swap}
+@font-face{font-family:"Archivo Narrow";src:url(/fonts/archivo-narrow-600.woff2) format("woff2");font-weight:600;font-display:swap}
+
+:root{
+  --ground:#eef1ec;--film:#f7f9f5;--ink:#17201c;--ink-2:#3d4a44;--line:#8e9b94;--rule:#c7cfc9;
+  --mark:#1d40a6;--mark-ink:#f7f9f5;
+  --read:"Literata",Georgia,"Times New Roman",serif;
+  --plan:"Archivo Narrow","Arial Narrow","Roboto Condensed",system-ui,sans-serif;
+  --measure:40rem;--sheet:64rem;--gap:clamp(16px,4vw,40px);
+  color-scheme:light dark;
+}
+/* Night: by the system setting, unless the reader chose day; or by the reader's choice. */
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){color-scheme:dark;
+  --ground:#0f2340;--film:#14305a;--ink:#e8eef8;--ink-2:#bccadf;--line:#6f88ad;--rule:#2d4a74;
+  --mark:#a6d8ff;--mark-ink:#0f2340;
+}}
+:root[data-theme=dark]{color-scheme:dark;
+  --ground:#0f2340;--film:#14305a;--ink:#e8eef8;--ink-2:#bccadf;--line:#6f88ad;--rule:#2d4a74;
+  --mark:#a6d8ff;--mark-ink:#0f2340;
+}
+:root[data-theme=light]{color-scheme:light}
+
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%;scrollbar-color:var(--line) var(--ground);accent-color:var(--mark)}
+body{margin:0;background:var(--ground);color:var(--ink);font:400 1.0625rem/1.68 var(--read);font-optical-sizing:auto;overflow-wrap:break-word;caret-color:var(--mark);font-variant-numeric:oldstyle-nums proportional-nums}
+::selection{background:var(--mark);color:var(--mark-ink)}
+a{color:var(--mark);text-decoration-thickness:1px;text-underline-offset:.18em}
+a:hover{text-decoration-thickness:2px}
+a:visited{color:color-mix(in srgb,var(--mark) 72%,var(--ink))}
+:focus-visible{outline:2px solid var(--mark);outline-offset:3px}
+img{max-width:100%;height:auto;display:block}
+picture{display:block;min-width:0}
+.skip{position:absolute;left:-999px}.skip:focus{left:16px;top:8px;background:var(--film);padding:8px 12px;z-index:9}
+
+/* the drawing border around the whole sheet on wide screens */
+@media (min-width:900px){body{margin:14px;border:1px solid var(--line);min-height:calc(100vh - 28px)}}
+
+/* masthead: a ruled strip with the north arrow */
+header.site{border-bottom:3px double var(--line)}
+.bar{max-width:var(--sheet);margin:0 auto;padding:12px var(--gap);display:flex;flex-wrap:wrap;gap:8px 28px;align-items:center;justify-content:space-between}
+.brand{display:inline-flex;align-items:center;gap:10px;color:var(--ink);text-decoration:none;font:600 1rem/1 var(--plan);letter-spacing:.08em;text-transform:uppercase}
+.north{width:26px;height:26px;flex:none}
+header.site nav{display:flex;flex-wrap:wrap;gap:2px clamp(12px,3vw,22px);font:500 .8125rem/1 var(--plan);letter-spacing:.05em;text-transform:uppercase}
+header.site nav a{color:var(--ink-2);text-decoration:none;padding:12px 0;border-bottom:2px solid transparent}
+header.site nav a:hover{color:var(--ink)}
+header.site nav a[aria-current]{color:var(--ink);border-bottom-color:var(--mark)}
+
+.crumbs{max-width:var(--sheet);margin:0 auto;padding:16px var(--gap) 0;font:500 .8125rem/1.4 var(--plan);letter-spacing:.05em;text-transform:uppercase;color:var(--ink-2)}
+.crumbs a{color:var(--ink-2)}
+
+main{padding:4px 0 64px}
+.sheet{max-width:var(--sheet);margin:0 auto;padding:0 var(--gap)}
+
+h1,h2,h3{font-family:var(--read);color:var(--ink);text-wrap:balance}
+h1{font-size:clamp(2rem,1.2rem + 3.6vw,3.25rem);line-height:1.08;font-weight:640;letter-spacing:-.018em;margin:.55em 0 .45em;max-width:20ch}
+h2{max-width:var(--measure);font-size:1.5rem;line-height:1.25;font-weight:620;margin:2.4em 0 .55em;padding-top:.7em;border-top:1px solid var(--rule);position:relative}
+h2::before{content:"";position:absolute;left:0;top:-1px;width:28px;border-top:2px solid var(--ink)}
+h3{font-size:1.1875rem;font-weight:620;margin:1.8em 0 .4em}
+.lead{font-size:1.1875rem;line-height:1.55;color:var(--ink-2);max-width:var(--measure);margin:0 0 1.6em}
+.small{font:500 .875rem/1.5 var(--plan);letter-spacing:.02em;color:var(--ink-2)}
+
+/* title block: the ruled cells every drawing sheet carries */
+.titleblock{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));margin:0 0 28px;border:1px solid var(--ink);max-width:var(--measure)}
+.titleblock div{padding:8px 12px 9px;border-right:1px solid var(--line);border-bottom:1px solid var(--line)}
+.titleblock div:nth-child(2n){border-right:0}
+.titleblock div:nth-last-child(-n+2){border-bottom:0}
+.titleblock dt{font:600 .75rem/1.2 var(--plan);letter-spacing:.1em;text-transform:uppercase;color:var(--ink-2)}
+.titleblock dd{margin:2px 0 0;font-size:.9375rem;font-variant-numeric:lining-nums tabular-nums}
+@media (min-width:640px){.titleblock{grid-template-columns:repeat(4,minmax(0,1fr))}.titleblock div{border-bottom:0}.titleblock div:nth-child(2n){border-right:1px solid var(--line)}.titleblock div:last-child{border-right:0}}
+
+/* plan notes and the schedule share one look: a film panel with a heavy top wall */
+.note{margin:0 0 8px}
+.note,.schedule{background:var(--film);border:1px solid var(--line);border-top:3px solid var(--ink);padding:14px 18px 16px;max-width:var(--measure)}
+.note h2,.schedule h2{font:600 .8125rem/1.2 var(--plan);letter-spacing:.1em;text-transform:uppercase;margin:0 0 8px;padding:0;border:0}
+.note h2::before,.schedule h2::before{display:none}
+.note ul{margin:0;padding-left:1.15rem}
+.note li{margin:.3rem 0}
+.schedule ol{margin:0;padding:0;list-style:none;counter-reset:s}
+.schedule li{border-top:1px solid var(--rule)}
+.schedule li:first-child{border-top:0}
+.schedule a{display:block;padding:7px 0;color:var(--ink);text-decoration:none;font-size:.9375rem;line-height:1.35}
+.schedule a:hover{color:var(--mark)}
+
+.layout{display:grid;gap:20px;margin-top:8px}
+.column{min-width:0;max-width:var(--measure)}
+.schedule.wide{display:none}
+.schedule.narrow{padding:4px 18px}
+.schedule.narrow summary{cursor:pointer;min-height:48px;display:flex;align-items:center;gap:10px;font:600 .8125rem/1.2 var(--plan);letter-spacing:.1em;text-transform:uppercase}
+.schedule.narrow .count{font-weight:500;color:var(--ink-2);letter-spacing:.05em}
+.schedule.narrow ol{padding-bottom:12px}
+.margin{min-width:0}
+@media (min-width:1100px){
+  .layout{grid-template-columns:minmax(0,var(--measure)) minmax(0,1fr);gap:56px;align-items:start}
+  .margin{order:2;position:sticky;top:20px}
+  .schedule.wide{display:block}.schedule.narrow{display:none}
+}
+
+.prose{max-width:var(--measure);min-width:0}
+.prose p,.prose li{hyphens:auto}
+.prose ul,.prose ol{padding-left:1.25rem}
+.prose li{margin:.35rem 0}
+.prose li::marker{color:var(--ink-2)}
+.prose blockquote{margin:1.4rem 0;padding:.1rem 0 .1rem 1.1rem;border-left:1px solid var(--ink);font-style:italic;color:var(--ink-2)}
+.prose strong{font-weight:640}
+
+/* tables: a door schedule — narrow capitals in the head, figures in line */
+.table-wrap{overflow-x:auto;margin:1.6rem 0;-webkit-overflow-scrolling:touch}
+table{border-collapse:collapse;width:100%;font-size:.9375rem;line-height:1.45;border:1px solid var(--ink);background:var(--film);font-variant-numeric:lining-nums tabular-nums}
+th,td{text-align:left;vertical-align:top;padding:10px 14px;border-bottom:1px solid var(--rule)}
+th{font:600 .8125rem/1.25 var(--plan);letter-spacing:.07em;text-transform:uppercase;border-bottom:1px solid var(--ink)}
+td+td,th+th{border-left:1px solid var(--rule)}
+tr:last-child td{border-bottom:0}
+
+/* the book, drawn as a room you can walk into */
+.room{position:relative;display:grid;grid-template-columns:88px minmax(0,1fr);gap:18px;align-items:start;border:2px solid var(--ink);background:var(--film);padding:22px 20px 20px;margin:44px 0;max-width:var(--measure)}
+.door{position:absolute;right:-2px;top:-2px;transform:scaleX(-1);width:44px;height:44px;background:var(--ground);color:var(--ink)}
+.room-img img{border:1px solid var(--line)}
+.room p{margin:.15rem 0 .65rem}
+.room>div:last-child{padding-right:30px}
+.room-title{font-size:1.25rem;line-height:1.25;font-weight:640}
+.room-title a{color:var(--ink);text-decoration:none}
+.room-title a:hover{text-decoration:underline}
+@media (min-width:640px){.room{grid-template-columns:120px minmax(0,1fr);gap:24px;padding:26px 26px 22px}}
+.button{display:inline-flex;align-items:center;min-height:44px;padding:0 18px;margin:4px 16px 4px 0;background:var(--ink);color:var(--ground);font:600 .875rem/1 var(--plan);letter-spacing:.09em;text-transform:uppercase;text-decoration:none;border:1px solid var(--ink)}
+.button:visited{color:var(--ground)}
+.button:hover{background:var(--mark);border-color:var(--mark);color:var(--mark-ink)}
+
+/* questions: drawn plus that turns to a minus */
+.faq details{border-top:1px solid var(--rule)}
+.faq details:last-of-type{border-bottom:1px solid var(--rule)}
+.faq summary{list-style:none;cursor:pointer;display:flex;gap:14px;align-items:center;min-height:52px;padding:8px 0;font-weight:600}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::before{content:"";flex:none;width:12px;height:12px;background:linear-gradient(var(--ink),var(--ink)) center/12px 1.5px no-repeat,linear-gradient(var(--ink),var(--ink)) center/1.5px 12px no-repeat;transition:transform .25s cubic-bezier(.2,.7,.2,1)}
+.faq details[open] summary::before{transform:rotate(90deg);background:linear-gradient(var(--ink),var(--ink)) center/12px 1.5px no-repeat}
+.faq details p{margin:0 0 14px 26px;max-width:var(--measure)}
+.sources ol{font-size:.9375rem;line-height:1.5;padding-left:1.25rem;max-width:var(--measure)}
+.sources li{margin:.4rem 0}
+.how{max-width:var(--measure);margin-top:2.4rem}
+
+/* registers: lists of sheets, like a drawing register */
+.register{list-style:none;margin:0;padding:0;border-top:1px solid var(--ink);max-width:var(--measure)}
+.register li{display:grid;grid-template-columns:minmax(0,1fr);gap:4px;padding:16px 0 18px;border-bottom:1px solid var(--rule)}
+.register a{text-decoration:none;color:var(--ink);display:block}
+.register a:hover .reg-title{color:var(--mark)}
+.reg-title{display:block;font-size:1.1875rem;line-height:1.3;font-weight:620}
+.reg-desc{display:block;color:var(--ink-2);font-size:.9375rem;line-height:1.5;margin-top:4px}
+.register time{font:500 .8125rem/1.2 var(--plan);letter-spacing:.07em;text-transform:uppercase;color:var(--ink-2)}
+@media (min-width:720px){.register li{grid-template-columns:minmax(0,1fr) auto;gap:24px;align-items:baseline}}
+
+.rooms .room{margin:28px 0}
+.book-hero{display:grid;gap:28px;margin-top:20px}
+.book-hero picture{max-width:340px}
+.book-hero img,.gallery img{border:1px solid var(--line)}
+.facts{padding-left:1.2rem;max-width:var(--measure)}
+.gallery{display:grid;gap:18px}
+@media (min-width:760px){.book-hero{grid-template-columns:320px minmax(0,1fr);align-items:start}.gallery{grid-template-columns:1fr 1fr}}
+
+footer.site{border-top:3px double var(--line);font:500 .9375rem/1.5 var(--plan);letter-spacing:.02em;color:var(--ink-2)}
+footer.site .bar{display:block;padding-top:20px;padding-bottom:28px}
+footer.site p{margin:.35rem 0;max-width:var(--measure)}
+footer.site a{color:var(--ink)}
+
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+@media print{header.site nav,.button,footer.site,.margin{display:none}body{background:#fff;color:#000;border:0;margin:0}}
+
+/* the current place is marked with a drawn pennant, as on a plan's key */
+header.site nav a[aria-current]{display:inline-flex;align-items:center;gap:6px}
+header.site nav a[aria-current]::before{content:"";width:8px;height:11px;flex:none;background:var(--mark);-webkit-mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 11'%3E%3Cpath d='M0 0h1.4v11H0zM1.4 0 8 2.6 1.4 5.2z'/%3E%3C/svg%3E") center/contain no-repeat;mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 11'%3E%3Cpath d='M0 0h1.4v11H0zM1.4 0 8 2.6 1.4 5.2z'/%3E%3C/svg%3E") center/contain no-repeat}
+.button{white-space:nowrap}
+/* narrow phones: the room stacks, cover above the text */
+@media (max-width:420px){.room{grid-template-columns:1fr;gap:14px}.room-img{width:96px}.room>div:last-child{padding-right:0}.room-title{padding-right:34px}}
+/* night: the blueprint keeps its faint drafting grid */
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]) body{background-image:linear-gradient(color-mix(in srgb,var(--mark) 5%,transparent) 1px,transparent 1px),linear-gradient(90deg,color-mix(in srgb,var(--mark) 5%,transparent) 1px,transparent 1px);background-size:24px 24px}}
+:root[data-theme=dark] body{background-image:linear-gradient(color-mix(in srgb,var(--mark) 5%,transparent) 1px,transparent 1px),linear-gradient(90deg,color-mix(in srgb,var(--mark) 5%,transparent) 1px,transparent 1px);background-size:24px 24px}
+
+/* day / night switch in the masthead: a drawn half-filled circle, shown only when the script runs */
+.theme{display:inline-flex;align-items:center;justify-content:center;width:44px;height:44px;margin:-10px -12px -10px -16px;padding:0;background:none;border:0;color:var(--ink-2);cursor:pointer}
+.theme:hover{color:var(--ink)}
+.theme svg{width:20px;height:20px}
+@media (max-width:719px){header.site .bar{row-gap:0}.brand{order:1}.theme{order:2}header.site nav{order:3;flex-basis:100%}}
+@media (min-width:720px){header.site nav{margin-left:auto}}
+/* language row (shown only when a second language is live): the language being read is not a link */
+header.site nav.langs{gap:2px clamp(10px,2.4vw,18px);text-transform:none;letter-spacing:.02em}
+header.site nav.langs span[aria-current]{color:var(--ink);padding:12px 0;border-bottom:2px solid var(--mark)}
+@media (max-width:719px){header.site nav.langs{order:4}}
+@media (min-width:720px){header.site nav.langs{margin-left:0}}
+/* long German and Spanish words break at syllables instead of running off a phone screen */
+:lang(de) h1,:lang(de) h2,:lang(de) h3,:lang(de) .reg-title,:lang(es) h1,:lang(es) h2{hyphens:auto;-webkit-hyphens:auto}
+:lang(de) .prose,:lang(de) td,:lang(es) .prose,:lang(es) td{hyphens:auto;-webkit-hyphens:auto}
+/* calculator (tool pages, config/tools.json): a plan note you can fill in. The form stays
+   hidden until its script runs; the chart under it works without one. */
+.calc{background:var(--film);border:1px solid var(--line);border-top:3px solid var(--ink);padding:14px 18px 18px;margin:1.6rem 0;max-width:var(--measure)}
+.calc[hidden]{display:none}
+.prose .calc-title{font:600 .8125rem/1.2 var(--plan);letter-spacing:.1em;text-transform:uppercase;margin:0 0 12px;padding:0;border:0}
+.prose .calc-title::before{display:none}
+.calc-age{display:flex;flex-wrap:wrap;gap:12px 18px;align-items:end}
+.calc label,.calc legend{display:block;font:600 .8125rem/1.25 var(--plan);letter-spacing:.07em;text-transform:uppercase;color:var(--ink-2);margin:0 0 6px;padding:0}
+.calc input[type=number],.calc select{display:block;min-height:44px;width:7.5rem;padding:8px 10px;font:400 1rem/1.2 var(--read);font-variant-numeric:lining-nums tabular-nums;color:var(--ink);background:var(--ground);border:1px solid var(--ink);border-radius:0}
+.calc input[aria-invalid=true]{border-width:2px;border-color:var(--mark)}
+.calc fieldset{border:0;margin:16px 0 0;padding:0;min-width:0}
+.calc-sizes label{display:flex;align-items:center;gap:10px;min-height:44px;margin:0;font:400 1rem/1.35 var(--read);letter-spacing:0;text-transform:none;color:var(--ink);cursor:pointer}
+.calc-sizes input{flex:none;width:20px;height:20px;margin:0}
+.calc .button{margin:16px 0 0;cursor:pointer}
+.calc-result{margin-top:16px;padding-top:12px;border-top:1px solid var(--rule)}
+.calc-result:empty{margin:0;padding:0;border:0}
+.calc-result p{margin:.35rem 0}
+.calc-result .calc-answer{font-size:1.5rem;line-height:1.25;font-weight:620;font-variant-numeric:lining-nums}
+.calc-chart h3{max-width:var(--measure)}
+.calc-chart tbody th{font:inherit;letter-spacing:0;text-transform:none;border-bottom:1px solid var(--rule)}
+.calc-chart tbody tr:last-child th{border-bottom:0}
+.calc-chart table[data-chart] th,.calc-chart table[data-chart] td{padding:8px 10px}
+.table-wrap:focus-visible{outline-offset:2px}
+/* the dog chart has six columns: on narrow phones it tightens so all of them stay in view */
+@media (max-width:480px){.calc-chart table[data-chart] th,.calc-chart table[data-chart] td{padding:7px 3px 7px 4px}.calc-chart table[data-chart] th{letter-spacing:0;font-size:.75rem}.calc-chart table[data-chart]{font-size:.875rem}}
+</style>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://books.clovermoor.com/#website","url":"https://books.clovermoor.com/","name":"Quiet Days Books","inLanguage":"en","publisher":{"@id":"https://books.clovermoor.com/#org"}},{"@type":"Organization","@id":"https://books.clovermoor.com/#org","name":"Quiet Days Books","url":"https://books.clovermoor.com/"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://books.clovermoor.com/"},{"@type":"ListItem","position":2,"name":"Noticing your cat","item":"https://books.clovermoor.com/cats/"},{"@type":"ListItem","position":3,"name":"Cat Age Calculator: Your Cat's Age in Human Years"}]},{"@type":"WebPage","@id":"https://books.clovermoor.com/cats/cat-age-calculator/#article","name":"Cat Age Calculator: Your Cat's Age in Human Years","description":"Enter your cat's age to see it in human years and its life stage. Two years make about 24, then each year adds 4, so a cat of 10 is about 56.","inLanguage":"en","url":"https://books.clovermoor.com/cats/cat-age-calculator/","datePublished":"2026-11-06","dateModified":"2026-11-06","author":{"@id":"https://books.clovermoor.com/#org"},"publisher":{"@id":"https://books.clovermoor.com/#org"},"isPartOf":{"@id":"https://books.clovermoor.com/#website"},"citation":["https://icatcare.org/articles/how-to-tell-your-cats-age-in-human-years","https://www.cats.org.uk/cats-blog/how-long-do-pet-cats-live","https://vcahospitals.com/resources/senior/when-is-your-pet-considered-a-senior"]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How does a cat age calculator work?","acceptedAnswer":{"@type":"Answer","text":"This one uses International Cat Care's chart. Up to 2 years it reads the chart's rows by month, on a straight line between two rows; from 2 years it starts at 24 and adds 4 human years for each cat year. It also names the life stage. Every figure is an estimate."}},{"@type":"Question","name":"Is a cat year 7 human years?","acceptedAnswer":{"@type":"Answer","text":"No. Both International Cat Care and Cats Protection count the first two years as about 24 human years, because a cat grows up fast, and about 4 human years for each year after that. Seven a year would make a fully grown 2-year-old cat 14."}},{"@type":"Question","name":"How old is a 15 year old cat in human years?","acceptedAnswer":{"@type":"Answer","text":"About 76, in both the International Cat Care and the Cats Protection charts. Both charities call cats of 15 and over super senior."}},{"@type":"Question","name":"When is a cat a senior?","acceptedAnswer":{"@type":"Answer","text":"International Cat Care and Cats Protection put the senior stage at 11 to 14 years, with super senior from 15. VCA Animal Hospitals puts senior at about 9 to 11 for cats of all sizes. Your vet will judge your own cat."}}]}]}</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site"><div class="bar"><a class="brand" href="/"><svg class="north" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10.5" fill="none" stroke="currentColor" stroke-width="1.2"/><path d="M12 3.5 16 17l-4-2.6L8 17Z" fill="currentColor"/></svg><span>Quiet Days Books</span></a><nav aria-label="Sections"><a href="/dogs/">Life with an older dog</a><a href="/cats/" aria-current="page">Noticing your cat</a><a href="/about/">About</a></nav><button class="theme" type="button" hidden aria-label="Dark theme" aria-pressed="false"><svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="8.4" fill="none" stroke="currentColor" stroke-width="1.3"/><path d="M10 1.6a8.4 8.4 0 0 1 0 16.8Z" fill="currentColor"/></svg></button></div></header>
+<script>(function(){var b=document.querySelector(".theme");if(!b)return;var r=document.documentElement,m=matchMedia("(prefers-color-scheme: dark)");function cur(){return r.dataset.theme||(m.matches?"dark":"light")}function show(){b.setAttribute("aria-pressed",cur()==="dark"?"true":"false")}b.hidden=false;show();m.addEventListener&&m.addEventListener("change",show);b.addEventListener("click",function(){var t=cur()==="dark"?"light":"dark";r.dataset.theme=t;try{localStorage.setItem("theme",t)}catch(e){}show()})})();</script>
+<nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> <span aria-hidden="true">›</span> <a href="/cats/">Noticing your cat</a> <span aria-hidden="true">›</span> <span aria-current="page">Cat Age Calculator: Your Cat's Age in Human Years</span></nav>
+<main id="main"><article class="sheet article">
+<header><h1>Cat Age Calculator</h1>
+<dl class="titleblock">
+<div><dt>Published</dt><dd><time datetime="2026-11-06">6 November 2026</time></dd></div>
+<div><dt>Checked</dt><dd><time datetime="2026-11-06">6 November 2026</time></dd></div>
+<div><dt>Reading</dt><dd>3 min</dd></div>
+<div><dt>Sources</dt><dd><a href="#sources">3 named</a></dd></div>
+</dl></header>
+<div class="layout"><div class="margin"><nav class="schedule wide" aria-labelledby="schedule-h"><h2 id="schedule-h">In this article</h2><ol><li><a href="#how-the-cat-age-calculator-works">How the cat age calculator works</a></li><li><a href="#cat-life-stages-in-the-calculator">Cat life stages in the calculator</a></li><li><a href="#why-there-is-no-size-or-breed-box">Why there is no size or breed box</a></li><li><a href="#what-the-number-is-good-for">What the number is good for</a></li></ol></nav><details class="schedule narrow"><summary>In this article <span class="count">4 sections</span></summary><ol><li><a href="#how-the-cat-age-calculator-works">How the cat age calculator works</a></li><li><a href="#cat-life-stages-in-the-calculator">Cat life stages in the calculator</a></li><li><a href="#why-there-is-no-size-or-breed-box">Why there is no size or breed box</a></li><li><a href="#what-the-number-is-good-for">What the number is good for</a></li></ol></details></div>
+<div class="column"><div class="prose"><p>Type in your cat&#39;s age in years and months. The calculator uses International Cat Care&#39;s chart: a cat&#39;s first two years make about 24 human years, and each year after that adds 4. So a 5-year-old cat is about 36, a 10-year-old about 56 and a 15-year-old about 76. It also names the life stage. Every figure is an estimate.</p>
+<div class="tool"><form class="calc" id="calc" data-tool="cat-age" hidden novalidate aria-labelledby="calc-h">
+<h2 id="calc-h" class="calc-title">Work out your cat's age</h2>
+<div class="calc-age">
+<div><label for="calc-years">Age in years</label><input id="calc-years" name="years" type="number" inputmode="numeric" min="0" max="40" step="1" autocomplete="off"></div>
+<div><label for="calc-months">and months</label><select id="calc-months" name="months"><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option></select></div>
+</div>
+
+<button class="button" type="submit">Work it out</button>
+<div class="calc-result" id="calc-result" role="status" aria-live="polite" aria-atomic="true"></div>
+</form>
+<script>(function client(D) {
+  var f = document.getElementById("calc");
+  if (!f) return;
+  var years = f.elements.years, months = f.elements.months, out = document.getElementById("calc-result");
+  var shown = false;
+  f.hidden = false;
+  function r(n) { return Math.round(n); }
+  function p(cls, html) { return "<p" + (cls ? ' class="' + cls + '"' : "") + ">" + html + "</p>"; }
+  function fill(s, v) { return s.replace(/\{(\w+)\}/g, function (m, k) { return k in v ? v[k] : m; }); }
+  function line(a, b, x0, x1, x) { return D.straight ? a + (b - a) * (x - x0) / (x1 - x0) : a; }
+  function dog(age) {
+    var key = (f.querySelector("input[name=size]:checked") || {}).value;
+    var size = D.sizes.filter(function (s) { return s.key === key; })[0];
+    if (!size) return { error: "Pick your dog's size by adult weight." };
+    var c = D.columns.indexOf(key) + 1, rows = D.rows, first = rows[0], last = rows[rows.length - 1];
+    var words = size.label.toLowerCase(), html = "";
+    if (age < first[0]) html += p("calc-answer", "Under " + first[c] + " in human years") + p("", "The American Kennel Club chart starts at " + first[0] + " year, when a " + words + " dog is about " + first[c] + " in human years. It gives no figure for a younger puppy, and neither do we.");
+    else if (age > last[0]) html += p("calc-answer", "Over " + last[c] + " in human years") + p("", "The American Kennel Club chart stops at " + last[0] + " years, when a " + words + " dog is about " + last[c] + ". Past that it gives no figure.");
+    else {
+      var human = last[c];
+      for (var i = 0; i < rows.length - 1; i++) if (age >= rows[i][0] && age < rows[i + 1][0]) { human = line(rows[i][c], rows[i + 1][c], rows[i][0], rows[i + 1][0], age); break; }
+      html += p("calc-answer", "About <span class=\"calc-num\">" + r(human) + "</span> in human years") + p("small", "American Kennel Club chart, " + words + " dog, " + size.weight + "." + (D.straight && age % 1 ? " Between two birthdays we read the chart on a straight line from one row to the next." : ""));
+    }
+    if (D.formula && age >= (D.formula.min_years || 0) && age > 0) html += p("", D.formula.label + ": about " + r(D.formula.a * Math.log(age) + D.formula.b) + ". It was worked out on Labrador Retrievers, so it fits dogs of that size best.");
+    var st = D.stages[D.stages.length - 1];
+    for (var j = 0; j < D.stages.length; j++) {
+      var u = D.stages[j].until, lim = u === "senior_from" ? size.senior[0] : u === "senior_to" ? size.senior[1] : u;
+      if (lim === null || age < lim) { st = D.stages[j]; break; }
+    }
+    html += p("", "Life stage: <strong>" + st.label + "</strong>. " + fill(st.note, { size: words, from: size.senior[0], to: size.senior[1] }));
+    return { html: html };
+  }
+  function cat(m) {
+    if (m < D.min_months) return { error: "Enter an age of at least " + D.min_months + " month: the chart starts there." };
+    var rows = D.rows, R = D.rule, human;
+    if (m <= R.from_years * 12) {
+      human = rows[rows.length - 1].human;
+      for (var i = 0; i < rows.length - 1; i++) if (m >= rows[i].months && m < rows[i + 1].months) { human = line(rows[i].human, rows[i + 1].human, rows[i].months, rows[i + 1].months, m); break; }
+    } else {
+      var past = (m - R.from_years * 12) / 12;
+      human = R.base + R.per_year * (D.straight ? past : Math.floor(past));
+    }
+    var st = D.stages[0];
+    for (var j = 0; j < D.stages.length; j++) if (m >= D.stages[j].from_months) st = D.stages[j];
+    return { html: p("calc-answer", "About <span class=\"calc-num\">" + r(human) + "</span> in human years") +
+      p("", "Life stage: <strong>" + st.label + "</strong>. " + st.note) +
+      p("small", "International Cat Care chart." + (D.straight && m % 12 ? " Between two rows of the chart we read it on a straight line." : "")) };
+  }
+  function run() {
+    var y = years.value.trim(), mo = Number(months.value) || 0;
+    var yn = y === "" ? 0 : Number(y), res;
+    if (!/^\d*$/.test(y) || yn > D.max_years) res = { error: "Enter the years as a whole number from 0 to " + D.max_years + "." };
+    else if (y === "" && !mo) res = { error: "Enter an age: years, months or both." };
+    else res = D.animal === "dog" ? dog(yn + mo / 12) : cat(yn * 12 + mo);
+    if (res.error) {
+      years.setAttribute("aria-invalid", "true");
+      years.setAttribute("aria-describedby", "calc-result");
+      out.innerHTML = p("calc-error", res.error);
+      return false;
+    }
+    years.removeAttribute("aria-invalid");
+    years.removeAttribute("aria-describedby");
+    out.innerHTML = res.html + p("small", "An estimate for picturing the stage of life, not a measurement of your " + D.animal + ". Your vet can tell you far more.");
+    return true;
+  }
+  f.addEventListener("submit", function (e) {
+    e.preventDefault();
+    shown = run();
+    if (!shown) years.focus();
+  });
+  f.addEventListener("change", function () { if (shown) run(); });
+})({"animal":"cat","max_years":40,"straight":true,"min_months":1,"rows":[{"months":1,"human":1,"shown":"0 to 1"},{"months":2,"human":2},{"months":3,"human":4},{"months":4,"human":6},{"months":5,"human":8},{"months":6,"human":10},{"months":7,"human":12},{"months":12,"human":15},{"months":18,"human":21},{"months":24,"human":24}],"rule":{"from_years":2,"base":24,"per_year":4,"chart_until_years":25},"stages":[{"from_months":0,"label":"Under 7 months","note":"International Cat Care's first stage, 0 to 6 months."},{"from_months":7,"label":"Junior","note":"7 months to 2 years in International Cat Care's stages: full size, like a teenager or young adult in people."},{"from_months":36,"label":"Adult","note":"3 to 6 years (International Cat Care). Cats Protection calls it prime."},{"from_months":84,"label":"Mature","note":"7 to 10 years. Both charities liken it to a person in their mid-40s to mid-50s."},{"from_months":132,"label":"Senior","note":"11 to 14 years in both charities' stages."},{"from_months":180,"label":"Super senior","note":"15 years and over in both charities' stages."}]});</script>
+<section class="calc-chart" aria-labelledby="chart-h">
+<h3 id="chart-h">Cat age chart: human years and life stage</h3>
+<p class="small">International Cat Care's chart and life stages. From 2 years on, each cat year adds 4 human years.</p>
+<div class="table-wrap" tabindex="0" role="region" aria-labelledby="chart-h"><table data-chart="cat">
+<thead><tr><th scope="col">Cat's age</th><th scope="col">Human age</th><th scope="col">Life stage</th></tr></thead><tbody><tr><th scope="row">1 month</th><td>0 to 1</td><td>Under 7 months</td></tr><tr><th scope="row">2 months</th><td>2</td><td>Under 7 months</td></tr><tr><th scope="row">3 months</th><td>4</td><td>Under 7 months</td></tr><tr><th scope="row">4 months</th><td>6</td><td>Under 7 months</td></tr><tr><th scope="row">5 months</th><td>8</td><td>Under 7 months</td></tr><tr><th scope="row">6 months</th><td>10</td><td>Under 7 months</td></tr><tr><th scope="row">7 months</th><td>12</td><td>Junior</td></tr><tr><th scope="row">1 year</th><td>15</td><td>Junior</td></tr><tr><th scope="row">18 months</th><td>21</td><td>Junior</td></tr><tr><th scope="row">2 years</th><td>24</td><td>Junior</td></tr><tr><th scope="row">3 years</th><td>28</td><td>Adult</td></tr><tr><th scope="row">4 years</th><td>32</td><td>Adult</td></tr><tr><th scope="row">5 years</th><td>36</td><td>Adult</td></tr><tr><th scope="row">6 years</th><td>40</td><td>Adult</td></tr><tr><th scope="row">7 years</th><td>44</td><td>Mature</td></tr><tr><th scope="row">8 years</th><td>48</td><td>Mature</td></tr><tr><th scope="row">9 years</th><td>52</td><td>Mature</td></tr><tr><th scope="row">10 years</th><td>56</td><td>Mature</td></tr><tr><th scope="row">11 years</th><td>60</td><td>Senior</td></tr><tr><th scope="row">12 years</th><td>64</td><td>Senior</td></tr><tr><th scope="row">13 years</th><td>68</td><td>Senior</td></tr><tr><th scope="row">14 years</th><td>72</td><td>Senior</td></tr><tr><th scope="row">15 years</th><td>76</td><td>Super senior</td></tr><tr><th scope="row">16 years</th><td>80</td><td>Super senior</td></tr><tr><th scope="row">17 years</th><td>84</td><td>Super senior</td></tr><tr><th scope="row">18 years</th><td>88</td><td>Super senior</td></tr><tr><th scope="row">19 years</th><td>92</td><td>Super senior</td></tr><tr><th scope="row">20 years</th><td>96</td><td>Super senior</td></tr><tr><th scope="row">21 years</th><td>100</td><td>Super senior</td></tr><tr><th scope="row">22 years</th><td>104</td><td>Super senior</td></tr><tr><th scope="row">23 years</th><td>108</td><td>Super senior</td></tr><tr><th scope="row">24 years</th><td>112</td><td>Super senior</td></tr><tr><th scope="row">25 years</th><td>116</td><td>Super senior</td></tr></tbody></table></div>
+</section></div>
+
+<h2 id="how-the-cat-age-calculator-works">How the cat age calculator works</h2>
+<p>Up to 2 years it reads International Cat Care&#39;s chart, which goes month by month at first: about 4 human years at 3 months, 10 at 6 months, 12 at 7 months, 15 at a year, 21 at 18 months and 24 at 2 years. Between two rows we read the chart on a straight line, so a cat of 9 months comes out at about 13. That step is our arithmetic, not the charity&#39;s.</p>
+<p>From 2 years the rule takes over: start at 24 and add 4 for each year past the second birthday. A 9-year-old cat is 24 + 7 × 4 = 52. We spread each year&#39;s 4 over its months, so a cat of 2 years and 6 months is about 26.</p>
+<p>Cats Protection&#39;s chart uses the same steps: 15 at 12 months, 21 at 18 months, 24 at 2 years, then around four human years for each cat year. The one place the two differ is 14, which Cats Protection puts at 70 and International Cat Care at 72. The calculator follows International Cat Care.</p>
+<h2 id="cat-life-stages-in-the-calculator">Cat life stages in the calculator</h2>
+<p>The life stage is International Cat Care&#39;s:</p>
+<ol>
+<li>Under 7 months.</li>
+<li>Junior, 7 months to 2 years: full size, like a teenager or young adult in people.</li>
+<li>Adult, 3 to 6 years. Cats Protection calls this stage prime.</li>
+<li>Mature, 7 to 10 years, which both charities liken to a person in their mid-40s to mid-50s.</li>
+<li>Senior, 11 to 14 years.</li>
+<li>Super senior, 15 years and over.</li>
+</ol>
+<p>VCA Animal Hospitals draws the senior line earlier, at about 9 to 11 for cats of all sizes. The stages are a guide to what to expect, and your vet may see your own cat differently.</p>
+<h2 id="why-there-is-no-size-or-breed-box">Why there is no size or breed box</h2>
+<p>Because the sources have none. International Cat Care and Cats Protection each give one chart for all cats, and VCA gives one senior line for cats of every size. Dogs are different: their charts split by weight, and our <a href="/dogs/dog-age-calculator/">dog age calculator</a> asks for size.</p>
+<h2 id="what-the-number-is-good-for">What the number is good for</h2>
+<p>Picturing where your cat is in its life. A 12-year-old cat at about 64 is in the senior years, even if it still takes the stairs two at a time. The figure says nothing about health, so take questions about that to your vet.</p>
+<p>Our page on <a href="/cats/cat-years-to-human-years/">cat years to human years</a> has the full chart, the vets&#39; own life stages and what UK records say about how long cats live. For everyday ideas at any age, see <a href="/cats/things-to-do-with-your-cat/">things to do with your cat</a> and our page on the <a href="/cats/cat-daily-routine/">cat daily routine</a>.</p>
+<p>Our book <a href="/books/the-house-your-cat-knows/">The House Your Cat Knows</a> is about noticing the cat you live with now. &quot;The Nap Rotation&quot; asks you to write down two or three places your cat rests over a day or a week, and what the light, heat or noise is like in each.</p>
+</div></div></div>
+<aside class="room" aria-label="From our books"><svg class="door" viewBox="0 0 48 48" aria-hidden="true"><path d="M2 46V2" stroke="currentColor" stroke-width="2.4"/><path d="M2 2a44 44 0 0 1 44 44" fill="none" stroke="currentColor" stroke-width="1" stroke-dasharray="3 3"/></svg>
+<div class="room-img"><picture><source srcset="/img/books/cat/01_cover.webp" type="image/webp"><img src="/img/books/cat/01_cover.png" alt="Cover of The House Your Cat Knows" width="800" height="1200" loading="lazy" decoding="async"></picture></div>
+<div><p class="room-title"><a href="/books/the-house-your-cat-knows/">The House Your Cat Knows</a></p>
+<p>A quiet printable and digital archive for noticing the life your cat already shares with you.</p>
+<p><a class="button" href="https://www.etsy.com/listing/4591734891" rel="noopener" data-goatcounter-click="etsy-cat">See it on Etsy</a> <a href="/books/the-house-your-cat-knows/">What is inside</a></p></div>
+</aside>
+<section class="faq"><h2 id="questions">Questions people ask</h2><details><summary>How does a cat age calculator work?</summary><p>This one uses International Cat Care's chart. Up to 2 years it reads the chart's rows by month, on a straight line between two rows; from 2 years it starts at 24 and adds 4 human years for each cat year. It also names the life stage. Every figure is an estimate.</p></details><details><summary>Is a cat year 7 human years?</summary><p>No. Both International Cat Care and Cats Protection count the first two years as about 24 human years, because a cat grows up fast, and about 4 human years for each year after that. Seven a year would make a fully grown 2-year-old cat 14.</p></details><details><summary>How old is a 15 year old cat in human years?</summary><p>About 76, in both the International Cat Care and the Cats Protection charts. Both charities call cats of 15 and over super senior.</p></details><details><summary>When is a cat a senior?</summary><p>International Cat Care and Cats Protection put the senior stage at 11 to 14 years, with super senior from 15. VCA Animal Hospitals puts senior at about 9 to 11 for cats of all sizes. Your vet will judge your own cat.</p></details></section>
+<section class="sources"><h2 id="sources">Sources</h2><ol><li><a href="https://icatcare.org/articles/how-to-tell-your-cats-age-in-human-years" rel="noopener">How to tell your cat's age in human years</a>, International Cat Care</li><li><a href="https://www.cats.org.uk/cats-blog/how-long-do-pet-cats-live" rel="noopener">How long do pet cats live?</a>, Cats Protection</li><li><a href="https://vcahospitals.com/resources/senior/when-is-your-pet-considered-a-senior" rel="noopener">When is your dog or cat considered a senior?</a>, VCA Animal Hospitals</li></ol></section>
+<p class="small how">We write these articles with help from an AI model. Every fact is checked against the sources listed under each article; anything we could not confirm is left out. <a href="/about/">How we write these pages</a>.</p>
+<section class="related"><h2 id="read-next">Read next</h2><ul class="register"><li><a href="/cats/cat-years-to-human-years/"><span class="reg-title">Cat Years to Human Years: Chart and the Simple Rule</span><span class="reg-desc">A cat of 2 is about 24 in human years; after that, add 4 for each cat year. So 10 is about 56 and 15 about 76. Full chart and life stages here.</span></a><time datetime="2026-11-05">5 November 2026</time></li><li><a href="/cats/things-to-do-with-your-cat/"><span class="reg-title">Things to Do With Your Cat: Play, Quiet and Noticing</span><span class="reg-desc">Things to do with your cat at home: hunting-style play, food puzzles, quiet company, safe time outside, and small ways to notice the life your cat already has.</span></a><time datetime="2026-10-30">30 October 2026</time></li><li><a href="/cats/cat-daily-routine/"><span class="reg-title">Cat Daily Routine: What a Cat Does All Day, and Why</span><span class="reg-desc">A cat's daily routine: busy at dawn and dusk, 12 to 18 hours of naps, small meals, grooming and patrols, timed around the people it lives with.</span></a><time datetime="2026-11-01">1 November 2026</time></li></ul></section>
+</article></main>
+<footer class="site"><div class="bar">
+<p>Small books for noticing the animal you live with, while they are here.</p>
+<p><a href="/books/one-day-youll-miss-this/">One Day, You’ll Miss This</a> · <a href="/books/the-house-your-cat-knows/">The House Your Cat Knows</a> · <a href="/about/">About these pages</a> · <a href="/feed.xml">Feed</a></p>
+<p class="small">We write these articles with help from an AI model. Every fact is checked against the sources listed under each article; anything we could not confirm is left out.</p>
+</div></footer>
+</body>
+</html>
