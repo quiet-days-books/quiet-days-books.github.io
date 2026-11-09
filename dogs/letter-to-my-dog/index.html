@@ -19,7 +19,7 @@
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="preload" href="/fonts/literata.woff2" as="font" type="font/woff2" crossorigin>
 <script>try{var t=localStorage.getItem("theme");if(t==="light"||t==="dark")document.documentElement.dataset.theme=t}catch(e){}</script>
-<script data-goatcounter="https://quietdays.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+<script data-goatcounter="https://quietdays.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script><script>document.addEventListener("DOMContentLoaded",function(){var p=location.pathname;document.querySelectorAll("[data-goatcounter-click]").forEach(function(a){a.setAttribute("data-goatcounter-referrer",p)});var m=document.querySelector("[data-read-end]");if(!m||!("IntersectionObserver" in window))return;var o=new IntersectionObserver(function(e){if(!e[0].isIntersecting)return;o.disconnect();(function s(n){var g=window.goatcounter;if(g&&g.count)g.count({path:"read-end"+p,title:document.title,event:true});else if(n<40)setTimeout(function(){s(n+1)},500)})(0)});o.observe(m)});</script>
 <meta name="google-site-verification" content="hHBGjlz6LvtyxdP3x3sWT5arWOdvQq0RpVLMBuHod_0">
 <meta name="google-site-verification" content="xf8LYssisbsEb_zO68Vfdsqkq7o0FOpAd0k9LcDhvv8">
 <meta name="msvalidate.01" content="74194B63F367EB355F843A035E6E6554">
@@ -244,6 +244,13 @@ header.site nav.langs span[aria-current]{color:var(--ink);padding:12px 0;border-
 .table-wrap:focus-visible{outline-offset:2px}
 /* the dog chart has six columns: on narrow phones it tightens so all of them stay in view */
 @media (max-width:480px){.calc-chart table[data-chart] th,.calc-chart table[data-chart] td{padding:7px 3px 7px 4px}.calc-chart table[data-chart] th{letter-spacing:0;font-size:.75rem}.calc-chart table[data-chart]{font-size:.875rem}}
+/* «Add this table to your site» (scripts/embed.mjs) */
+.embed{margin:12px 0 4px;max-width:var(--measure)}
+.embed summary{cursor:pointer;font:600 .875rem/1.4 var(--plan);letter-spacing:.02em;color:var(--ink-2);padding:12px 0;min-height:44px;box-sizing:border-box}
+.embed summary:hover{color:var(--ink)}
+.embed label{display:block;margin:8px 0 6px}
+.embed-code{display:block;width:100%;box-sizing:border-box;font:400 .8125rem/1.45 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;color:var(--ink);background:var(--film);border:1px solid var(--line);border-radius:0;padding:10px 12px;resize:vertical}
+.embed-code:focus-visible{outline:2px solid var(--ink);outline-offset:2px}
 </style>
 <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://books.clovermoor.com/#website","url":"https://books.clovermoor.com/","name":"Quiet Days Books","inLanguage":"en","publisher":{"@id":"https://books.clovermoor.com/#org"}},{"@type":"Organization","@id":"https://books.clovermoor.com/#org","name":"Quiet Days Books","url":"https://books.clovermoor.com/"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://books.clovermoor.com/"},{"@type":"ListItem","position":2,"name":"Life with an older dog","item":"https://books.clovermoor.com/dogs/"},{"@type":"ListItem","position":3,"name":"Letter to My Dog: How to Write One While They're Here"}]},{"@type":"BlogPosting","@id":"https://books.clovermoor.com/dogs/letter-to-my-dog/#article","headline":"Letter to My Dog: How to Write One While They're Here","description":"A letter to your dog is easiest to write on an ordinary day: date it, describe them as they are now, say the odd true things. Prompts and an example inside.","inLanguage":"en","url":"https://books.clovermoor.com/dogs/letter-to-my-dog/","mainEntityOfPage":"https://books.clovermoor.com/dogs/letter-to-my-dog/","datePublished":"2026-11-03","dateModified":"2026-11-03","wordCount":1354,"author":{"@id":"https://books.clovermoor.com/#org"},"publisher":{"@id":"https://books.clovermoor.com/#org"},"image":"https://books.clovermoor.com/img/books/dog/01_cover.jpg","articleSection":"Life with an older dog","citation":["https://ggia.berkeley.edu/practice/gratitude_letter","https://www.eurekalert.org/news-releases/491234","https://pubmed.ncbi.nlm.nih.gov/16045394/"]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What do you write in a letter to your dog?","acceptedAnswer":{"@type":"Answer","text":"What they are like right now: what they do every morning, what makes you laugh, where they sleep, what the house sounds like with them in it, what is going on in your life and how they fit into it. Add one thing you have never said out loud because it sounds silly."}},{"@type":"Question","name":"How long should a letter to my dog be?","acceptedAnswer":{"@type":"Answer","text":"One page is plenty. Most good ones take ten to twenty minutes and are written in one sitting without editing."}},{"@type":"Question","name":"Is it weird to write a letter to a dog?","acceptedAnswer":{"@type":"Answer","text":"No. People write letters to babies who cannot read yet for the same reason: the letter is for the record and for the writer. Years from now it will tell you exactly what this time was like."}},{"@type":"Question","name":"Should I write a letter to my dog on their birthday?","acceptedAnswer":{"@type":"Answer","text":"A birthday or adoption anniversary is a good habit, because it gives you a date to repeat. A letter every year becomes a record of how the dog, and your life, changed."}}]}]}</script>
 </head>
@@ -337,7 +344,44 @@ header.site nav.langs span[aria-current]{color:var(--ink);padding:12px 0;border-
 <td>One thing we will do together</td>
 </tr>
 </tbody></table>
-</div><p>For the &quot;next year&quot; line, our <a href="/dogs/senior-dog-bucket-list/">senior dog bucket list</a> has ideas sorted by how much energy an old dog has.</p>
+</div><details class="embed">
+<summary>Add this table to your site</summary>
+<p class="small">Free to use on your site, blog or newsletter. Copy the code below and paste it into your page as HTML. It shows the same table with a link back to this page as the source.</p>
+<label class="small" for="embed-t1">HTML code</label>
+<textarea id="embed-t1" class="embed-code" readonly rows="6" spellcheck="false">&lt;figure style=&quot;margin:1.5em 0;max-width:640px&quot;&gt;
+&lt;figcaption style=&quot;font-weight:bold;margin:0 0 .5em&quot;&gt;Birthday letter to my dog&lt;/figcaption&gt;
+&lt;table style=&quot;border-collapse:collapse;width:100%;font-size:15px&quot;&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&quot;border:1px solid #bbb;padding:6px 8px;text-align:left;background:#f3f3f3;color:#222&quot;&gt;Heading&lt;/th&gt;
+&lt;th style=&quot;border:1px solid #bbb;padding:6px 8px;text-align:left;background:#f3f3f3;color:#222&quot;&gt;What to write&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;&lt;tr&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;This year you&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;New habits, things you stopped doing, new favorite spot&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;You still&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;The things that have not changed at all&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;Our year&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;Where we lived, what happened, who visited&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;Your people&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;Who you greet loudest now&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;Next year&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;One thing we will do together&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+&lt;p style=&quot;font-size:13px;margin:.5em 0 0&quot;&gt;Source: &lt;a href=&quot;https://books.clovermoor.com/dogs/letter-to-my-dog/&quot; style=&quot;color:inherit;text-decoration:underline&quot;&gt;Quiet Days Books&lt;/a&gt;. The page lists the sources of these figures.&lt;/p&gt;
+&lt;/figure&gt;</textarea>
+<p><button type="button" class="button embed-copy" data-for="embed-t1" data-done="Copied" hidden>Copy code</button></p>
+</details><p>For the &quot;next year&quot; line, our <a href="/dogs/senior-dog-bucket-list/">senior dog bucket list</a> has ideas sorted by how much energy an old dog has.</p>
 <h2 id="letter-to-my-old-dog">Letter to my old dog</h2>
 <p>A letter to an old dog is often the one people put off, because it feels like a goodbye. It doesn&#39;t have to be. Write it about the dog they are now: the gray coming in, the slower walk, the new habit of sleeping in the sun patch by the back door. An old dog is still a dog you can describe in the present tense.</p>
 <p>Some people do write a letter after a loss, and that is a different letter with a different job. This page is about the earlier one, and the earlier one is easier, because nothing has happened to prompt it. If writing stirs up worry about the future, our page on <a href="/dogs/anticipatory-grief-dog/">anticipatory grief</a> is written for exactly that feeling.</p>
@@ -347,7 +391,7 @@ header.site nav.langs span[aria-current]{color:var(--ink);padding:12px 0;border-
 <p>So read it in the voice you use with them at home. If you record yourself doing it, you have their reaction on file as well. That is the kind of recording our <a href="/dogs/senior-dog-photoshoot-ideas/">senior dog photoshoot ideas</a> page suggests pairing with photos.</p>
 <h2 id="where-to-keep-the-letter">Where to keep the letter</h2>
 <p>Keep it with the other things about them, not in a drawer on its own. A folder with their photos, a printed page, or a <a href="/dogs/dog-memory-book-ideas/">dog memory book</a> all work. Write the date on the outside. In two years, write another one and put it next to the first. The second will differ from the first in ways you can&#39;t predict from here.</p>
-</div></div></div>
+<script>document.querySelectorAll(".embed-copy").forEach(function(b){var t=document.getElementById(b.getAttribute("data-for"));if(!t)return;b.hidden=false;var label=b.textContent;b.addEventListener("click",function(){function done(){b.textContent=b.getAttribute("data-done");setTimeout(function(){b.textContent=label},2500)}t.select();if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(t.value).then(done,function(){document.execCommand("copy");done()})}else{document.execCommand("copy");done()}})});</script></div><div data-read-end aria-hidden="true" style="height:1px"></div></div></div>
 <aside class="room" aria-label="From our books"><svg class="door" viewBox="0 0 48 48" aria-hidden="true"><path d="M2 46V2" stroke="currentColor" stroke-width="2.4"/><path d="M2 2a44 44 0 0 1 44 44" fill="none" stroke="currentColor" stroke-width="1" stroke-dasharray="3 3"/></svg>
 <div class="room-img"><picture><source srcset="/img/books/dog/01_cover.webp" type="image/webp"><img src="/img/books/dog/01_cover.jpg" alt="Cover of One Day, You’ll Miss This" width="1200" height="900" loading="lazy" decoding="async"></picture></div>
 <div><p class="room-title"><a href="/books/one-day-youll-miss-this/">One Day, You’ll Miss This</a></p>

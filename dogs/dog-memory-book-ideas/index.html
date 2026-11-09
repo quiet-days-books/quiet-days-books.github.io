@@ -19,7 +19,7 @@
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="preload" href="/fonts/literata.woff2" as="font" type="font/woff2" crossorigin>
 <script>try{var t=localStorage.getItem("theme");if(t==="light"||t==="dark")document.documentElement.dataset.theme=t}catch(e){}</script>
-<script data-goatcounter="https://quietdays.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+<script data-goatcounter="https://quietdays.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script><script>document.addEventListener("DOMContentLoaded",function(){var p=location.pathname;document.querySelectorAll("[data-goatcounter-click]").forEach(function(a){a.setAttribute("data-goatcounter-referrer",p)});var m=document.querySelector("[data-read-end]");if(!m||!("IntersectionObserver" in window))return;var o=new IntersectionObserver(function(e){if(!e[0].isIntersecting)return;o.disconnect();(function s(n){var g=window.goatcounter;if(g&&g.count)g.count({path:"read-end"+p,title:document.title,event:true});else if(n<40)setTimeout(function(){s(n+1)},500)})(0)});o.observe(m)});</script>
 <meta name="google-site-verification" content="hHBGjlz6LvtyxdP3x3sWT5arWOdvQq0RpVLMBuHod_0">
 <meta name="google-site-verification" content="xf8LYssisbsEb_zO68Vfdsqkq7o0FOpAd0k9LcDhvv8">
 <meta name="msvalidate.01" content="74194B63F367EB355F843A035E6E6554">
@@ -244,6 +244,13 @@ header.site nav.langs span[aria-current]{color:var(--ink);padding:12px 0;border-
 .table-wrap:focus-visible{outline-offset:2px}
 /* the dog chart has six columns: on narrow phones it tightens so all of them stay in view */
 @media (max-width:480px){.calc-chart table[data-chart] th,.calc-chart table[data-chart] td{padding:7px 3px 7px 4px}.calc-chart table[data-chart] th{letter-spacing:0;font-size:.75rem}.calc-chart table[data-chart]{font-size:.875rem}}
+/* «Add this table to your site» (scripts/embed.mjs) */
+.embed{margin:12px 0 4px;max-width:var(--measure)}
+.embed summary{cursor:pointer;font:600 .875rem/1.4 var(--plan);letter-spacing:.02em;color:var(--ink-2);padding:12px 0;min-height:44px;box-sizing:border-box}
+.embed summary:hover{color:var(--ink)}
+.embed label{display:block;margin:8px 0 6px}
+.embed-code{display:block;width:100%;box-sizing:border-box;font:400 .8125rem/1.45 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;color:var(--ink);background:var(--film);border:1px solid var(--line);border-radius:0;padding:10px 12px;resize:vertical}
+.embed-code:focus-visible{outline:2px solid var(--ink);outline-offset:2px}
 </style>
 <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://books.clovermoor.com/#website","url":"https://books.clovermoor.com/","name":"Quiet Days Books","inLanguage":"en","publisher":{"@id":"https://books.clovermoor.com/#org"}},{"@type":"Organization","@id":"https://books.clovermoor.com/#org","name":"Quiet Days Books","url":"https://books.clovermoor.com/"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://books.clovermoor.com/"},{"@type":"ListItem","position":2,"name":"Life with an older dog","item":"https://books.clovermoor.com/dogs/"},{"@type":"ListItem","position":3,"name":"Dog Memory Book Ideas: What to Put In While They're Here"}]},{"@type":"BlogPosting","@id":"https://books.clovermoor.com/dogs/dog-memory-book-ideas/#article","headline":"Dog Memory Book Ideas: What to Put In While They're Here","description":"Dog memory book ideas to fill while your dog is still beside you: the day you met, nicknames, 25 chosen photos, paw print, sounds, and how to make pages last.","inLanguage":"en","url":"https://books.clovermoor.com/dogs/dog-memory-book-ideas/","mainEntityOfPage":"https://books.clovermoor.com/dogs/dog-memory-book-ideas/","datePublished":"2026-11-05","dateModified":"2026-11-05","wordCount":1241,"author":{"@id":"https://books.clovermoor.com/#org"},"publisher":{"@id":"https://books.clovermoor.com/#org"},"image":"https://books.clovermoor.com/img/books/dog/01_cover.jpg","articleSection":"Life with an older dog","citation":["https://www.loc.gov/preservation/care/photo.html","https://blogs.loc.gov/thesignal/2012/04/preserving-your-personal-digital-photographs-library-of-congress-presents-online-session/"]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What do you put in a dog memory book?","acceptedAnswer":{"@type":"Answer","text":"The day you met and their first day home, every nickname, a page of their habits, about 25 chosen photos, a paw print with the date and their measurements, a small dated envelope of shed fur, a photo of their collar and tag, a list of the places that belong to your story, and a line or two from the people they love. Add links or QR codes to sound and video files if you keep it on paper."}},{"@type":"Question","name":"Should I make a dog memory book before my dog dies?","acceptedAnswer":{"@type":"Answer","text":"Yes, if you can. You remember more while the dog is here, you can still take the photos and recordings you are missing, and the dog can be part of making it: the paw print, the photo of them with their toy, the walk you film."}},{"@type":"Question","name":"Digital or printed memory book for my dog?","acceptedAnswer":{"@type":"Answer","text":"Both, ideally. Paper is easy to pick up and show people. Digital holds sound and video. Whichever you choose, keep copies of the files in more than one place."}},{"@type":"Question","name":"How many photos should go in a dog memory book?","acceptedAnswer":{"@type":"Answer","text":"Fewer than you think. Around 25 chosen by category tells the whole story and can be looked through in a few minutes. A phone full of photos is a pile, not a record."}}]}]}</script>
 </head>
@@ -309,7 +316,60 @@ header.site nav.langs span[aria-current]{color:var(--ink);padding:12px 0;border-
 <td>49</td>
 </tr>
 </tbody></table>
-</div><p>You don&#39;t need all of it. Pick the sections that fit your dog and start with the one that feels easiest.</p>
+</div><details class="embed">
+<summary>Add this table to your site</summary>
+<p class="small">Free to use on your site, blog or newsletter. Copy the code below and paste it into your page as HTML. It shows the same table with a link back to this page as the source.</p>
+<label class="small" for="embed-t1">HTML code</label>
+<textarea id="embed-t1" class="embed-code" readonly rows="6" spellcheck="false">&lt;figure style=&quot;margin:1.5em 0;max-width:640px&quot;&gt;
+&lt;figcaption style=&quot;font-weight:bold;margin:0 0 .5em&quot;&gt;What to put in a dog memory book&lt;/figcaption&gt;
+&lt;table style=&quot;border-collapse:collapse;width:100%;font-size:15px&quot;&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&quot;border:1px solid #bbb;padding:6px 8px;text-align:left;background:#f3f3f3;color:#222&quot;&gt;Section&lt;/th&gt;
+&lt;th style=&quot;border:1px solid #bbb;padding:6px 8px;text-align:left;background:#f3f3f3;color:#222&quot;&gt;What goes in&lt;/th&gt;
+&lt;th style=&quot;border:1px solid #bbb;padding:6px 8px;text-align:left;background:#f3f3f3;color:#222&quot;&gt;Activities in our book&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;&lt;tr&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;Our story&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;The day you met, the first day home, nicknames, the funniest thing, the biggest trouble&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;31-36&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;Photos&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;25 chosen photos, close-ups, the sleeping spot&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;25, 27, 48&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;Keepsakes&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;Paw print, nose print, shed fur, collar and tag, favorite toy&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;41-45&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;Sounds and video&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;Footsteps, breathing, the greeting, the tail&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;16-24, 47&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;Places&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;The places that belong to your story, as a list and a map&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;40, 46&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;Their people&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;Who they love, and a memory from each&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;39&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;A letter&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;Written to them, dated, on an ordinary day&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;49&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+&lt;p style=&quot;font-size:13px;margin:.5em 0 0&quot;&gt;Source: &lt;a href=&quot;https://books.clovermoor.com/dogs/dog-memory-book-ideas/&quot; style=&quot;color:inherit;text-decoration:underline&quot;&gt;Quiet Days Books&lt;/a&gt;. The page lists the sources of these figures.&lt;/p&gt;
+&lt;/figure&gt;</textarea>
+<p><button type="button" class="button embed-copy" data-for="embed-t1" data-done="Copied" hidden>Copy code</button></p>
+</details><p>You don&#39;t need all of it. Pick the sections that fit your dog and start with the one that feels easiest.</p>
 <h2 id="ideas-for-the-story-pages">Ideas for the story pages</h2>
 <p>The story fades before the photos do. The date goes first, then the weather, then the order things happened in. Write these down as scenes, not summaries:</p>
 <ul>
@@ -380,7 +440,50 @@ header.site nav.langs span[aria-current]{color:var(--ink);padding:12px 0;border-
 <td>Easy, print another page</td>
 </tr>
 </tbody></table>
-</div><p>Our own book is the third kind: 50 activities in four parts (Do, Capture, Remember, Preserve), with capture cards, printable memory pages and a setup for keeping files together in one Memory Vault. It is a digital download, so you print what you need.</p>
+</div><details class="embed">
+<summary>Add this table to your site</summary>
+<p class="small">Free to use on your site, blog or newsletter. Copy the code below and paste it into your page as HTML. It shows the same table with a link back to this page as the source.</p>
+<label class="small" for="embed-t2">HTML code</label>
+<textarea id="embed-t2" class="embed-code" readonly rows="6" spellcheck="false">&lt;figure style=&quot;margin:1.5em 0;max-width:640px&quot;&gt;
+&lt;figcaption style=&quot;font-weight:bold;margin:0 0 .5em&quot;&gt;Memory book for my dog: DIY or ready-made?&lt;/figcaption&gt;
+&lt;table style=&quot;border-collapse:collapse;width:100%;font-size:15px&quot;&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&quot;border:1px solid #bbb;padding:6px 8px;text-align:left;background:#f3f3f3;color:#222&quot;&gt;&lt;/th&gt;
+&lt;th style=&quot;border:1px solid #bbb;padding:6px 8px;text-align:left;background:#f3f3f3;color:#222&quot;&gt;DIY scrapbook or album&lt;/th&gt;
+&lt;th style=&quot;border:1px solid #bbb;padding:6px 8px;text-align:left;background:#f3f3f3;color:#222&quot;&gt;Ready-made fill-in book&lt;/th&gt;
+&lt;th style=&quot;border:1px solid #bbb;padding:6px 8px;text-align:left;background:#f3f3f3;color:#222&quot;&gt;Printable or digital guide&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;&lt;tr&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;Cost&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;Album and supplies&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;One purchase&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;One purchase, print at home&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;Prompts&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;None, you plan it&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;Fixed prompts&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;Prompts plus activities&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;Sound and video&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;Only if you add links&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;Rarely&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;Depends on the guide&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;Changes later&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;Easy&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;Hard&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;Easy, print another page&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+&lt;p style=&quot;font-size:13px;margin:.5em 0 0&quot;&gt;Source: &lt;a href=&quot;https://books.clovermoor.com/dogs/dog-memory-book-ideas/&quot; style=&quot;color:inherit;text-decoration:underline&quot;&gt;Quiet Days Books&lt;/a&gt;. The page lists the sources of these figures.&lt;/p&gt;
+&lt;/figure&gt;</textarea>
+<p><button type="button" class="button embed-copy" data-for="embed-t2" data-done="Copied" hidden>Copy code</button></p>
+</details><p>Our own book is the third kind: 50 activities in four parts (Do, Capture, Remember, Preserve), with capture cards, printable memory pages and a setup for keeping files together in one Memory Vault. It is a digital download, so you print what you need.</p>
 <h2 id="how-to-make-the-pages-last">How to make the pages last</h2>
 <p>A memory book is meant to be opened in twenty years, so the materials matter. The Library of Congress gives clear advice for photographs:</p>
 <ul>
@@ -392,7 +495,7 @@ header.site nav.langs span[aria-current]{color:var(--ink);padding:12px 0;border-
 <p>For digital files, the Library&#39;s advice is to make copies and store them in separate places. A phone alone is one lost phone away from nothing. A second copy on a computer or drive, and a third in cloud storage, is a reasonable setup.</p>
 <h2 id="where-to-start-this-week">Where to start this week</h2>
 <p>Start small. Write down the day you met, tonight, while the dog is asleep nearby. Then add a <a href="/dogs/letter-to-my-dog/">letter to your dog</a> as the last page, dated today. For things to do together that will fill the rest, see our <a href="/dogs/senior-dog-bucket-list/">senior dog bucket list</a>. If putting the book together brings up worry about losing them, our page on <a href="/dogs/anticipatory-grief-dog/">anticipatory grief</a> may help.</p>
-</div></div></div>
+<script>document.querySelectorAll(".embed-copy").forEach(function(b){var t=document.getElementById(b.getAttribute("data-for"));if(!t)return;b.hidden=false;var label=b.textContent;b.addEventListener("click",function(){function done(){b.textContent=b.getAttribute("data-done");setTimeout(function(){b.textContent=label},2500)}t.select();if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(t.value).then(done,function(){document.execCommand("copy");done()})}else{document.execCommand("copy");done()}})});</script></div><div data-read-end aria-hidden="true" style="height:1px"></div></div></div>
 <aside class="room" aria-label="From our books"><svg class="door" viewBox="0 0 48 48" aria-hidden="true"><path d="M2 46V2" stroke="currentColor" stroke-width="2.4"/><path d="M2 2a44 44 0 0 1 44 44" fill="none" stroke="currentColor" stroke-width="1" stroke-dasharray="3 3"/></svg>
 <div class="room-img"><picture><source srcset="/img/books/dog/01_cover.webp" type="image/webp"><img src="/img/books/dog/01_cover.jpg" alt="Cover of One Day, You’ll Miss This" width="1200" height="900" loading="lazy" decoding="async"></picture></div>
 <div><p class="room-title"><a href="/books/one-day-youll-miss-this/">One Day, You’ll Miss This</a></p>

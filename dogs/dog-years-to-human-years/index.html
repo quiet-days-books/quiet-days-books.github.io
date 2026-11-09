@@ -19,7 +19,7 @@
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="preload" href="/fonts/literata.woff2" as="font" type="font/woff2" crossorigin>
 <script>try{var t=localStorage.getItem("theme");if(t==="light"||t==="dark")document.documentElement.dataset.theme=t}catch(e){}</script>
-<script data-goatcounter="https://quietdays.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+<script data-goatcounter="https://quietdays.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script><script>document.addEventListener("DOMContentLoaded",function(){var p=location.pathname;document.querySelectorAll("[data-goatcounter-click]").forEach(function(a){a.setAttribute("data-goatcounter-referrer",p)});var m=document.querySelector("[data-read-end]");if(!m||!("IntersectionObserver" in window))return;var o=new IntersectionObserver(function(e){if(!e[0].isIntersecting)return;o.disconnect();(function s(n){var g=window.goatcounter;if(g&&g.count)g.count({path:"read-end"+p,title:document.title,event:true});else if(n<40)setTimeout(function(){s(n+1)},500)})(0)});o.observe(m)});</script>
 <meta name="google-site-verification" content="hHBGjlz6LvtyxdP3x3sWT5arWOdvQq0RpVLMBuHod_0">
 <meta name="google-site-verification" content="xf8LYssisbsEb_zO68Vfdsqkq7o0FOpAd0k9LcDhvv8">
 <meta name="msvalidate.01" content="74194B63F367EB355F843A035E6E6554">
@@ -244,6 +244,13 @@ header.site nav.langs span[aria-current]{color:var(--ink);padding:12px 0;border-
 .table-wrap:focus-visible{outline-offset:2px}
 /* the dog chart has six columns: on narrow phones it tightens so all of them stay in view */
 @media (max-width:480px){.calc-chart table[data-chart] th,.calc-chart table[data-chart] td{padding:7px 3px 7px 4px}.calc-chart table[data-chart] th{letter-spacing:0;font-size:.75rem}.calc-chart table[data-chart]{font-size:.875rem}}
+/* «Add this table to your site» (scripts/embed.mjs) */
+.embed{margin:12px 0 4px;max-width:var(--measure)}
+.embed summary{cursor:pointer;font:600 .875rem/1.4 var(--plan);letter-spacing:.02em;color:var(--ink-2);padding:12px 0;min-height:44px;box-sizing:border-box}
+.embed summary:hover{color:var(--ink)}
+.embed label{display:block;margin:8px 0 6px}
+.embed-code{display:block;width:100%;box-sizing:border-box;font:400 .8125rem/1.45 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;color:var(--ink);background:var(--film);border:1px solid var(--line);border-radius:0;padding:10px 12px;resize:vertical}
+.embed-code:focus-visible{outline:2px solid var(--ink);outline-offset:2px}
 </style>
 <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://books.clovermoor.com/#website","url":"https://books.clovermoor.com/","name":"Quiet Days Books","inLanguage":"en","publisher":{"@id":"https://books.clovermoor.com/#org"}},{"@type":"Organization","@id":"https://books.clovermoor.com/#org","name":"Quiet Days Books","url":"https://books.clovermoor.com/"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://books.clovermoor.com/"},{"@type":"ListItem","position":2,"name":"Life with an older dog","item":"https://books.clovermoor.com/dogs/"},{"@type":"ListItem","position":3,"name":"Dog Years to Human Years: Chart and the Real Formula"}]},{"@type":"BlogPosting","@id":"https://books.clovermoor.com/dogs/dog-years-to-human-years/#article","headline":"Dog Years to Human Years: Chart and the Real Formula","description":"A dog's first year is about 15 human years and the second adds about 9. After that size matters, so the old 'multiply by 7' rule is wrong at almost every age.","inLanguage":"en","url":"https://books.clovermoor.com/dogs/dog-years-to-human-years/","mainEntityOfPage":"https://books.clovermoor.com/dogs/dog-years-to-human-years/","datePublished":"2026-11-07","dateModified":"2026-11-07","wordCount":1456,"author":{"@id":"https://books.clovermoor.com/#org"},"publisher":{"@id":"https://books.clovermoor.com/#org"},"image":"https://books.clovermoor.com/img/books/dog/01_cover.jpg","articleSection":"Life with an older dog","citation":["https://www.akc.org/expert-advice/health/how-to-calculate-dog-years-to-human-years/","https://doi.org/10.1016/j.cels.2020.06.006","https://doi.org/10.1038/s41598-023-50458-w"]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Is 1 dog year really 7 human years?","acceptedAnswer":{"@type":"Answer","text":"No. The 7x rule runs far too slow in the first two years and too fast later. The AVMA, as quoted by the AKC, puts a medium dog's first year at about 15 human years and its second at about 9 more, with roughly 4 or 5 human years a year after that."}},{"@type":"Question","name":"What is the formula for dog years to human years?","acceptedAnswer":{"@type":"Answer","text":"The best known one comes from a 2020 Cell Systems paper on DNA methylation in Labrador Retrievers: human age = 16 x ln(dog age) + 31, where ln is the natural logarithm. A 2-year-old dog works out at about 42 and a 10-year-old at about 68."}},{"@type":"Question","name":"How old is a 7 year old dog in human years?","acceptedAnswer":{"@type":"Answer","text":"About 44 for a small dog, 47 for a medium dog, 50 for a large dog and 56 for a giant dog, on the AKC size chart. The Labrador epigenetic formula gives about 62. The old 7x rule says 49, which happens to sit near the middle."}},{"@type":"Question","name":"Do small dogs age slower than big dogs in human years?","acceptedAnswer":{"@type":"Answer","text":"After the first few years, yes. On the AKC chart, small, medium and large dogs match until age 5, then split. By 10 a small dog is about 56 in human years, a large dog about 66 and a giant dog about 79. Large breeds also tend to have shorter lives."}},{"@type":"Question","name":"How do you calculate dog years to human years?","acceptedAnswer":{"@type":"Answer","text":"Pick your dog's weight band, then read across the AKC chart at your dog's age. For the epigenetic formula, take the natural logarithm of the age in years, multiply by 16 and add 31. A phone calculator's 'ln' key does the first step."}}]}]}</script>
 </head>
@@ -368,7 +375,110 @@ header.site nav.langs span[aria-current]{color:var(--ink);padding:12px 0;border-
 <td>112</td>
 </tr>
 </tbody></table>
-</div><p>Two things stand out. The methods disagree most about young adults: the formula makes a 3-year-old dog nearly 49, the size chart makes it 28. And they disagree about old giant dogs: the size chart passes 100 at 13, while the formula, built on Labradors, stays in the seventies.</p>
+</div><details class="embed">
+<summary>Add this table to your site</summary>
+<p class="small">Free to use on your site, blog or newsletter. Copy the code below and paste it into your page as HTML. It shows the same table with a link back to this page as the source.</p>
+<label class="small" for="embed-t1">HTML code</label>
+<textarea id="embed-t1" class="embed-code" readonly rows="6" spellcheck="false">&lt;figure style=&quot;margin:1.5em 0;max-width:640px&quot;&gt;
+&lt;figcaption style=&quot;font-weight:bold;margin:0 0 .5em&quot;&gt;Dog years to human years chart&lt;/figcaption&gt;
+&lt;table style=&quot;border-collapse:collapse;width:100%;font-size:15px&quot;&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&quot;border:1px solid #bbb;padding:6px 8px;text-align:left;background:#f3f3f3;color:#222&quot;&gt;Dog&amp;#39;s age&lt;/th&gt;
+&lt;th style=&quot;border:1px solid #bbb;padding:6px 8px;text-align:left;background:#f3f3f3;color:#222&quot;&gt;Small (20 lb or less)&lt;/th&gt;
+&lt;th style=&quot;border:1px solid #bbb;padding:6px 8px;text-align:left;background:#f3f3f3;color:#222&quot;&gt;Medium (21 to 50 lb)&lt;/th&gt;
+&lt;th style=&quot;border:1px solid #bbb;padding:6px 8px;text-align:left;background:#f3f3f3;color:#222&quot;&gt;Large (51 to 100 lb)&lt;/th&gt;
+&lt;th style=&quot;border:1px solid #bbb;padding:6px 8px;text-align:left;background:#f3f3f3;color:#222&quot;&gt;Giant (over 100 lb)&lt;/th&gt;
+&lt;th style=&quot;border:1px solid #bbb;padding:6px 8px;text-align:left;background:#f3f3f3;color:#222&quot;&gt;Formula (Labradors)&lt;/th&gt;
+&lt;th style=&quot;border:1px solid #bbb;padding:6px 8px;text-align:left;background:#f3f3f3;color:#222&quot;&gt;Old 7x rule&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;&lt;tr&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;1&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;15&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;15&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;15&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;12&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;31&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;7&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;2&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;24&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;24&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;24&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;22&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;42&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;14&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;3&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;28&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;28&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;28&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;31&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;49&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;21&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;5&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;36&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;36&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;36&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;45&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;57&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;35&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;7&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;44&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;47&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;50&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;56&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;62&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;49&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;10&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;56&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;60&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;66&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;79&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;68&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;70&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;12&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;64&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;69&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;77&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;93&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;71&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;84&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;14&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;72&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;78&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;88&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;107&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;73&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;98&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;16&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;80&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;87&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;99&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;121&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;75&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;112&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+&lt;p style=&quot;font-size:13px;margin:.5em 0 0&quot;&gt;Source: &lt;a href=&quot;https://books.clovermoor.com/dogs/dog-years-to-human-years/&quot; style=&quot;color:inherit;text-decoration:underline&quot;&gt;Quiet Days Books&lt;/a&gt;. The page lists the sources of these figures.&lt;/p&gt;
+&lt;/figure&gt;</textarea>
+<p><button type="button" class="button embed-copy" data-for="embed-t1" data-done="Copied" hidden>Copy code</button></p>
+</details><p>Two things stand out. The methods disagree most about young adults: the formula makes a 3-year-old dog nearly 49, the size chart makes it 28. And they disagree about old giant dogs: the size chart passes 100 at 13, while the formula, built on Labradors, stays in the seventies.</p>
 <p>None of these numbers is a measurement of your dog. They are ways of saying &quot;what stage of life is this?&quot; in human terms. To skip the table, our <a href="/dogs/dog-age-calculator/">dog age calculator</a> reads it for you, including the months between birthdays.</p>
 <h2 id="dog-years-to-human-years-for-small-dogs-and-big-dogs">Dog years to human years for small dogs and big dogs</h2>
 <p>On the AKC chart, small, medium and large dogs are the same age in human years up to 5. From 6 they split, and the gap widens every year. At 10, a small dog is about 56, a medium dog 60, a large dog 66 and a giant dog 79.</p>
@@ -425,12 +535,53 @@ header.site nav.langs span[aria-current]{color:var(--ink);padding:12px 0;border-
 <td>49</td>
 </tr>
 </tbody></table>
-</div><p>So a 7-year-old Jack Russell is roughly a mid-forties human, and a 7-year-old Great Dane is in its late fifties. For many large breeds, 7 is also close to the age at which vets start to treat a dog as a senior. That depends on the breed&#39;s lifespan rather than on a human-years figure, and our <a href="/dogs/when-is-a-dog-a-senior/">senior dog age chart by breed</a> works it out breed by breed.</p>
+</div><details class="embed">
+<summary>Add this table to your site</summary>
+<p class="small">Free to use on your site, blog or newsletter. Copy the code below and paste it into your page as HTML. It shows the same table with a link back to this page as the source.</p>
+<label class="small" for="embed-t2">HTML code</label>
+<textarea id="embed-t2" class="embed-code" readonly rows="6" spellcheck="false">&lt;figure style=&quot;margin:1.5em 0;max-width:640px&quot;&gt;
+&lt;figcaption style=&quot;font-weight:bold;margin:0 0 .5em&quot;&gt;How old is a 7 year old dog in human years?&lt;/figcaption&gt;
+&lt;table style=&quot;border-collapse:collapse;width:100%;font-size:15px&quot;&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&quot;border:1px solid #bbb;padding:6px 8px;text-align:left;background:#f3f3f3;color:#222&quot;&gt;Method&lt;/th&gt;
+&lt;th style=&quot;border:1px solid #bbb;padding:6px 8px;text-align:left;background:#f3f3f3;color:#222&quot;&gt;A 7-year-old dog in human years&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;&lt;tr&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;AKC chart, small dog&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;44&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;AKC chart, medium dog&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;47&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;AKC chart, large dog&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;50&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;AKC chart, giant dog&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;56&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;Epigenetic formula (Labradors)&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;about 62&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;Old 7x rule&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;49&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+&lt;p style=&quot;font-size:13px;margin:.5em 0 0&quot;&gt;Source: &lt;a href=&quot;https://books.clovermoor.com/dogs/dog-years-to-human-years/&quot; style=&quot;color:inherit;text-decoration:underline&quot;&gt;Quiet Days Books&lt;/a&gt;. The page lists the sources of these figures.&lt;/p&gt;
+&lt;/figure&gt;</textarea>
+<p><button type="button" class="button embed-copy" data-for="embed-t2" data-done="Copied" hidden>Copy code</button></p>
+</details><p>So a 7-year-old Jack Russell is roughly a mid-forties human, and a 7-year-old Great Dane is in its late fifties. For many large breeds, 7 is also close to the age at which vets start to treat a dog as a senior. That depends on the breed&#39;s lifespan rather than on a human-years figure, and our <a href="/dogs/when-is-a-dog-a-senior/">senior dog age chart by breed</a> works it out breed by breed.</p>
 <h2 id="what-a-dog-39-s-human-age-is-useful-for">What a dog&#39;s human age is useful for</h2>
 <p>Mostly for seeing the shape of the years ahead. A 10-year-old Labrador at about 68 in human terms is not middle-aged any more, even if it still runs to the door. A 3-year-old dog at 28 to 49 is a grown adult, not a teenager.</p>
 <p>The number does not tell you how long your dog will live or how healthy it is. Your vet can tell you much more from an exam than any chart can. If your dog has moved into the older column of the table, the useful questions are practical ones: how far to walk, what to change at home, and what you want to do together while there is energy for it.</p>
 <p>That last one is the part we care about at Quiet Days Books. Our <a href="/dogs/senior-dog-bucket-list/">senior dog bucket list</a> sorts ideas by how much energy an older dog has, and <a href="/dogs/fun-things-to-do-with-your-senior-dog/">fun things to do with your senior dog</a> has gentler games. Our book <a href="/books/one-day-youll-miss-this/">One Day, You&#39;ll Miss This</a> has 50 small activities for the dog beside you now. One of them, &quot;Recreate an Old Memory&quot;, asks you to find a photo from your dog&#39;s first months and take it again in the same spot: the human-years table, in one picture.</p>
-</div></div></div>
+<script>document.querySelectorAll(".embed-copy").forEach(function(b){var t=document.getElementById(b.getAttribute("data-for"));if(!t)return;b.hidden=false;var label=b.textContent;b.addEventListener("click",function(){function done(){b.textContent=b.getAttribute("data-done");setTimeout(function(){b.textContent=label},2500)}t.select();if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(t.value).then(done,function(){document.execCommand("copy");done()})}else{document.execCommand("copy");done()}})});</script></div><div data-read-end aria-hidden="true" style="height:1px"></div></div></div>
 <aside class="room" aria-label="From our books"><svg class="door" viewBox="0 0 48 48" aria-hidden="true"><path d="M2 46V2" stroke="currentColor" stroke-width="2.4"/><path d="M2 2a44 44 0 0 1 44 44" fill="none" stroke="currentColor" stroke-width="1" stroke-dasharray="3 3"/></svg>
 <div class="room-img"><picture><source srcset="/img/books/dog/01_cover.webp" type="image/webp"><img src="/img/books/dog/01_cover.jpg" alt="Cover of One Day, You’ll Miss This" width="1200" height="900" loading="lazy" decoding="async"></picture></div>
 <div><p class="room-title"><a href="/books/one-day-youll-miss-this/">One Day, You’ll Miss This</a></p>

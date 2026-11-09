@@ -19,7 +19,7 @@
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="preload" href="/fonts/literata.woff2" as="font" type="font/woff2" crossorigin>
 <script>try{var t=localStorage.getItem("theme");if(t==="light"||t==="dark")document.documentElement.dataset.theme=t}catch(e){}</script>
-<script data-goatcounter="https://quietdays.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+<script data-goatcounter="https://quietdays.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script><script>document.addEventListener("DOMContentLoaded",function(){var p=location.pathname;document.querySelectorAll("[data-goatcounter-click]").forEach(function(a){a.setAttribute("data-goatcounter-referrer",p)});var m=document.querySelector("[data-read-end]");if(!m||!("IntersectionObserver" in window))return;var o=new IntersectionObserver(function(e){if(!e[0].isIntersecting)return;o.disconnect();(function s(n){var g=window.goatcounter;if(g&&g.count)g.count({path:"read-end"+p,title:document.title,event:true});else if(n<40)setTimeout(function(){s(n+1)},500)})(0)});o.observe(m)});</script>
 <meta name="google-site-verification" content="hHBGjlz6LvtyxdP3x3sWT5arWOdvQq0RpVLMBuHod_0">
 <meta name="google-site-verification" content="xf8LYssisbsEb_zO68Vfdsqkq7o0FOpAd0k9LcDhvv8">
 <meta name="msvalidate.01" content="74194B63F367EB355F843A035E6E6554">
@@ -244,6 +244,13 @@ header.site nav.langs span[aria-current]{color:var(--ink);padding:12px 0;border-
 .table-wrap:focus-visible{outline-offset:2px}
 /* the dog chart has six columns: on narrow phones it tightens so all of them stay in view */
 @media (max-width:480px){.calc-chart table[data-chart] th,.calc-chart table[data-chart] td{padding:7px 3px 7px 4px}.calc-chart table[data-chart] th{letter-spacing:0;font-size:.75rem}.calc-chart table[data-chart]{font-size:.875rem}}
+/* «Add this table to your site» (scripts/embed.mjs) */
+.embed{margin:12px 0 4px;max-width:var(--measure)}
+.embed summary{cursor:pointer;font:600 .875rem/1.4 var(--plan);letter-spacing:.02em;color:var(--ink-2);padding:12px 0;min-height:44px;box-sizing:border-box}
+.embed summary:hover{color:var(--ink)}
+.embed label{display:block;margin:8px 0 6px}
+.embed-code{display:block;width:100%;box-sizing:border-box;font:400 .8125rem/1.45 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;color:var(--ink);background:var(--film);border:1px solid var(--line);border-radius:0;padding:10px 12px;resize:vertical}
+.embed-code:focus-visible{outline:2px solid var(--ink);outline-offset:2px}
 </style>
 <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://books.clovermoor.com/#website","url":"https://books.clovermoor.com/","name":"Quiet Days Books","inLanguage":"en","publisher":{"@id":"https://books.clovermoor.com/#org"}},{"@type":"Organization","@id":"https://books.clovermoor.com/#org","name":"Quiet Days Books","url":"https://books.clovermoor.com/"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://books.clovermoor.com/"},{"@type":"ListItem","position":2,"name":"Life with an older dog","item":"https://books.clovermoor.com/dogs/"},{"@type":"ListItem","position":3,"name":"Senior Dog Photoshoot Ideas You Can Do at Home"}]},{"@type":"BlogPosting","@id":"https://books.clovermoor.com/dogs/senior-dog-photoshoot-ideas/#article","headline":"Senior Dog Photoshoot Ideas You Can Do at Home","description":"Senior dog photoshoot ideas that suit an older body: favorite spots, gray-muzzle close-ups, owner shots, golden hour, plus sound and video. Short sessions.","inLanguage":"en","url":"https://books.clovermoor.com/dogs/senior-dog-photoshoot-ideas/","mainEntityOfPage":"https://books.clovermoor.com/dogs/senior-dog-photoshoot-ideas/","datePublished":"2026-11-04","dateModified":"2026-11-04","wordCount":1240,"author":{"@id":"https://books.clovermoor.com/#org"},"publisher":{"@id":"https://books.clovermoor.com/#org"},"image":"https://books.clovermoor.com/img/books/dog/01_cover.jpg","articleSection":"Life with an older dog","citation":["https://pdsa.org.uk/what-we-do/blog/older-pets-taking-care-of-your-senior-citizen-s-joints","https://www.fearfreehappyhomes.com/7-ways-to-help-senior-dogs-stay-safe-and-feel-good/"]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How long should a senior dog photoshoot be?","acceptedAnswer":{"@type":"Answer","text":"Short. Plan several sessions of a few minutes rather than one long one, and stop when the dog lies down, looks away or loses interest. For an old dog, three good frames on three different days beat an hour of forced poses."}},{"@type":"Question","name":"What should I wear for a photoshoot with my senior dog?","acceptedAnswer":{"@type":"Answer","text":"Plain clothes in a color that contrasts with the coat: darker for a pale dog, lighter for a dark dog. Avoid busy patterns and anything that sheds fluff, and wear something you can sit on the floor in."}},{"@type":"Question","name":"Is flash bad for old dogs?","acceptedAnswer":{"@type":"Answer","text":"We suggest skipping it. A sudden flash can startle any dog, and dogs whose sight or hearing has faded are easier to startle. Window light or soft evening light looks better on a gray coat anyway."}},{"@type":"Question","name":"Should I hire a senior dog photographer?","acceptedAnswer":{"@type":"Answer","text":"If you want large prints or photos of the whole family together, a photographer who works with older dogs is worth it. Tell them about your dog's joints, hearing and stamina before booking. Many of the best photos, though, are the everyday ones only you can take."}}]}]}</script>
 </head>
@@ -360,7 +367,68 @@ header.site nav.langs span[aria-current]{color:var(--ink);padding:12px 0;border-
 <td>Dogs still walking</td>
 </tr>
 </tbody></table>
-</div><h2 id="add-sound-and-video">Add sound and video</h2>
+</div><details class="embed">
+<summary>Add this table to your site</summary>
+<p class="small">Free to use on your site, blog or newsletter. Copy the code below and paste it into your page as HTML. It shows the same table with a link back to this page as the source.</p>
+<label class="small" for="embed-t1">HTML code</label>
+<textarea id="embed-t1" class="embed-code" readonly rows="6" spellcheck="false">&lt;figure style=&quot;margin:1.5em 0;max-width:640px&quot;&gt;
+&lt;figcaption style=&quot;font-weight:bold;margin:0 0 .5em&quot;&gt;Ideas sorted by how much the dog has to move&lt;/figcaption&gt;
+&lt;table style=&quot;border-collapse:collapse;width:100%;font-size:15px&quot;&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&quot;border:1px solid #bbb;padding:6px 8px;text-align:left;background:#f3f3f3;color:#222&quot;&gt;Idea&lt;/th&gt;
+&lt;th style=&quot;border:1px solid #bbb;padding:6px 8px;text-align:left;background:#f3f3f3;color:#222&quot;&gt;What the dog does&lt;/th&gt;
+&lt;th style=&quot;border:1px solid #bbb;padding:6px 8px;text-align:left;background:#f3f3f3;color:#222&quot;&gt;Best light&lt;/th&gt;
+&lt;th style=&quot;border:1px solid #bbb;padding:6px 8px;text-align:left;background:#f3f3f3;color:#222&quot;&gt;Good for&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;&lt;tr&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;Sleeping spot, full and empty&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;Nothing, they are asleep&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;Daylight from a window&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;Any dog&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;Close-up set&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;Lies still&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;Side light from a window&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;Any dog&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;Sun patch&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;Lies in the sun&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;Afternoon sun&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;Dogs who seek warmth&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;Owner on the floor&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;Lies or sits beside you&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;Window light&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;Any dog, needs a helper&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;Old photo recreated&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;Sits or lies in one spot&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;Match the original&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;Dogs who can reach the spot&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;Sunset backlight&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;Stands or sits outdoors&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;Hour before sunset&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;Dogs who still enjoy a short walk&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;The ordinary walk, filmed&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;Walks their usual route&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;Any&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;Dogs still walking&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+&lt;p style=&quot;font-size:13px;margin:.5em 0 0&quot;&gt;Source: &lt;a href=&quot;https://books.clovermoor.com/dogs/senior-dog-photoshoot-ideas/&quot; style=&quot;color:inherit;text-decoration:underline&quot;&gt;Quiet Days Books&lt;/a&gt;. The page lists the sources of these figures.&lt;/p&gt;
+&lt;/figure&gt;</textarea>
+<p><button type="button" class="button embed-copy" data-for="embed-t1" data-done="Copied" hidden>Copy code</button></p>
+</details><h2 id="add-sound-and-video">Add sound and video</h2>
 <p>A photo shows what a dog looked like. It does not keep their footsteps on the kitchen floor, the thump of the tail, or the sigh when they lie down. Each of them takes seconds to record on a phone, and you are already sitting on the floor with the dog.</p>
 <p>While you are set up anyway:</p>
 <ul>
@@ -373,7 +441,7 @@ header.site nav.langs span[aria-current]{color:var(--ink);padding:12px 0;border-
 <h2 id="should-you-hire-a-senior-dog-photographer">Should you hire a senior dog photographer?</h2>
 <p>A professional is worth it for big prints, a family group, or if you simply want to be in the photos without thinking about it. Choose someone who has photographed old dogs before, and tell them about joints, hearing, sight and how long your dog can stay comfortable. Ask them to come to your home or a place your dog knows.</p>
 <p>The everyday photos are still yours to take, on an ordinary Tuesday, and a photographer can&#39;t stand in for those. When you have them, pick the best twenty-five and keep them together. Our page on <a href="/dogs/dog-memory-book-ideas/">dog memory book ideas</a> shows how to choose them by category. And if you want words to go with the pictures, try writing a <a href="/dogs/letter-to-my-dog/">letter to your dog</a> on the same day.</p>
-</div></div></div>
+<script>document.querySelectorAll(".embed-copy").forEach(function(b){var t=document.getElementById(b.getAttribute("data-for"));if(!t)return;b.hidden=false;var label=b.textContent;b.addEventListener("click",function(){function done(){b.textContent=b.getAttribute("data-done");setTimeout(function(){b.textContent=label},2500)}t.select();if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(t.value).then(done,function(){document.execCommand("copy");done()})}else{document.execCommand("copy");done()}})});</script></div><div data-read-end aria-hidden="true" style="height:1px"></div></div></div>
 <aside class="room" aria-label="From our books"><svg class="door" viewBox="0 0 48 48" aria-hidden="true"><path d="M2 46V2" stroke="currentColor" stroke-width="2.4"/><path d="M2 2a44 44 0 0 1 44 44" fill="none" stroke="currentColor" stroke-width="1" stroke-dasharray="3 3"/></svg>
 <div class="room-img"><picture><source srcset="/img/books/dog/01_cover.webp" type="image/webp"><img src="/img/books/dog/01_cover.jpg" alt="Cover of One Day, You’ll Miss This" width="1200" height="900" loading="lazy" decoding="async"></picture></div>
 <div><p class="room-title"><a href="/books/one-day-youll-miss-this/">One Day, You’ll Miss This</a></p>
