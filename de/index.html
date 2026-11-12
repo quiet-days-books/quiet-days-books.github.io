@@ -126,7 +126,7 @@ h3{font-size:1.1875rem;font-weight:620;margin:1.8em 0 .4em}
 .schedule.narrow ol{padding-bottom:12px}
 .margin{min-width:0}
 @media (min-width:1100px){
-  .layout{grid-template-columns:minmax(0,var(--measure)) minmax(0,1fr);gap:56px;align-items:start}
+  .layout{grid-template-columns:minmax(0,var(--measure)) minmax(12rem,1fr);gap:56px;align-items:start}
   .margin{order:2;position:sticky;top:20px}
   .schedule.wide{display:block}.schedule.narrow{display:none}
 }
@@ -211,6 +211,7 @@ header.site nav a[aria-current]::before{content:"";width:8px;height:11px;flex:no
 
 /* day / night switch in the masthead: a drawn half-filled circle, shown only when the script runs */
 .theme{display:inline-flex;align-items:center;justify-content:center;width:44px;height:44px;margin:-10px -12px -10px -16px;padding:0;background:none;border:0;color:var(--ink-2);cursor:pointer}
+.theme[hidden]{display:none}
 .theme:hover{color:var(--ink)}
 .theme svg{width:20px;height:20px}
 @media (max-width:719px){header.site .bar{row-gap:0}.brand{order:1}.theme{order:2}header.site nav{order:3;flex-basis:100%}}
@@ -255,6 +256,43 @@ header.site nav.langs span[aria-current]{color:var(--ink);padding:12px 0;border-
 .embed label{display:block;margin:8px 0 6px}
 .embed-code{display:block;width:100%;box-sizing:border-box;font:400 .8125rem/1.45 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;color:var(--ink);background:var(--film);border:1px solid var(--line);border-radius:0;padding:10px 12px;resize:vertical}
 .embed-code:focus-visible{outline:2px solid var(--ink);outline-offset:2px}
+/* layout_v2 (config/site.json, 11.11.2026): these classes appear only in pages built with it.
+   The book box names what it is, the section pages list topics, home shows each section. */
+.room-kind{font:600 .75rem/1.2 var(--plan);letter-spacing:.1em;text-transform:uppercase;color:var(--ink-2)}
+.room.v2 .room-kind{margin:0 0 .35rem}
+.room-fact{font-size:.9375rem;line-height:1.5;color:var(--ink-2)}
+.room-actions{display:flex;flex-wrap:wrap;align-items:center;gap:4px 18px;margin-bottom:0}
+.room-actions .button{margin:4px 0}
+.room-more{display:inline-flex;align-items:center;min-height:44px}
+.room-inline{margin:2.2em 0}
+.room-inline .room-title{font-size:1.125rem}
+/* the short box inside an article keeps its cover beside the text even on narrow phones */
+@media (max-width:420px){.room-inline .room-img{width:64px}}
+/* long button words (German, 200 % text) wrap inside the button instead of pushing the page sideways */
+.room.v2 .button{white-space:normal;line-height:1.2;padding-block:8px}
+.topics ul,.topic-list{list-style:none;margin:0 0 8px;padding:0;border-top:1px solid var(--ink);max-width:var(--measure)}
+.topics li,.topic-list li{border-bottom:1px solid var(--rule)}
+.topics a,.topic-list a{display:flex;justify-content:space-between;align-items:center;gap:12px;min-height:44px;padding:6px 0;color:var(--ink);text-decoration:none;font:500 .9375rem/1.3 var(--plan);letter-spacing:.04em;text-transform:uppercase}
+.topics a:hover,.topic-list a:hover{color:var(--mark)}
+.topics .count{font-variant-numeric:lining-nums tabular-nums;color:var(--ink-2)}
+.home-section h3{font:600 .8125rem/1.2 var(--plan);letter-spacing:.1em;text-transform:uppercase;color:var(--ink-2);margin:1.8em 0 .6em}
+.home-section .lead{margin-bottom:.4em}
+.section-all{max-width:var(--measure);margin:12px 0 0}
+.section-all a{display:inline-flex;align-items:center;min-height:44px}
+/* phones (11.11.2026, the wider device check): every control outside running text is a
+   44px tap target (config/devices.json → tap_target_min). Links inside sentences keep their
+   line; the look on wider screens does not change. */
+@media (max-width:767px){
+  .brand{min-height:44px}
+  header.site nav a,header.site nav.langs span[aria-current],.room-title a,.room p>a:not(.button),.sheet section>h2>a,footer.site a,main .sheet>p>a{display:inline-flex;align-items:center;min-height:44px;min-width:44px}
+  header.site nav a{padding:0}
+  .titleblock dd a{display:inline-flex;align-items:center;min-height:44px;margin:-11px 0}
+  .schedule li a{display:flex;align-items:center;min-height:44px}
+}
+/* found by the wider device check, 11.11.2026: Safari on iPhone ignores min-height on a native
+   select (29px tall). (The schedule column of articles keeps at least 12rem: at 200 % text it
+   was squeezed to 0 and its heading ran off the page; at normal size it is wider than that anyway.) */
+.calc select{height:44px}
 </style>
 <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://books.clovermoor.com/de/#website","url":"https://books.clovermoor.com/de/","name":"Quiet Days Books","inLanguage":"de","publisher":{"@id":"https://books.clovermoor.com/#org"}},{"@type":"Organization","@id":"https://books.clovermoor.com/#org","name":"Quiet Days Books","url":"https://books.clovermoor.com/"}]}</script>
 </head>
@@ -277,7 +315,7 @@ header.site nav.langs span[aria-current]{color:var(--ink);padding:12px 0;border-
 <p class="small book-lang">Das Buch ist auf Englisch.</p>
 <p><a class="button" href="https://www.etsy.com/listing/4591734891" rel="noopener" data-goatcounter-click="etsy-cat">Auf Etsy ansehen</a> <a href="/de/buecher/the-house-your-cat-knows/">Was drin ist</a></p></div>
 </aside></div>
-<section><h2><a href="/de/hunde/">Leben mit einem älteren Hund</a></h2><ul class="register"><li><a href="/de/hunde/ab-wann-ist-ein-hund-senior/"><span class="reg-title">Ab wann ist ein Hund Senior? Alter nach Größe und Rasse</span><span class="reg-desc">Kleine Hunde gelten mit etwa 9 bis 11 Jahren als Senior, mittelgroße mit 7 bis 9, große mit 6 bis 7, sehr große schon mit 4 bis 5. Was sich im Alter ändert.</span></a><time datetime="2026-11-11">11. November 2026</time></li></ul></section><section><h2><a href="/de/katzen/">Deine Katze im Blick</a></h2><ul class="register"><li><a href="/de/katzen/katzensprache/"><span class="reg-title">Katzensprache: Schwanz, Ohren, Augen und Laute deuten</span><span class="reg-desc">Katzen sprechen mit Schwanz, Ohren, Augen und Haltung, mit Menschen auch mit Lauten. Was die wichtigsten Signale bedeuten und warum es aufs Gesamtbild ankommt.</span></a><time datetime="2026-11-10">10. November 2026</time></li></ul></section></div></main>
+<section><h2><a href="/de/hunde/">Leben mit einem älteren Hund</a></h2><ul class="register"><li><a href="/de/hunde/ab-wann-ist-ein-hund-senior/"><span class="reg-title">Ab wann ist ein Hund Senior? Alter nach Größe und Rasse</span><span class="reg-desc">Kleine Hunde gelten mit etwa 9 bis 11 Jahren als Senior, mittelgroße mit 7 bis 9, große mit 6 bis 7, sehr große schon mit 4 bis 5. Was sich im Alter ändert.</span></a><time datetime="2026-11-11">11. November 2026</time></li></ul></section><section><h2><a href="/de/katzen/">Deine Katze im Blick</a></h2><ul class="register"><li><a href="/de/katzen/katzenjahre-in-menschenjahre/"><span class="reg-title">Katzenjahre in Menschenjahre: Tabelle und Faustregel</span><span class="reg-desc">Eine einjährige Katze entspricht etwa 15 Menschenjahren, eine zweijährige 24; danach kommen pro Katzenjahr 4 Menschenjahre dazu. Tabelle bis 25 Jahre.</span></a><time datetime="2026-11-12">12. November 2026</time></li><li><a href="/de/katzen/katzensprache/"><span class="reg-title">Katzensprache: Schwanz, Ohren, Augen und Laute deuten</span><span class="reg-desc">Katzen sprechen mit Schwanz, Ohren, Augen und Haltung, mit Menschen auch mit Lauten. Was die wichtigsten Signale bedeuten und warum es aufs Gesamtbild ankommt.</span></a><time datetime="2026-11-10">10. November 2026</time></li></ul></section></div></main>
 <footer class="site"><div class="bar">
 <p>Kleine Bücher, um das Tier wahrzunehmen, mit dem du lebst, solange es da ist.</p>
 <p><a href="/de/buecher/one-day-youll-miss-this/">One Day, You’ll Miss This</a> · <a href="/de/buecher/the-house-your-cat-knows/">The House Your Cat Knows</a> · <a href="/de/ueber-uns/">Über diese Seiten</a> · <a href="/de/feed.xml">Feed</a></p>

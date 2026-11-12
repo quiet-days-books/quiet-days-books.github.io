@@ -122,7 +122,7 @@ h3{font-size:1.1875rem;font-weight:620;margin:1.8em 0 .4em}
 .schedule.narrow ol{padding-bottom:12px}
 .margin{min-width:0}
 @media (min-width:1100px){
-  .layout{grid-template-columns:minmax(0,var(--measure)) minmax(0,1fr);gap:56px;align-items:start}
+  .layout{grid-template-columns:minmax(0,var(--measure)) minmax(12rem,1fr);gap:56px;align-items:start}
   .margin{order:2;position:sticky;top:20px}
   .schedule.wide{display:block}.schedule.narrow{display:none}
 }
@@ -207,6 +207,7 @@ header.site nav a[aria-current]::before{content:"";width:8px;height:11px;flex:no
 
 /* day / night switch in the masthead: a drawn half-filled circle, shown only when the script runs */
 .theme{display:inline-flex;align-items:center;justify-content:center;width:44px;height:44px;margin:-10px -12px -10px -16px;padding:0;background:none;border:0;color:var(--ink-2);cursor:pointer}
+.theme[hidden]{display:none}
 .theme:hover{color:var(--ink)}
 .theme svg{width:20px;height:20px}
 @media (max-width:719px){header.site .bar{row-gap:0}.brand{order:1}.theme{order:2}header.site nav{order:3;flex-basis:100%}}
@@ -251,6 +252,43 @@ header.site nav.langs span[aria-current]{color:var(--ink);padding:12px 0;border-
 .embed label{display:block;margin:8px 0 6px}
 .embed-code{display:block;width:100%;box-sizing:border-box;font:400 .8125rem/1.45 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;color:var(--ink);background:var(--film);border:1px solid var(--line);border-radius:0;padding:10px 12px;resize:vertical}
 .embed-code:focus-visible{outline:2px solid var(--ink);outline-offset:2px}
+/* layout_v2 (config/site.json, 11.11.2026): these classes appear only in pages built with it.
+   The book box names what it is, the section pages list topics, home shows each section. */
+.room-kind{font:600 .75rem/1.2 var(--plan);letter-spacing:.1em;text-transform:uppercase;color:var(--ink-2)}
+.room.v2 .room-kind{margin:0 0 .35rem}
+.room-fact{font-size:.9375rem;line-height:1.5;color:var(--ink-2)}
+.room-actions{display:flex;flex-wrap:wrap;align-items:center;gap:4px 18px;margin-bottom:0}
+.room-actions .button{margin:4px 0}
+.room-more{display:inline-flex;align-items:center;min-height:44px}
+.room-inline{margin:2.2em 0}
+.room-inline .room-title{font-size:1.125rem}
+/* the short box inside an article keeps its cover beside the text even on narrow phones */
+@media (max-width:420px){.room-inline .room-img{width:64px}}
+/* long button words (German, 200 % text) wrap inside the button instead of pushing the page sideways */
+.room.v2 .button{white-space:normal;line-height:1.2;padding-block:8px}
+.topics ul,.topic-list{list-style:none;margin:0 0 8px;padding:0;border-top:1px solid var(--ink);max-width:var(--measure)}
+.topics li,.topic-list li{border-bottom:1px solid var(--rule)}
+.topics a,.topic-list a{display:flex;justify-content:space-between;align-items:center;gap:12px;min-height:44px;padding:6px 0;color:var(--ink);text-decoration:none;font:500 .9375rem/1.3 var(--plan);letter-spacing:.04em;text-transform:uppercase}
+.topics a:hover,.topic-list a:hover{color:var(--mark)}
+.topics .count{font-variant-numeric:lining-nums tabular-nums;color:var(--ink-2)}
+.home-section h3{font:600 .8125rem/1.2 var(--plan);letter-spacing:.1em;text-transform:uppercase;color:var(--ink-2);margin:1.8em 0 .6em}
+.home-section .lead{margin-bottom:.4em}
+.section-all{max-width:var(--measure);margin:12px 0 0}
+.section-all a{display:inline-flex;align-items:center;min-height:44px}
+/* phones (11.11.2026, the wider device check): every control outside running text is a
+   44px tap target (config/devices.json → tap_target_min). Links inside sentences keep their
+   line; the look on wider screens does not change. */
+@media (max-width:767px){
+  .brand{min-height:44px}
+  header.site nav a,header.site nav.langs span[aria-current],.room-title a,.room p>a:not(.button),.sheet section>h2>a,footer.site a,main .sheet>p>a{display:inline-flex;align-items:center;min-height:44px;min-width:44px}
+  header.site nav a{padding:0}
+  .titleblock dd a{display:inline-flex;align-items:center;min-height:44px;margin:-11px 0}
+  .schedule li a{display:flex;align-items:center;min-height:44px}
+}
+/* found by the wider device check, 11.11.2026: Safari on iPhone ignores min-height on a native
+   select (29px tall). (The schedule column of articles keeps at least 12rem: at 200 % text it
+   was squeezed to 0 and its heading ran off the page; at normal size it is wider than that anyway.) */
+.calc select{height:44px}
 </style>
 <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://books.clovermoor.com/#website","url":"https://books.clovermoor.com/","name":"Quiet Days Books","inLanguage":"en","publisher":{"@id":"https://books.clovermoor.com/#org"}},{"@type":"Organization","@id":"https://books.clovermoor.com/#org","name":"Quiet Days Books","url":"https://books.clovermoor.com/"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://books.clovermoor.com/"},{"@type":"ListItem","position":2,"name":"Noticing your cat","item":"https://books.clovermoor.com/cats/"},{"@type":"ListItem","position":3,"name":"Why Does My Cat Bring Me Toys? Play, Hunting, You"}]},{"@type":"BlogPosting","@id":"https://books.clovermoor.com/cats/why-does-my-cat-bring-me-toys/#article","headline":"Why Does My Cat Bring Me Toys? Play, Hunting, You","description":"Cats bring you toys to finish a hunt somewhere safe and, often, to start a game. Many learn to fetch untaught and decide themselves when play starts and ends.","inLanguage":"en","url":"https://books.clovermoor.com/cats/why-does-my-cat-bring-me-toys/","mainEntityOfPage":"https://books.clovermoor.com/cats/why-does-my-cat-bring-me-toys/","datePublished":"2026-11-11","dateModified":"2026-11-11","wordCount":1111,"author":{"@id":"https://books.clovermoor.com/#org"},"publisher":{"@id":"https://books.clovermoor.com/#org"},"image":"https://books.clovermoor.com/img/books/cat/01_cover.png","articleSection":"Noticing your cat","citation":["https://doi.org/10.1038/s41598-023-47409-w","https://doi.org/10.1371/journal.pone.0309068","https://www.cats.org.uk/cats-blog/why-does-my-cat-bring-in-mice","https://pubmed.ncbi.nlm.nih.gov/33577746/","https://catvets.com/wp-content/uploads/2024/01/EnvironmentalNeedsGLS.pdf","https://pdsa.org.uk/what-we-do/blog/why-do-cats-sleep-so-much"]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Why does my cat bring me toys?","acceptedAnswer":{"@type":"Answer","text":"Carrying a 'catch' back to a safe place is part of a cat's hunting sequence, and you and your home are that safe place. Many cats also use it to start a game: in a 2023 survey, cats began and ended fetching sessions more often than their owners did."}},{"@type":"Question","name":"Why does my cat bring me toys at night?","acceptedAnswer":{"@type":"Answer","text":"Cats are crepuscular, most active at dusk and dawn, according to the PDSA. A cat with energy to spend at those times may carry a toy to wherever you are, including the bed. A short play session before you go to sleep can help."}},{"@type":"Question","name":"Why does my cat bring me things that aren't toys?","acceptedAnswer":{"@type":"Answer","text":"Owners in the 2023 fetching survey described a wide range of objects being fetched. To a cat, anything small enough to carry can stand in for prey. Put away string, ribbon and small parts, which the AAFP and ISFM advise keeping out of reach."}},{"@type":"Question","name":"Do cats bring mice as a gift?","acceptedAnswer":{"@type":"Answer","text":"Cats Protection says no: cats bring prey home because home is where they feel safe and secure, and they may want to eat it undisturbed. Don't punish a cat for it; shouting won't stop a natural instinct."}},{"@type":"Question","name":"How do I stop my cat bringing me dead animals?","acceptedAnswer":{"@type":"Answer","text":"Play helps. In a University of Exeter trial, households that added 5 to 10 minutes of daily play with toys saw 25% fewer animals brought home. Cats Protection also suggests short, regular play sessions with suitable toys."}}]}]}</script>
 </head>
@@ -356,7 +394,7 @@ header.site nav.langs span[aria-current]{color:var(--ink);padding:12px 0;border-
 <p>If the toy arrives while you are busy, you don&#39;t have to answer at once. Play later works too. For more ideas, see our guide to <a href="/cats/things-to-do-with-your-cat/">things to do with your cat</a>.</p>
 <h2 id="keep-a-record-of-the-game-your-cat-already-plays">Keep a record of the game your cat already plays</h2>
 <p>Every cat that brings toys has its own version: one particular toy, one time of day, one spot where it drops it. Our book <a href="/books/the-house-your-cat-knows/">The House Your Cat Knows</a> has two activities for this. The Game They Already Know asks you to record a play pattern your cat already knows, keep it short and stop while the game still feels easy. Their Chosen Object asks you to photograph one object your cat picks again and again, and write what it does with it and how long it has been part of the house.</p>
-<p>A toy that has been carried to you again and again is worth keeping a picture of. Our cat keepsake ideas guide has ways to keep things like that. And if you wonder why your cat seems to forget some toys and remember others, our article on <a href="/cats/how-good-is-a-cats-memory/">how good a cat&#39;s memory is</a> looks at what studies have found. A cat that brings you toys often follows you too; <a href="/cats/why-does-my-cat-follow-me/">why your cat follows you</a> explains that side.</p>
+<p>A toy that has been carried to you again and again is worth keeping a picture of. Our <a href="/cats/cat-keepsake-ideas/">cat keepsake ideas</a> guide has ways to keep things like that. And if you wonder why your cat seems to forget some toys and remember others, our article on <a href="/cats/how-good-is-a-cats-memory/">how good a cat&#39;s memory is</a> looks at what studies have found. A cat that brings you toys often follows you too; <a href="/cats/why-does-my-cat-follow-me/">why your cat follows you</a> explains that side.</p>
 <script>document.querySelectorAll(".embed-copy").forEach(function(b){var t=document.getElementById(b.getAttribute("data-for"));if(!t)return;b.hidden=false;var label=b.textContent;b.addEventListener("click",function(){function done(){b.textContent=b.getAttribute("data-done");setTimeout(function(){b.textContent=label},2500)}t.select();if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(t.value).then(done,function(){document.execCommand("copy");done()})}else{document.execCommand("copy");done()}})});</script></div><div data-read-end aria-hidden="true" style="height:1px"></div></div></div>
 <aside class="room" aria-label="From our books"><svg class="door" viewBox="0 0 48 48" aria-hidden="true"><path d="M2 46V2" stroke="currentColor" stroke-width="2.4"/><path d="M2 2a44 44 0 0 1 44 44" fill="none" stroke="currentColor" stroke-width="1" stroke-dasharray="3 3"/></svg>
 <div class="room-img"><picture><source srcset="/img/books/cat/01_cover.webp" type="image/webp"><img src="/img/books/cat/01_cover.png" alt="Cover of The House Your Cat Knows" width="800" height="1200" loading="lazy" decoding="async"></picture></div>

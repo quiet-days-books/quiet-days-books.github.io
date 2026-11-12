@@ -122,7 +122,7 @@ h3{font-size:1.1875rem;font-weight:620;margin:1.8em 0 .4em}
 .schedule.narrow ol{padding-bottom:12px}
 .margin{min-width:0}
 @media (min-width:1100px){
-  .layout{grid-template-columns:minmax(0,var(--measure)) minmax(0,1fr);gap:56px;align-items:start}
+  .layout{grid-template-columns:minmax(0,var(--measure)) minmax(12rem,1fr);gap:56px;align-items:start}
   .margin{order:2;position:sticky;top:20px}
   .schedule.wide{display:block}.schedule.narrow{display:none}
 }
@@ -207,6 +207,7 @@ header.site nav a[aria-current]::before{content:"";width:8px;height:11px;flex:no
 
 /* day / night switch in the masthead: a drawn half-filled circle, shown only when the script runs */
 .theme{display:inline-flex;align-items:center;justify-content:center;width:44px;height:44px;margin:-10px -12px -10px -16px;padding:0;background:none;border:0;color:var(--ink-2);cursor:pointer}
+.theme[hidden]{display:none}
 .theme:hover{color:var(--ink)}
 .theme svg{width:20px;height:20px}
 @media (max-width:719px){header.site .bar{row-gap:0}.brand{order:1}.theme{order:2}header.site nav{order:3;flex-basis:100%}}
@@ -251,6 +252,43 @@ header.site nav.langs span[aria-current]{color:var(--ink);padding:12px 0;border-
 .embed label{display:block;margin:8px 0 6px}
 .embed-code{display:block;width:100%;box-sizing:border-box;font:400 .8125rem/1.45 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;color:var(--ink);background:var(--film);border:1px solid var(--line);border-radius:0;padding:10px 12px;resize:vertical}
 .embed-code:focus-visible{outline:2px solid var(--ink);outline-offset:2px}
+/* layout_v2 (config/site.json, 11.11.2026): these classes appear only in pages built with it.
+   The book box names what it is, the section pages list topics, home shows each section. */
+.room-kind{font:600 .75rem/1.2 var(--plan);letter-spacing:.1em;text-transform:uppercase;color:var(--ink-2)}
+.room.v2 .room-kind{margin:0 0 .35rem}
+.room-fact{font-size:.9375rem;line-height:1.5;color:var(--ink-2)}
+.room-actions{display:flex;flex-wrap:wrap;align-items:center;gap:4px 18px;margin-bottom:0}
+.room-actions .button{margin:4px 0}
+.room-more{display:inline-flex;align-items:center;min-height:44px}
+.room-inline{margin:2.2em 0}
+.room-inline .room-title{font-size:1.125rem}
+/* the short box inside an article keeps its cover beside the text even on narrow phones */
+@media (max-width:420px){.room-inline .room-img{width:64px}}
+/* long button words (German, 200 % text) wrap inside the button instead of pushing the page sideways */
+.room.v2 .button{white-space:normal;line-height:1.2;padding-block:8px}
+.topics ul,.topic-list{list-style:none;margin:0 0 8px;padding:0;border-top:1px solid var(--ink);max-width:var(--measure)}
+.topics li,.topic-list li{border-bottom:1px solid var(--rule)}
+.topics a,.topic-list a{display:flex;justify-content:space-between;align-items:center;gap:12px;min-height:44px;padding:6px 0;color:var(--ink);text-decoration:none;font:500 .9375rem/1.3 var(--plan);letter-spacing:.04em;text-transform:uppercase}
+.topics a:hover,.topic-list a:hover{color:var(--mark)}
+.topics .count{font-variant-numeric:lining-nums tabular-nums;color:var(--ink-2)}
+.home-section h3{font:600 .8125rem/1.2 var(--plan);letter-spacing:.1em;text-transform:uppercase;color:var(--ink-2);margin:1.8em 0 .6em}
+.home-section .lead{margin-bottom:.4em}
+.section-all{max-width:var(--measure);margin:12px 0 0}
+.section-all a{display:inline-flex;align-items:center;min-height:44px}
+/* phones (11.11.2026, the wider device check): every control outside running text is a
+   44px tap target (config/devices.json → tap_target_min). Links inside sentences keep their
+   line; the look on wider screens does not change. */
+@media (max-width:767px){
+  .brand{min-height:44px}
+  header.site nav a,header.site nav.langs span[aria-current],.room-title a,.room p>a:not(.button),.sheet section>h2>a,footer.site a,main .sheet>p>a{display:inline-flex;align-items:center;min-height:44px;min-width:44px}
+  header.site nav a{padding:0}
+  .titleblock dd a{display:inline-flex;align-items:center;min-height:44px;margin:-11px 0}
+  .schedule li a{display:flex;align-items:center;min-height:44px}
+}
+/* found by the wider device check, 11.11.2026: Safari on iPhone ignores min-height on a native
+   select (29px tall). (The schedule column of articles keeps at least 12rem: at 200 % text it
+   was squeezed to 0 and its heading ran off the page; at normal size it is wider than that anyway.) */
+.calc select{height:44px}
 </style>
 <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://books.clovermoor.com/#website","url":"https://books.clovermoor.com/","name":"Quiet Days Books","inLanguage":"en","publisher":{"@id":"https://books.clovermoor.com/#org"}},{"@type":"Organization","@id":"https://books.clovermoor.com/#org","name":"Quiet Days Books","url":"https://books.clovermoor.com/"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://books.clovermoor.com/"},{"@type":"ListItem","position":2,"name":"Noticing your cat","item":"https://books.clovermoor.com/cats/"},{"@type":"ListItem","position":3,"name":"How Good Is a Cat's Memory? What Studies Show"}]},{"@type":"BlogPosting","@id":"https://books.clovermoor.com/cats/how-good-is-a-cats-memory/#article","headline":"How Good Is a Cat's Memory? What Studies Show","description":"A cat's memory is good for what matters to it: what it ate and where, and its people's voices, while memory for a hidden toy fades within seconds.","inLanguage":"en","url":"https://books.clovermoor.com/cats/how-good-is-a-cats-memory/","mainEntityOfPage":"https://books.clovermoor.com/cats/how-good-is-a-cats-memory/","datePublished":"2026-11-10","dateModified":"2026-11-10","wordCount":1057,"author":{"@id":"https://books.clovermoor.com/#org"},"publisher":{"@id":"https://books.clovermoor.com/#org"},"image":"https://books.clovermoor.com/img/books/cat/01_cover.png","articleSection":"Noticing your cat","citation":["https://pubmed.ncbi.nlm.nih.gov/16133631/","https://pubmed.ncbi.nlm.nih.gov/28065774/","https://pubmed.ncbi.nlm.nih.gov/23525707/","https://doi.org/10.1371/journal.pone.0257611","https://catvets.com/wp-content/uploads/2024/01/EnvironmentalNeedsGLS.pdf"]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Do cats have a good memory?","acceptedAnswer":{"@type":"Answer","text":"For the things that matter to them, yes. Studies show cats remember what they ate and where after a single experience, recognise their owner's voice and keep track of where their owner is. Their memory for an object that disappears from view is short."}},{"@type":"Question","name":"How long is a cat's memory?","acceptedAnswer":{"@type":"Answer","text":"It depends on the kind of memory. In one study, cats' accuracy at finding a hidden object dropped quickly between 0 and 30 seconds, though it stayed above chance at 60 seconds. In another, cats used what they learned from one meal 15 minutes later. Long-term spans in years have not been measured."}},{"@type":"Question","name":"Do cats have long-term memory?","acceptedAnswer":{"@type":"Answer","text":"Yes, in the sense that they learn and keep routines, routes, places and people. Recognising an owner's voice relies on it. What no study has shown is a reliable number of years."}},{"@type":"Question","name":"Do cats remember people?","acceptedAnswer":{"@type":"Answer","text":"They remember the people they live with. In a 2013 study, cats that had stopped reacting to strangers' voices reacted again to their owner's. How long a cat remembers someone it has not seen for years has not been tested."}},{"@type":"Question","name":"Do older cats lose their memory?","acceptedAnswer":{"@type":"Answer","text":"The AAFP and ISFM note that a cat's preferences can change as it ages, and that changes in behaviour can also be linked to a medical problem. If an older cat seems lost in places it knew well, ask your vet."}}]}]}</script>
 </head>
@@ -369,7 +407,7 @@ header.site nav.langs span[aria-current]{color:var(--ink);padding:12px 0;border-
 <p>The AAFP and ISFM guidelines note that a cat&#39;s preferences for contact with people may change as it ages and experiences sensory decline and reduced mobility. A cat that once loved being picked up may come to prefer being stroked where it rests.</p>
 <p>The same guidelines add that changes in behaviour may also be linked to an underlying medical problem. If an older cat seems lost in rooms it knew well or its routine changes suddenly, it can be a sign the cat is unwell. Ask your vet.</p>
 <h2 id="keeping-the-memories-on-your-side">Keeping the memories on your side</h2>
-<p>Your cat remembers the house in its own way. Your side of that is yours to keep: the route, the window, the sound of arrival, the names you use. The activities above are a start, our cat keepsake ideas show ways to keep them, and our guide to <a href="/cats/things-to-do-with-your-cat/">things to do with your cat</a> has more quiet ideas for the time you share.</p>
+<p>Your cat remembers the house in its own way. Your side of that is yours to keep: the route, the window, the sound of arrival, the names you use. The activities above are a start, our <a href="/cats/cat-keepsake-ideas/">cat keepsake ideas</a> show ways to keep them, and our guide to <a href="/cats/things-to-do-with-your-cat/">things to do with your cat</a> has more quiet ideas for the time you share.</p>
 <script>document.querySelectorAll(".embed-copy").forEach(function(b){var t=document.getElementById(b.getAttribute("data-for"));if(!t)return;b.hidden=false;var label=b.textContent;b.addEventListener("click",function(){function done(){b.textContent=b.getAttribute("data-done");setTimeout(function(){b.textContent=label},2500)}t.select();if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(t.value).then(done,function(){document.execCommand("copy");done()})}else{document.execCommand("copy");done()}})});</script></div><div data-read-end aria-hidden="true" style="height:1px"></div></div></div>
 <aside class="room" aria-label="From our books"><svg class="door" viewBox="0 0 48 48" aria-hidden="true"><path d="M2 46V2" stroke="currentColor" stroke-width="2.4"/><path d="M2 2a44 44 0 0 1 44 44" fill="none" stroke="currentColor" stroke-width="1" stroke-dasharray="3 3"/></svg>
 <div class="room-img"><picture><source srcset="/img/books/cat/01_cover.webp" type="image/webp"><img src="/img/books/cat/01_cover.png" alt="Cover of The House Your Cat Knows" width="800" height="1200" loading="lazy" decoding="async"></picture></div>

@@ -122,7 +122,7 @@ h3{font-size:1.1875rem;font-weight:620;margin:1.8em 0 .4em}
 .schedule.narrow ol{padding-bottom:12px}
 .margin{min-width:0}
 @media (min-width:1100px){
-  .layout{grid-template-columns:minmax(0,var(--measure)) minmax(0,1fr);gap:56px;align-items:start}
+  .layout{grid-template-columns:minmax(0,var(--measure)) minmax(12rem,1fr);gap:56px;align-items:start}
   .margin{order:2;position:sticky;top:20px}
   .schedule.wide{display:block}.schedule.narrow{display:none}
 }
@@ -207,6 +207,7 @@ header.site nav a[aria-current]::before{content:"";width:8px;height:11px;flex:no
 
 /* day / night switch in the masthead: a drawn half-filled circle, shown only when the script runs */
 .theme{display:inline-flex;align-items:center;justify-content:center;width:44px;height:44px;margin:-10px -12px -10px -16px;padding:0;background:none;border:0;color:var(--ink-2);cursor:pointer}
+.theme[hidden]{display:none}
 .theme:hover{color:var(--ink)}
 .theme svg{width:20px;height:20px}
 @media (max-width:719px){header.site .bar{row-gap:0}.brand{order:1}.theme{order:2}header.site nav{order:3;flex-basis:100%}}
@@ -251,6 +252,43 @@ header.site nav.langs span[aria-current]{color:var(--ink);padding:12px 0;border-
 .embed label{display:block;margin:8px 0 6px}
 .embed-code{display:block;width:100%;box-sizing:border-box;font:400 .8125rem/1.45 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;color:var(--ink);background:var(--film);border:1px solid var(--line);border-radius:0;padding:10px 12px;resize:vertical}
 .embed-code:focus-visible{outline:2px solid var(--ink);outline-offset:2px}
+/* layout_v2 (config/site.json, 11.11.2026): these classes appear only in pages built with it.
+   The book box names what it is, the section pages list topics, home shows each section. */
+.room-kind{font:600 .75rem/1.2 var(--plan);letter-spacing:.1em;text-transform:uppercase;color:var(--ink-2)}
+.room.v2 .room-kind{margin:0 0 .35rem}
+.room-fact{font-size:.9375rem;line-height:1.5;color:var(--ink-2)}
+.room-actions{display:flex;flex-wrap:wrap;align-items:center;gap:4px 18px;margin-bottom:0}
+.room-actions .button{margin:4px 0}
+.room-more{display:inline-flex;align-items:center;min-height:44px}
+.room-inline{margin:2.2em 0}
+.room-inline .room-title{font-size:1.125rem}
+/* the short box inside an article keeps its cover beside the text even on narrow phones */
+@media (max-width:420px){.room-inline .room-img{width:64px}}
+/* long button words (German, 200 % text) wrap inside the button instead of pushing the page sideways */
+.room.v2 .button{white-space:normal;line-height:1.2;padding-block:8px}
+.topics ul,.topic-list{list-style:none;margin:0 0 8px;padding:0;border-top:1px solid var(--ink);max-width:var(--measure)}
+.topics li,.topic-list li{border-bottom:1px solid var(--rule)}
+.topics a,.topic-list a{display:flex;justify-content:space-between;align-items:center;gap:12px;min-height:44px;padding:6px 0;color:var(--ink);text-decoration:none;font:500 .9375rem/1.3 var(--plan);letter-spacing:.04em;text-transform:uppercase}
+.topics a:hover,.topic-list a:hover{color:var(--mark)}
+.topics .count{font-variant-numeric:lining-nums tabular-nums;color:var(--ink-2)}
+.home-section h3{font:600 .8125rem/1.2 var(--plan);letter-spacing:.1em;text-transform:uppercase;color:var(--ink-2);margin:1.8em 0 .6em}
+.home-section .lead{margin-bottom:.4em}
+.section-all{max-width:var(--measure);margin:12px 0 0}
+.section-all a{display:inline-flex;align-items:center;min-height:44px}
+/* phones (11.11.2026, the wider device check): every control outside running text is a
+   44px tap target (config/devices.json → tap_target_min). Links inside sentences keep their
+   line; the look on wider screens does not change. */
+@media (max-width:767px){
+  .brand{min-height:44px}
+  header.site nav a,header.site nav.langs span[aria-current],.room-title a,.room p>a:not(.button),.sheet section>h2>a,footer.site a,main .sheet>p>a{display:inline-flex;align-items:center;min-height:44px;min-width:44px}
+  header.site nav a{padding:0}
+  .titleblock dd a{display:inline-flex;align-items:center;min-height:44px;margin:-11px 0}
+  .schedule li a{display:flex;align-items:center;min-height:44px}
+}
+/* found by the wider device check, 11.11.2026: Safari on iPhone ignores min-height on a native
+   select (29px tall). (The schedule column of articles keeps at least 12rem: at 200 % text it
+   was squeezed to 0 and its heading ran off the page; at normal size it is wider than that anyway.) */
+.calc select{height:44px}
 </style>
 <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://books.clovermoor.com/#website","url":"https://books.clovermoor.com/","name":"Quiet Days Books","inLanguage":"en","publisher":{"@id":"https://books.clovermoor.com/#org"}},{"@type":"Organization","@id":"https://books.clovermoor.com/#org","name":"Quiet Days Books","url":"https://books.clovermoor.com/"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://books.clovermoor.com/"},{"@type":"ListItem","position":2,"name":"Life with an older dog","item":"https://books.clovermoor.com/dogs/"},{"@type":"ListItem","position":3,"name":"Dog Years to Human Years: Chart and the Real Formula"}]},{"@type":"BlogPosting","@id":"https://books.clovermoor.com/dogs/dog-years-to-human-years/#article","headline":"Dog Years to Human Years: Chart and the Real Formula","description":"A dog's first year is about 15 human years and the second adds about 9. After that size matters, so the old 'multiply by 7' rule is wrong at almost every age.","inLanguage":"en","url":"https://books.clovermoor.com/dogs/dog-years-to-human-years/","mainEntityOfPage":"https://books.clovermoor.com/dogs/dog-years-to-human-years/","datePublished":"2026-11-07","dateModified":"2026-11-07","wordCount":1456,"author":{"@id":"https://books.clovermoor.com/#org"},"publisher":{"@id":"https://books.clovermoor.com/#org"},"image":"https://books.clovermoor.com/img/books/dog/01_cover.jpg","articleSection":"Life with an older dog","citation":["https://www.akc.org/expert-advice/health/how-to-calculate-dog-years-to-human-years/","https://doi.org/10.1016/j.cels.2020.06.006","https://doi.org/10.1038/s41598-023-50458-w"]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Is 1 dog year really 7 human years?","acceptedAnswer":{"@type":"Answer","text":"No. The 7x rule runs far too slow in the first two years and too fast later. The AVMA, as quoted by the AKC, puts a medium dog's first year at about 15 human years and its second at about 9 more, with roughly 4 or 5 human years a year after that."}},{"@type":"Question","name":"What is the formula for dog years to human years?","acceptedAnswer":{"@type":"Answer","text":"The best known one comes from a 2020 Cell Systems paper on DNA methylation in Labrador Retrievers: human age = 16 x ln(dog age) + 31, where ln is the natural logarithm. A 2-year-old dog works out at about 42 and a 10-year-old at about 68."}},{"@type":"Question","name":"How old is a 7 year old dog in human years?","acceptedAnswer":{"@type":"Answer","text":"About 44 for a small dog, 47 for a medium dog, 50 for a large dog and 56 for a giant dog, on the AKC size chart. The Labrador epigenetic formula gives about 62. The old 7x rule says 49, which happens to sit near the middle."}},{"@type":"Question","name":"Do small dogs age slower than big dogs in human years?","acceptedAnswer":{"@type":"Answer","text":"After the first few years, yes. On the AKC chart, small, medium and large dogs match until age 5, then split. By 10 a small dog is about 56 in human years, a large dog about 66 and a giant dog about 79. Large breeds also tend to have shorter lives."}},{"@type":"Question","name":"How do you calculate dog years to human years?","acceptedAnswer":{"@type":"Answer","text":"Pick your dog's weight band, then read across the AKC chart at your dog's age. For the epigenetic formula, take the natural logarithm of the age in years, multiply by 16 and add 31. A phone calculator's 'ln' key does the first step."}}]}]}</script>
 </head>
