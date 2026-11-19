@@ -296,6 +296,15 @@ header.site nav.langs span[aria-current]{color:var(--ink);padding:12px 0;border-
 /* name generator (config/tools.json, kind "names"): the starting points are phrases, not numbers */
 .calc-names .calc-age>div{flex:1 1 100%}
 .calc-names select{width:100%;max-width:22rem}
+
+/* scheme drawn from the article's own steps, table or summary (scripts/images.mjs): the day
+   picture by day, the night picture at night, by the system or by the reader's choice */
+.scheme{margin:2rem 0}
+.scheme img{width:100%;height:auto}
+.scheme .s-night{display:none}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]) .scheme .s-day{display:none}:root:not([data-theme=light]) .scheme .s-night{display:block}}
+:root[data-theme=dark] .scheme .s-day{display:none}
+:root[data-theme=dark] .scheme .s-night{display:block}
 </style>
 <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://books.clovermoor.com/es/#website","url":"https://books.clovermoor.com/es/","name":"Quiet Days Books","inLanguage":"es","publisher":{"@id":"https://books.clovermoor.com/#org"}},{"@type":"Organization","@id":"https://books.clovermoor.com/#org","name":"Quiet Days Books","url":"https://books.clovermoor.com/"}]}</script>
 </head>
@@ -324,9 +333,9 @@ header.site nav.langs span[aria-current]{color:var(--ink);padding:12px 0;border-
 </aside></div>
 <section class="home-section"><h2><a href="/es/perros/">La vida con un perro mayor</a></h2><p class="lead">Ideas, listas y respuestas sinceras para los años que todavía te quedan con tu perro.</p>
 <h3>Empieza aquí</h3><ul class="register"><li><a href="/es/perros/cuantas-horas-duerme-un-perro/"><span class="reg-title">Cuántas horas duerme un perro: lo que dicen los estudios</span><span class="reg-desc">Un perro adulto duerme unas 10 horas al día de media, casi todo de noche, y dormita a ratos por el día. Cifras por edad, siestas y cuándo consultar.</span></a><time datetime="2026-11-11">11 de noviembre de 2026</time></li></ul>
-<h3>Temas</h3><ul class="topic-list"><li><a href="/es/perros/#memories">Fotos, recuerdos y sentimientos</a></li><li><a href="/es/perros/#body">Sentidos, sueño y conducta</a></li><li><a href="/es/perros/#food">Comida y frío</a></li></ul>
-<h3>Lo más reciente</h3><ul class="register"><li><a href="/es/perros/los-perros-sienten-frio/"><span class="reg-title">¿Los perros sienten frío? Señales y cómo protegerlos</span><span class="reg-desc">Sí, los perros sienten frío, sobre todo los pequeños, de pelo corto, delgados, mayores y cachorros. Señales, cuándo ponerle abrigo, paseos, patas y cama.</span></a><time datetime="2026-11-18">18 de noviembre de 2026</time></li><li><a href="/es/perros/que-no-pueden-comer-los-perros/"><span class="reg-title">Qué no pueden comer los perros: lista con fuentes</span><span class="reg-desc">Los perros no pueden comer chocolate, uvas ni pasas, cebolla, ajo, xilitol, macadamias, alcohol, masa cruda ni huesos cocidos. Lista con el porqué y la fuente.</span></a><time datetime="2026-11-17">17 de noviembre de 2026</time></li><li><a href="/es/perros/perros-en-navidad/"><span class="reg-title">Perros en Navidad: peligros en casa y cómo disfrutarla</span><span class="reg-desc">En Navidad, aleja de tu perro el árbol y sus cables, la flor de Pascua, el chocolate, las uvas y los petardos. Peligros con fuente y planes juntos.</span></a><time datetime="2026-11-16">16 de noviembre de 2026</time></li></ul>
-<p class="section-all"><a href="/es/perros/">Todos los artículos de esta sección (5)</a></p></section>
+<h3>Temas</h3><ul class="topic-list"><li><a href="/es/perros/#memories">Fotos, recuerdos y sentimientos</a></li><li><a href="/es/perros/#age">Edad y esperanza de vida</a></li><li><a href="/es/perros/#body">Sentidos, sueño y conducta</a></li><li><a href="/es/perros/#food">Comida y frío</a></li></ul>
+<h3>Lo más reciente</h3><ul class="register"><li><a href="/es/perros/cuanto-vive-un-perro/"><span class="reg-title">Cuánto vive un perro: años por raza, tamaño y sexo</span><span class="reg-desc">Un perro vive unos 12 años: la mediana de 584.734 perros británicos fue de 12,5. Por raza va de 5,4 a 15,4 años. Tabla de 26 razas con sus estudios.</span></a><time datetime="2026-11-19">19 de noviembre de 2026</time></li><li><a href="/es/perros/los-perros-sienten-frio/"><span class="reg-title">¿Los perros sienten frío? Señales y cómo protegerlos</span><span class="reg-desc">Sí, los perros sienten frío, sobre todo los pequeños, de pelo corto, delgados, mayores y cachorros. Señales, cuándo ponerle abrigo, paseos, patas y cama.</span></a><time datetime="2026-11-18">18 de noviembre de 2026</time></li><li><a href="/es/perros/que-no-pueden-comer-los-perros/"><span class="reg-title">Qué no pueden comer los perros: lista con fuentes</span><span class="reg-desc">Los perros no pueden comer chocolate, uvas ni pasas, cebolla, ajo, xilitol, macadamias, alcohol, masa cruda ni huesos cocidos. Lista con el porqué y la fuente.</span></a><time datetime="2026-11-17">17 de noviembre de 2026</time></li></ul>
+<p class="section-all"><a href="/es/perros/">Todos los artículos de esta sección (6)</a></p></section>
 <section class="home-section"><h2><a href="/es/gatos/">Fijarse en tu gato</a></h2><p class="lead">Lo que tu gato ya hace cada día, qué significa y cómo guardarlo.</p>
 <h3>Empieza aquí</h3><ul class="register"><li><a href="/es/gatos/curiosidades-de-los-gatos/"><span class="reg-title">Curiosidades de los gatos: 15 datos comprobados</span><span class="reg-desc">Los gatos no notan el sabor dulce, reconocen su nombre, maúllan sobre todo a las personas y duermen de 12 a 18 horas. 15 curiosidades, cada una con su fuente.</span></a><time datetime="2026-11-12">12 de noviembre de 2026</time></li></ul>
 

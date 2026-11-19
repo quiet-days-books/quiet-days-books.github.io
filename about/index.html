@@ -295,6 +295,15 @@ header.site nav.langs span[aria-current]{color:var(--ink);padding:12px 0;border-
 /* name generator (config/tools.json, kind "names"): the starting points are phrases, not numbers */
 .calc-names .calc-age>div{flex:1 1 100%}
 .calc-names select{width:100%;max-width:22rem}
+
+/* scheme drawn from the article's own steps, table or summary (scripts/images.mjs): the day
+   picture by day, the night picture at night, by the system or by the reader's choice */
+.scheme{margin:2rem 0}
+.scheme img{width:100%;height:auto}
+.scheme .s-night{display:none}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]) .scheme .s-day{display:none}:root:not([data-theme=light]) .scheme .s-night{display:block}}
+:root[data-theme=dark] .scheme .s-day{display:none}
+:root[data-theme=dark] .scheme .s-night{display:block}
 </style>
 <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://books.clovermoor.com/#website","url":"https://books.clovermoor.com/","name":"Quiet Days Books","inLanguage":"en","publisher":{"@id":"https://books.clovermoor.com/#org"}},{"@type":"Organization","@id":"https://books.clovermoor.com/#org","name":"Quiet Days Books","url":"https://books.clovermoor.com/"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://books.clovermoor.com/"},{"@type":"ListItem","position":2,"name":"About"}]}]}</script>
 </head>
