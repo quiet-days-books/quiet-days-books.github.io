@@ -1,0 +1,480 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cómo ven los perros: colores, oscuridad y movimiento</title>
+<meta name="description" content="Los perros ven en color, pero sobre todo azules y amarillos: el rojo y el verde se les confunden. Ven peor los detalles y mejor con poca luz y movimiento.">
+<link rel="canonical" href="https://books.clovermoor.com/es/perros/como-ven-los-perros/">
+<meta property="og:type" content="article">
+<meta property="og:locale" content="es_ES">
+<meta property="og:title" content="Cómo ven los perros: colores, oscuridad y movimiento">
+<meta property="og:description" content="Los perros ven en color, pero sobre todo azules y amarillos: el rojo y el verde se les confunden. Ven peor los detalles y mejor con poca luz y movimiento.">
+<meta property="og:url" content="https://books.clovermoor.com/es/perros/como-ven-los-perros/">
+<meta property="og:site_name" content="Quiet Days Books">
+<meta property="og:image" content="https://books.clovermoor.com/img/covers/es/como-ven-los-perros.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Cómo ven los perros: colores, oscuridad y movimiento">
+<meta name="twitter:image" content="https://books.clovermoor.com/img/covers/es/como-ven-los-perros.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="color-scheme" content="light dark">
+<link rel="alternate" type="application/rss+xml" title="Quiet Days Books" href="/es/feed.xml">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="/fonts/literata.woff2" as="font" type="font/woff2" crossorigin>
+<script>try{var t=localStorage.getItem("theme");if(t==="light"||t==="dark")document.documentElement.dataset.theme=t}catch(e){}</script>
+<script data-goatcounter="https://quietdays.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script><script>document.addEventListener("DOMContentLoaded",function(){var p=location.pathname;document.querySelectorAll("[data-goatcounter-click]").forEach(function(a){a.setAttribute("data-goatcounter-referrer",p)});var m=document.querySelector("[data-read-end]");if(!m||!("IntersectionObserver" in window))return;var o=new IntersectionObserver(function(e){if(!e[0].isIntersecting)return;o.disconnect();(function s(n){var g=window.goatcounter;if(g&&g.count)g.count({path:"read-end"+p,title:document.title,event:true});else if(n<40)setTimeout(function(){s(n+1)},500)})(0)});o.observe(m)});</script>
+<meta name="google-site-verification" content="hHBGjlz6LvtyxdP3x3sWT5arWOdvQq0RpVLMBuHod_0">
+<meta name="google-site-verification" content="xf8LYssisbsEb_zO68Vfdsqkq7o0FOpAd0k9LcDhvv8">
+<meta name="msvalidate.01" content="74194B63F367EB355F843A035E6E6554">
+<meta name="yandex-verification" content="c46241a076187e57">
+<meta name="p:domain_verify" content="16ff5edbd4738a43bf460ee40d3b109b">
+<style>/* Quiet Days Books — the plan of a house.
+   Day: drafting film, green-black ink, cobalt markup. Night: the blueprint.
+   Two inks and a ground; every other colour is a step of the ink. */
+@font-face{font-family:"Literata";src:url(/fonts/literata.woff2) format("woff2");font-weight:200 900;font-style:normal;font-display:swap}
+@font-face{font-family:"Literata";src:url(/fonts/literata-italic.woff2) format("woff2");font-weight:200 900;font-style:italic;font-display:swap}
+@font-face{font-family:"Archivo Narrow";src:url(/fonts/archivo-narrow-500.woff2) format("woff2");font-weight:500;font-display:swap}
+@font-face{font-family:"Archivo Narrow";src:url(/fonts/archivo-narrow-600.woff2) format("woff2");font-weight:600;font-display:swap}
+
+:root{
+  --ground:#eef1ec;--film:#f7f9f5;--ink:#17201c;--ink-2:#3d4a44;--line:#8e9b94;--rule:#c7cfc9;
+  --mark:#1d40a6;--mark-ink:#f7f9f5;
+  --read:"Literata",Georgia,"Times New Roman",serif;
+  --plan:"Archivo Narrow","Arial Narrow","Roboto Condensed",system-ui,sans-serif;
+  --measure:40rem;--sheet:64rem;--gap:clamp(16px,4vw,40px);
+  color-scheme:light dark;
+}
+/* Night: by the system setting, unless the reader chose day; or by the reader's choice. */
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){color-scheme:dark;
+  --ground:#0f2340;--film:#14305a;--ink:#e8eef8;--ink-2:#bccadf;--line:#6f88ad;--rule:#2d4a74;
+  --mark:#a6d8ff;--mark-ink:#0f2340;
+}}
+:root[data-theme=dark]{color-scheme:dark;
+  --ground:#0f2340;--film:#14305a;--ink:#e8eef8;--ink-2:#bccadf;--line:#6f88ad;--rule:#2d4a74;
+  --mark:#a6d8ff;--mark-ink:#0f2340;
+}
+:root[data-theme=light]{color-scheme:light}
+
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%;scrollbar-color:var(--line) var(--ground);accent-color:var(--mark)}
+body{margin:0;background:var(--ground);color:var(--ink);font:400 1.0625rem/1.68 var(--read);font-optical-sizing:auto;overflow-wrap:break-word;caret-color:var(--mark);font-variant-numeric:oldstyle-nums proportional-nums}
+::selection{background:var(--mark);color:var(--mark-ink)}
+a{color:var(--mark);text-decoration-thickness:1px;text-underline-offset:.18em}
+a:hover{text-decoration-thickness:2px}
+a:visited{color:color-mix(in srgb,var(--mark) 72%,var(--ink))}
+:focus-visible{outline:2px solid var(--mark);outline-offset:3px}
+img{max-width:100%;height:auto;display:block}
+picture{display:block;min-width:0}
+.skip{position:absolute;left:-999px}.skip:focus{left:16px;top:8px;background:var(--film);padding:8px 12px;z-index:9}
+
+/* the drawing border around the whole sheet on wide screens */
+@media (min-width:900px){body{margin:14px;border:1px solid var(--line);min-height:calc(100vh - 28px)}}
+
+/* masthead: a ruled strip with the north arrow */
+header.site{border-bottom:3px double var(--line)}
+.bar{max-width:var(--sheet);margin:0 auto;padding:12px var(--gap);display:flex;flex-wrap:wrap;gap:8px 28px;align-items:center;justify-content:space-between}
+.brand{display:inline-flex;align-items:center;gap:10px;color:var(--ink);text-decoration:none;font:600 1rem/1 var(--plan);letter-spacing:.08em;text-transform:uppercase}
+.north{width:26px;height:26px;flex:none}
+header.site nav{display:flex;flex-wrap:wrap;gap:2px clamp(12px,3vw,22px);font:500 .8125rem/1 var(--plan);letter-spacing:.05em;text-transform:uppercase}
+header.site nav a{color:var(--ink-2);text-decoration:none;padding:12px 0;border-bottom:2px solid transparent}
+header.site nav a:hover{color:var(--ink)}
+header.site nav a[aria-current]{color:var(--ink);border-bottom-color:var(--mark)}
+
+.crumbs{max-width:var(--sheet);margin:0 auto;padding:16px var(--gap) 0;font:500 .8125rem/1.4 var(--plan);letter-spacing:.05em;text-transform:uppercase;color:var(--ink-2)}
+.crumbs a{color:var(--ink-2)}
+
+main{padding:4px 0 64px}
+.sheet{max-width:var(--sheet);margin:0 auto;padding:0 var(--gap)}
+
+h1,h2,h3{font-family:var(--read);color:var(--ink);text-wrap:balance}
+h1{font-size:clamp(2rem,1.2rem + 3.6vw,3.25rem);line-height:1.08;font-weight:640;letter-spacing:-.018em;margin:.55em 0 .45em;max-width:20ch}
+h2{max-width:var(--measure);font-size:1.5rem;line-height:1.25;font-weight:620;margin:2.4em 0 .55em;padding-top:.7em;border-top:1px solid var(--rule);position:relative}
+h2::before{content:"";position:absolute;left:0;top:-1px;width:28px;border-top:2px solid var(--ink)}
+h3{font-size:1.1875rem;font-weight:620;margin:1.8em 0 .4em}
+.lead{font-size:1.1875rem;line-height:1.55;color:var(--ink-2);max-width:var(--measure);margin:0 0 1.6em}
+.small{font:500 .875rem/1.5 var(--plan);letter-spacing:.02em;color:var(--ink-2)}
+
+/* title block: the ruled cells every drawing sheet carries */
+.titleblock{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));margin:0 0 28px;border:1px solid var(--ink);max-width:var(--measure)}
+.titleblock div{padding:8px 12px 9px;border-right:1px solid var(--line);border-bottom:1px solid var(--line)}
+.titleblock div:nth-child(2n){border-right:0}
+.titleblock div:nth-last-child(-n+2){border-bottom:0}
+.titleblock dt{font:600 .75rem/1.2 var(--plan);letter-spacing:.1em;text-transform:uppercase;color:var(--ink-2)}
+.titleblock dd{margin:2px 0 0;font-size:.9375rem;font-variant-numeric:lining-nums tabular-nums}
+@media (min-width:640px){.titleblock{grid-template-columns:repeat(4,minmax(0,1fr))}.titleblock div{border-bottom:0}.titleblock div:nth-child(2n){border-right:1px solid var(--line)}.titleblock div:last-child{border-right:0}}
+
+/* plan notes and the schedule share one look: a film panel with a heavy top wall */
+.note{margin:0 0 8px}
+.note,.schedule{background:var(--film);border:1px solid var(--line);border-top:3px solid var(--ink);padding:14px 18px 16px;max-width:var(--measure)}
+.note h2,.schedule h2{font:600 .8125rem/1.2 var(--plan);letter-spacing:.1em;text-transform:uppercase;margin:0 0 8px;padding:0;border:0}
+.note h2::before,.schedule h2::before{display:none}
+.note ul{margin:0;padding-left:1.15rem}
+.note li{margin:.3rem 0}
+.schedule ol{margin:0;padding:0;list-style:none;counter-reset:s}
+.schedule li{border-top:1px solid var(--rule)}
+.schedule li:first-child{border-top:0}
+.schedule a{display:block;padding:7px 0;color:var(--ink);text-decoration:none;font-size:.9375rem;line-height:1.35}
+.schedule a:hover{color:var(--mark)}
+
+.layout{display:grid;gap:20px;margin-top:8px}
+.column{min-width:0;max-width:var(--measure)}
+.schedule.wide{display:none}
+.schedule.narrow{padding:4px 18px}
+.schedule.narrow summary{cursor:pointer;min-height:48px;display:flex;align-items:center;gap:10px;font:600 .8125rem/1.2 var(--plan);letter-spacing:.1em;text-transform:uppercase}
+.schedule.narrow .count{font-weight:500;color:var(--ink-2);letter-spacing:.05em}
+.schedule.narrow ol{padding-bottom:12px}
+.margin{min-width:0}
+@media (min-width:1100px){
+  .layout{grid-template-columns:minmax(0,var(--measure)) minmax(12rem,1fr);gap:56px;align-items:start}
+  .margin{order:2;position:sticky;top:20px}
+  .schedule.wide{display:block}.schedule.narrow{display:none}
+}
+
+.prose{max-width:var(--measure);min-width:0}
+.prose p,.prose li{hyphens:auto}
+.prose ul,.prose ol{padding-left:1.25rem}
+.prose li{margin:.35rem 0}
+.prose li::marker{color:var(--ink-2)}
+.prose blockquote{margin:1.4rem 0;padding:.1rem 0 .1rem 1.1rem;border-left:1px solid var(--ink);font-style:italic;color:var(--ink-2)}
+.prose strong{font-weight:640}
+
+/* tables: a door schedule — narrow capitals in the head, figures in line */
+.table-wrap{overflow-x:auto;margin:1.6rem 0;-webkit-overflow-scrolling:touch}
+table{border-collapse:collapse;width:100%;font-size:.9375rem;line-height:1.45;border:1px solid var(--ink);background:var(--film);font-variant-numeric:lining-nums tabular-nums}
+th,td{text-align:left;vertical-align:top;padding:10px 14px;border-bottom:1px solid var(--rule)}
+th{font:600 .8125rem/1.25 var(--plan);letter-spacing:.07em;text-transform:uppercase;border-bottom:1px solid var(--ink)}
+td+td,th+th{border-left:1px solid var(--rule)}
+tr:last-child td{border-bottom:0}
+
+/* the book, drawn as a room you can walk into */
+.room{position:relative;display:grid;grid-template-columns:88px minmax(0,1fr);gap:18px;align-items:start;border:2px solid var(--ink);background:var(--film);padding:22px 20px 20px;margin:44px 0;max-width:var(--measure)}
+.door{position:absolute;right:-2px;top:-2px;transform:scaleX(-1);width:44px;height:44px;background:var(--ground);color:var(--ink)}
+.room-img img{border:1px solid var(--line)}
+.room p{margin:.15rem 0 .65rem}
+.room>div:last-child{padding-right:30px}
+.room-title{font-size:1.25rem;line-height:1.25;font-weight:640}
+.room-title a{color:var(--ink);text-decoration:none}
+.room-title a:hover{text-decoration:underline}
+@media (min-width:640px){.room{grid-template-columns:120px minmax(0,1fr);gap:24px;padding:26px 26px 22px}}
+.button{display:inline-flex;align-items:center;min-height:44px;padding:0 18px;margin:4px 16px 4px 0;background:var(--ink);color:var(--ground);font:600 .875rem/1 var(--plan);letter-spacing:.09em;text-transform:uppercase;text-decoration:none;border:1px solid var(--ink)}
+.button:visited{color:var(--ground)}
+.button:hover{background:var(--mark);border-color:var(--mark);color:var(--mark-ink)}
+
+/* questions: drawn plus that turns to a minus */
+.faq details{border-top:1px solid var(--rule)}
+.faq details:last-of-type{border-bottom:1px solid var(--rule)}
+.faq summary{list-style:none;cursor:pointer;display:flex;gap:14px;align-items:center;min-height:52px;padding:8px 0;font-weight:600}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::before{content:"";flex:none;width:12px;height:12px;background:linear-gradient(var(--ink),var(--ink)) center/12px 1.5px no-repeat,linear-gradient(var(--ink),var(--ink)) center/1.5px 12px no-repeat;transition:transform .25s cubic-bezier(.2,.7,.2,1)}
+.faq details[open] summary::before{transform:rotate(90deg);background:linear-gradient(var(--ink),var(--ink)) center/12px 1.5px no-repeat}
+.faq details p{margin:0 0 14px 26px;max-width:var(--measure)}
+.sources ol{font-size:.9375rem;line-height:1.5;padding-left:1.25rem;max-width:var(--measure)}
+.sources li{margin:.4rem 0}
+.how{max-width:var(--measure);margin-top:2.4rem}
+
+/* registers: lists of sheets, like a drawing register */
+.register{list-style:none;margin:0;padding:0;border-top:1px solid var(--ink);max-width:var(--measure)}
+.register li{display:grid;grid-template-columns:minmax(0,1fr);gap:4px;padding:16px 0 18px;border-bottom:1px solid var(--rule)}
+.register a{text-decoration:none;color:var(--ink);display:block}
+.register a:hover .reg-title{color:var(--mark)}
+.reg-title{display:block;font-size:1.1875rem;line-height:1.3;font-weight:620}
+.reg-desc{display:block;color:var(--ink-2);font-size:.9375rem;line-height:1.5;margin-top:4px}
+.register time{font:500 .8125rem/1.2 var(--plan);letter-spacing:.07em;text-transform:uppercase;color:var(--ink-2)}
+@media (min-width:720px){.register li{grid-template-columns:minmax(0,1fr) auto;gap:24px;align-items:baseline}}
+
+.rooms .room{margin:28px 0}
+.book-hero{display:grid;gap:28px;margin-top:20px}
+.book-hero picture{max-width:340px}
+.book-hero img,.gallery img{border:1px solid var(--line)}
+.facts{padding-left:1.2rem;max-width:var(--measure)}
+.gallery{display:grid;gap:18px}
+@media (min-width:760px){.book-hero{grid-template-columns:320px minmax(0,1fr);align-items:start}.gallery{grid-template-columns:1fr 1fr}}
+
+footer.site{border-top:3px double var(--line);font:500 .9375rem/1.5 var(--plan);letter-spacing:.02em;color:var(--ink-2)}
+footer.site .bar{display:block;padding-top:20px;padding-bottom:28px}
+footer.site p{margin:.35rem 0;max-width:var(--measure)}
+footer.site a{color:var(--ink)}
+
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+@media print{header.site nav,.button,footer.site,.margin{display:none}body{background:#fff;color:#000;border:0;margin:0}}
+
+/* the current place is marked with a drawn pennant, as on a plan's key */
+header.site nav a[aria-current]{display:inline-flex;align-items:center;gap:6px}
+header.site nav a[aria-current]::before{content:"";width:8px;height:11px;flex:none;background:var(--mark);-webkit-mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 11'%3E%3Cpath d='M0 0h1.4v11H0zM1.4 0 8 2.6 1.4 5.2z'/%3E%3C/svg%3E") center/contain no-repeat;mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 11'%3E%3Cpath d='M0 0h1.4v11H0zM1.4 0 8 2.6 1.4 5.2z'/%3E%3C/svg%3E") center/contain no-repeat}
+.button{white-space:nowrap}
+/* narrow phones: the room stacks, cover above the text */
+@media (max-width:420px){.room{grid-template-columns:1fr;gap:14px}.room-img{width:96px}.room>div:last-child{padding-right:0}.room-title{padding-right:34px}}
+/* night: the blueprint keeps its faint drafting grid */
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]) body{background-image:linear-gradient(color-mix(in srgb,var(--mark) 5%,transparent) 1px,transparent 1px),linear-gradient(90deg,color-mix(in srgb,var(--mark) 5%,transparent) 1px,transparent 1px);background-size:24px 24px}}
+:root[data-theme=dark] body{background-image:linear-gradient(color-mix(in srgb,var(--mark) 5%,transparent) 1px,transparent 1px),linear-gradient(90deg,color-mix(in srgb,var(--mark) 5%,transparent) 1px,transparent 1px);background-size:24px 24px}
+
+/* day / night switch in the masthead: a drawn half-filled circle, shown only when the script runs */
+.theme{display:inline-flex;align-items:center;justify-content:center;width:44px;height:44px;margin:-10px -12px -10px -16px;padding:0;background:none;border:0;color:var(--ink-2);cursor:pointer}
+.theme[hidden]{display:none}
+.theme:hover{color:var(--ink)}
+.theme svg{width:20px;height:20px}
+@media (max-width:719px){header.site .bar{row-gap:0}.brand{order:1}.theme{order:2}header.site nav{order:3;flex-basis:100%}}
+@media (min-width:720px){header.site nav{margin-left:auto}}
+/* language row (shown only when a second language is live): the language being read is not a link */
+header.site nav.langs{gap:2px clamp(10px,2.4vw,18px);text-transform:none;letter-spacing:.02em}
+header.site nav.langs span[aria-current]{color:var(--ink);padding:12px 0;border-bottom:2px solid var(--mark)}
+@media (max-width:719px){header.site nav.langs{order:4}}
+@media (min-width:720px){header.site nav.langs{margin-left:0}}
+/* long German and Spanish words break at syllables instead of running off a phone screen */
+:lang(de) h1,:lang(de) h2,:lang(de) h3,:lang(de) .reg-title,:lang(es) h1,:lang(es) h2{hyphens:auto;-webkit-hyphens:auto}
+:lang(de) .prose,:lang(de) td,:lang(es) .prose,:lang(es) td{hyphens:auto;-webkit-hyphens:auto}
+/* calculator (tool pages, config/tools.json): a plan note you can fill in. The form stays
+   hidden until its script runs; the chart under it works without one. */
+.calc{background:var(--film);border:1px solid var(--line);border-top:3px solid var(--ink);padding:14px 18px 18px;margin:1.6rem 0;max-width:var(--measure)}
+.calc[hidden]{display:none}
+.prose .calc-title{font:600 .8125rem/1.2 var(--plan);letter-spacing:.1em;text-transform:uppercase;margin:0 0 12px;padding:0;border:0}
+.prose .calc-title::before{display:none}
+.calc-age{display:flex;flex-wrap:wrap;gap:12px 18px;align-items:end}
+.calc label,.calc legend{display:block;font:600 .8125rem/1.25 var(--plan);letter-spacing:.07em;text-transform:uppercase;color:var(--ink-2);margin:0 0 6px;padding:0}
+.calc input[type=number],.calc select{display:block;min-height:44px;width:7.5rem;padding:8px 10px;font:400 1rem/1.2 var(--read);font-variant-numeric:lining-nums tabular-nums;color:var(--ink);background:var(--ground);border:1px solid var(--ink);border-radius:0}
+.calc input[aria-invalid=true]{border-width:2px;border-color:var(--mark)}
+.calc fieldset{border:0;margin:16px 0 0;padding:0;min-width:0}
+.calc-sizes label{display:flex;align-items:center;gap:10px;min-height:44px;margin:0;font:400 1rem/1.35 var(--read);letter-spacing:0;text-transform:none;color:var(--ink);cursor:pointer}
+.calc-sizes input{flex:none;width:20px;height:20px;margin:0}
+.calc .button{margin:16px 0 0;cursor:pointer}
+.calc-result{margin-top:16px;padding-top:12px;border-top:1px solid var(--rule)}
+.calc-result:empty{margin:0;padding:0;border:0}
+.calc-result p{margin:.35rem 0}
+.calc-result .calc-answer{font-size:1.5rem;line-height:1.25;font-weight:620;font-variant-numeric:lining-nums}
+.calc-chart h3{max-width:var(--measure)}
+.calc-chart tbody th{font:inherit;letter-spacing:0;text-transform:none;border-bottom:1px solid var(--rule)}
+.calc-chart tbody tr:last-child th{border-bottom:0}
+.calc-chart table[data-chart] th,.calc-chart table[data-chart] td{padding:8px 10px}
+.table-wrap:focus-visible{outline-offset:2px}
+/* the dog chart has six columns: on narrow phones it tightens so all of them stay in view */
+@media (max-width:480px){.calc-chart table[data-chart] th,.calc-chart table[data-chart] td{padding:7px 3px 7px 4px}.calc-chart table[data-chart] th{letter-spacing:0;font-size:.75rem}.calc-chart table[data-chart]{font-size:.875rem}}
+/* «Add this table to your site» (scripts/embed.mjs) */
+.embed{margin:12px 0 4px;max-width:var(--measure)}
+.embed summary{cursor:pointer;font:600 .875rem/1.4 var(--plan);letter-spacing:.02em;color:var(--ink-2);padding:12px 0;min-height:44px;box-sizing:border-box}
+.embed summary:hover{color:var(--ink)}
+.embed label{display:block;margin:8px 0 6px}
+.embed-code{display:block;width:100%;box-sizing:border-box;font:400 .8125rem/1.45 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;color:var(--ink);background:var(--film);border:1px solid var(--line);border-radius:0;padding:10px 12px;resize:vertical}
+.embed-code:focus-visible{outline:2px solid var(--ink);outline-offset:2px}
+/* layout_v2 (config/site.json, 11.11.2026): these classes appear only in pages built with it.
+   The book box names what it is, the section pages list topics, home shows each section. */
+.room-kind{font:600 .75rem/1.2 var(--plan);letter-spacing:.1em;text-transform:uppercase;color:var(--ink-2)}
+.room.v2 .room-kind{margin:0 0 .35rem}
+.room-fact{font-size:.9375rem;line-height:1.5;color:var(--ink-2)}
+.room-actions{display:flex;flex-wrap:wrap;align-items:center;gap:4px 18px;margin-bottom:0}
+.room-actions .button{margin:4px 0}
+.room-more{display:inline-flex;align-items:center;min-height:44px}
+.room-inline{margin:2.2em 0}
+.room-inline .room-title{font-size:1.125rem}
+/* the short box inside an article keeps its cover beside the text even on narrow phones */
+@media (max-width:420px){.room-inline .room-img{width:64px}}
+/* long button words (German, 200 % text) wrap inside the button instead of pushing the page sideways */
+.room.v2 .button{white-space:normal;line-height:1.2;padding-block:8px}
+.topics ul,.topic-list{list-style:none;margin:0 0 8px;padding:0;border-top:1px solid var(--ink);max-width:var(--measure)}
+.topics li,.topic-list li{border-bottom:1px solid var(--rule)}
+.topics a,.topic-list a{display:flex;justify-content:space-between;align-items:center;gap:12px;min-height:44px;padding:6px 0;color:var(--ink);text-decoration:none;font:500 .9375rem/1.3 var(--plan);letter-spacing:.04em;text-transform:uppercase}
+.topics a:hover,.topic-list a:hover{color:var(--mark)}
+.topics .count{font-variant-numeric:lining-nums tabular-nums;color:var(--ink-2)}
+.home-section h3{font:600 .8125rem/1.2 var(--plan);letter-spacing:.1em;text-transform:uppercase;color:var(--ink-2);margin:1.8em 0 .6em}
+.home-section .lead{margin-bottom:.4em}
+.section-all{max-width:var(--measure);margin:12px 0 0}
+.section-all a{display:inline-flex;align-items:center;min-height:44px}
+/* phones (11.11.2026, the wider device check): every control outside running text is a
+   44px tap target (config/devices.json → tap_target_min). Links inside sentences keep their
+   line; the look on wider screens does not change. */
+@media (max-width:767px){
+  .brand{min-height:44px}
+  header.site nav a,header.site nav.langs span[aria-current],.room-title a,.room p>a:not(.button),.sheet section>h2>a,footer.site a,main .sheet>p>a{display:inline-flex;align-items:center;min-height:44px;min-width:44px}
+  header.site nav a{padding:0}
+  .titleblock dd a{display:inline-flex;align-items:center;min-height:44px;margin:-11px 0}
+  .schedule li a{display:flex;align-items:center;min-height:44px}
+}
+/* found by the wider device check, 11.11.2026: Safari on iPhone ignores min-height on a native
+   select (29px tall). (The schedule column of articles keeps at least 12rem: at 200 % text it
+   was squeezed to 0 and its heading ran off the page; at normal size it is wider than that anyway.) */
+.calc select{height:44px}
+/* name generator (config/tools.json, kind "names"): the starting points are phrases, not numbers */
+.calc-names .calc-age>div{flex:1 1 100%}
+.calc-names select{width:100%;max-width:22rem}
+
+/* scheme drawn from the article's own steps, table or summary (scripts/images.mjs): the day
+   picture by day, the night picture at night, by the system or by the reader's choice */
+.scheme{margin:2rem 0}
+.scheme img{width:100%;height:auto}
+.scheme .s-night{display:none}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]) .scheme .s-day{display:none}:root:not([data-theme=light]) .scheme .s-night{display:block}}
+:root[data-theme=dark] .scheme .s-day{display:none}
+:root[data-theme=dark] .scheme .s-night{display:block}
+</style>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://books.clovermoor.com/es/#website","url":"https://books.clovermoor.com/es/","name":"Quiet Days Books","inLanguage":"es","publisher":{"@id":"https://books.clovermoor.com/#org"}},{"@type":"Organization","@id":"https://books.clovermoor.com/#org","name":"Quiet Days Books","url":"https://books.clovermoor.com/"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Inicio","item":"https://books.clovermoor.com/es/"},{"@type":"ListItem","position":2,"name":"La vida con un perro mayor","item":"https://books.clovermoor.com/es/perros/"},{"@type":"ListItem","position":3,"name":"Cómo ven los perros: colores, oscuridad y movimiento"}]},{"@type":"BlogPosting","@id":"https://books.clovermoor.com/es/perros/como-ven-los-perros/#article","headline":"Cómo ven los perros: colores, oscuridad y movimiento","description":"Los perros ven en color, pero sobre todo azules y amarillos: el rojo y el verde se les confunden. Ven peor los detalles y mejor con poca luz y movimiento.","inLanguage":"es","url":"https://books.clovermoor.com/es/perros/como-ven-los-perros/","mainEntityOfPage":"https://books.clovermoor.com/es/perros/como-ven-los-perros/","datePublished":"2026-11-23","dateModified":"2026-11-23","wordCount":1422,"author":{"@id":"https://books.clovermoor.com/#org"},"publisher":{"@id":"https://books.clovermoor.com/#org"},"image":{"@type":"ImageObject","url":"https://books.clovermoor.com/img/covers/es/como-ven-los-perros.png","width":1200,"height":630},"articleSection":"La vida con un perro mayor","citation":["https://www.rctn.org/bruno/animal-eyes/dog-vision-miller-murphy.pdf","https://doi.org/10.1098/rsos.170869","https://www.msdvetmanual.com/es/propietarios-de-perros/trastornos-oculares-de-los-perros/estructura-y-funci%C3%B3n-del-ojo-en-los-perros","https://www.msdvetmanual.com/es/propietarios-de-perros/trastornos-oculares-de-los-perros/trastornos-del-cristalino-en-los-perros"]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"¿Los perros ven en blanco y negro?","acceptedAnswer":{"@type":"Answer","text":"No. Tienen dos tipos de conos, uno sensible a la luz violeta-azul y otro a la amarilla-verde, así que ven colores, aunque menos que nosotros. La revisión de Miller y Murphy (JAVMA, 1995) concluye que estudios bien controlados han demostrado que los perros tienen y usan la visión del color."}},{"@type":"Question","name":"¿Qué colores ven los perros?","acceptedAnswer":{"@type":"Answer","text":"Sobre todo azules y amarillos. Según Miller y Murphy, los tonos violeta y azul probablemente los ven como azul, y el verde amarillento, el amarillo y el rojo, como amarillo. El azul verdoso les parecería blanco o gris."}},{"@type":"Question","name":"¿Los perros ven bien en la oscuridad?","acceptedAnswer":{"@type":"Answer","text":"Mejor que nosotros. La parte central de su retina está formada sobre todo por bastones, las células de la visión con poca luz, y detrás tienen el tapetum lucidum, una capa que devuelve la luz a la retina."}},{"@type":"Question","name":"¿Los perros ven la tele?","acceptedAnswer":{"@type":"Answer","text":"Pueden verla, pero no como nosotros. Miller y Murphy explican que los conos del perro detectan parpadeos de hasta unos 70 por segundo, así que una pantalla que se refresca 60 veces por segundo podría parecerles intermitente. La revisión es de 1995 y se refería a los televisores de entonces."}},{"@type":"Question","name":"¿Por qué mi perro mayor ve peor?","acceptedAnswer":{"@type":"Answer","text":"Con la edad, el cristalino se espesa y se endurece. El Manual MSD distingue ese cambio normal de las cataratas, en las que el cristalino se vuelve turbio y no deja pasar la luz. Si notas que tropieza o se desorienta, consulta a tu veterinario."}}]}]}</script>
+</head>
+<body data-layout="v2">
+<a class="skip" href="#main">Saltar al contenido</a>
+<header class="site"><div class="bar"><a class="brand" href="/es/"><svg class="north" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10.5" fill="none" stroke="currentColor" stroke-width="1.2"/><path d="M12 3.5 16 17l-4-2.6L8 17Z" fill="currentColor"/></svg><span>Quiet Days Books</span></a><nav aria-label="Secciones"><a href="/es/perros/" aria-current="page">La vida con un perro mayor</a><a href="/es/gatos/">Fijarse en tu gato</a><a href="/es/sobre-nosotros/">Sobre nosotros</a></nav><nav class="langs" aria-label="Idioma"><a href="/" hreflang="en" lang="en" data-goatcounter-click="lang-en">English</a><span lang="es" aria-current="true">Español</span><a href="/de/" hreflang="de" lang="de" data-goatcounter-click="lang-de">Deutsch</a></nav><button class="theme" type="button" hidden aria-label="Tema oscuro" aria-pressed="false"><svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="8.4" fill="none" stroke="currentColor" stroke-width="1.3"/><path d="M10 1.6a8.4 8.4 0 0 1 0 16.8Z" fill="currentColor"/></svg></button></div></header>
+<script>(function(){var b=document.querySelector(".theme");if(!b)return;var r=document.documentElement,m=matchMedia("(prefers-color-scheme: dark)");function cur(){return r.dataset.theme||(m.matches?"dark":"light")}function show(){b.setAttribute("aria-pressed",cur()==="dark"?"true":"false")}b.hidden=false;show();m.addEventListener&&m.addEventListener("change",show);b.addEventListener("click",function(){var t=cur()==="dark"?"light":"dark";r.dataset.theme=t;try{localStorage.setItem("theme",t)}catch(e){}show()})})();</script>
+<nav class="crumbs" aria-label="Ruta de navegación"><a href="/es/">Inicio</a> <span aria-hidden="true">›</span> <a href="/es/perros/">La vida con un perro mayor</a> <span aria-hidden="true">›</span> <span aria-current="page">Cómo ven los perros: colores, oscuridad y movimiento</span></nav>
+<main id="main"><article class="sheet article">
+<header><h1>Cómo ven los perros: colores, oscuridad y movimiento</h1>
+<dl class="titleblock">
+<div><dt>Publicado</dt><dd><time datetime="2026-11-23">23 de noviembre de 2026</time></dd></div>
+<div><dt>Revisado</dt><dd><time datetime="2026-11-11">11 de noviembre de 2026</time></dd></div>
+<div><dt>Lectura</dt><dd>7 min</dd></div>
+<div><dt>Fuentes</dt><dd><a href="#sources">4 citadas</a></dd></div>
+</dl></header>
+<div class="layout"><div class="margin"><nav class="schedule wide" aria-labelledby="schedule-h"><h2 id="schedule-h">En este artículo</h2><ol><li><a href="#los-perros-ven-en-blanco-y-negro">¿Los perros ven en blanco y negro?</a></li><li><a href="#que-colores-ven-los-perros">Qué colores ven los perros</a></li><li><a href="#perro-y-persona-cara-a-cara">Perro y persona, cara a cara</a></li><li><a href="#ven-los-perros-bien-de-lejos">¿Ven los perros bien de lejos?</a></li><li><a href="#ven-los-perros-en-la-oscuridad">¿Ven los perros en la oscuridad?</a></li><li><a href="#lo-que-tienen-delante-de-la-nariz-lo-ven-borroso">Lo que tienen delante de la nariz lo ven borroso</a></li><li><a href="#como-cambia-la-vista-de-un-perro-mayor">Cómo cambia la vista de un perro mayor</a></li><li><a href="#que-cambia-saber-todo-esto">Qué cambia saber todo esto</a></li></ol></nav><details class="schedule narrow"><summary>En este artículo <span class="count">8 apartados</span></summary><ol><li><a href="#los-perros-ven-en-blanco-y-negro">¿Los perros ven en blanco y negro?</a></li><li><a href="#que-colores-ven-los-perros">Qué colores ven los perros</a></li><li><a href="#perro-y-persona-cara-a-cara">Perro y persona, cara a cara</a></li><li><a href="#ven-los-perros-bien-de-lejos">¿Ven los perros bien de lejos?</a></li><li><a href="#ven-los-perros-en-la-oscuridad">¿Ven los perros en la oscuridad?</a></li><li><a href="#lo-que-tienen-delante-de-la-nariz-lo-ven-borroso">Lo que tienen delante de la nariz lo ven borroso</a></li><li><a href="#como-cambia-la-vista-de-un-perro-mayor">Cómo cambia la vista de un perro mayor</a></li><li><a href="#que-cambia-saber-todo-esto">Qué cambia saber todo esto</a></li></ol></details></div>
+<div class="column"><section class="note" aria-labelledby="note-h"><h2 id="note-h">En pocas palabras</h2><ul><li>Los perros ven en color, pero con dos tipos de conos en vez de tres: distinguen bien azules y amarillos y confunden rojo, naranja, amarillo y verde.</li><li>Un perro ve los detalles peor que una persona: unos 20/75 según la estimación más citada, aunque las cifras varían entre estudios.</li><li>Ven mejor con poca luz gracias a una retina con muchos bastones y una capa que refleja la luz, el tapetum lucidum.</li><li>Captan antes lo que se mueve: en un estudio de 1936, perros policía reconocían objetos en movimiento a 810-900 m y quietos solo a 585 m o menos.</li><li>Lo que tienen a menos de 33 a 50 cm de los ojos lo ven borroso, por eso olfatean la comida que les pones delante.</li></ul></section><div class="prose"><p>Los perros ven en color, pero solo una parte: distinguen bien azules y amarillos y confunden el rojo, el naranja y el verde, como una persona daltónica. Ven los detalles peor que nosotros, ven mejor con poca luz, tienen un campo de visión más ancho y se fijan antes en lo que se mueve que en lo que está quieto.</p>
+<h2 id="los-perros-ven-en-blanco-y-negro">¿Los perros ven en blanco y negro?</h2>
+<p>No, aunque la idea sigue circulando. Viene de estudios antiguos. La revisión más citada sobre la vista del perro, la de los veterinarios Paul Miller y Christopher Murphy, del laboratorio de oftalmología comparada de la Universidad de Wisconsin, publicada en 1995 en la revista de la Asociación Americana de Medicina Veterinaria (JAVMA), lo resume así: los primeros experimentos decían que los perros no veían colores o que no les daban importancia, pero estaban mal controlados, y los estudios posteriores, bien hechos, demuestran que los perros tienen visión del color y la usan.</p>
+<p>La clave está en los conos, las células de la retina que captan el color. Las personas tenemos tres tipos. Los perros tienen dos: uno responde mejor a una luz que nosotros vemos violeta y el otro a una que vemos verde amarillenta.</p>
+<aside class="room v2 room-inline" aria-label="De nuestros libros"><svg class="door" viewBox="0 0 48 48" aria-hidden="true"><path d="M2 46V2" stroke="currentColor" stroke-width="2.4"/><path d="M2 2a44 44 0 0 1 44 44" fill="none" stroke="currentColor" stroke-width="1" stroke-dasharray="3 3"/></svg>
+<div class="room-img"><picture><source srcset="/img/books/dog/01_cover.webp" type="image/webp"><img src="/img/books/dog/01_cover.jpg" alt="Portada de One Day, You’ll Miss This" width="1200" height="900" loading="lazy" decoding="async"></picture></div>
+<div><p class="room-kind">Nuestro libro digital</p>
+<p class="room-title"><a href="/es/libros/one-day-youll-miss-this/" lang="en">One Day, You’ll Miss This</a></p>
+<p>Una guía tranquila para crear recuerdos con el perro que todavía está a tu lado.</p>
+<p class="small book-lang">El libro está en inglés.</p>
+<p class="room-actions"><a class="button" href="https://www.etsy.com/listing/4584343261/one-day-youll-miss-this-dog-memory-book" rel="noopener" data-goatcounter-click="etsy-dog">Verlo en Etsy</a> <a class="room-more" href="/es/libros/one-day-youll-miss-this/">Qué incluye</a></p></div>
+</aside><h2 id="que-colores-ven-los-perros">Qué colores ven los perros</h2>
+<p>Con dos tipos de conos, el espectro del perro se reduce a dos tonos, según Miller y Murphy:</p>
+<ul>
+<li>Lo que nosotros vemos violeta y azul, el perro probablemente lo ve azul.</li>
+<li>Lo que vemos verde amarillento, amarillo, naranja y rojo, probablemente lo ve amarillo.</li>
+<li>Una franja estrecha que para nosotros es azul verdosa, probablemente la ve blanca o gris.</li>
+</ul>
+<p>Los colores más vivos para un perro estarían en los extremos, el azul y el amarillo. Los intermedios le parecerían mezclados con gris.</p>
+<p>En 2017, un equipo de la Universidad de Bari lo puso a prueba con 16 perros. Adaptaron la lámina 22 del test de Ishihara, el de los puntos de colores con un número escondido que se usa para detectar el daltonismo, y la convirtieron en animaciones de un gato en tonos rojos sobre fondo verde. Con los tonos del número 2, que las personas daltónicas al rojo y al verde sí ven, la mayoría de los perros miró hacia el gato. Con los del número 6, que esas personas no distinguen, la respuesta bajó de forma significativa. Los perros se comportaron como ellas.</p>
+<p>Una pelota roja sobre el césped verde puede ser difícil de distinguir por el color; una azul o amarilla destaca más. Los autores de 1995 ponen otro ejemplo: un perro guía no puede distinguir por el color las luces de un semáforo, así que se apoya en la posición y el brillo.</p>
+<h2 id="perro-y-persona-cara-a-cara">Perro y persona, cara a cara</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th></th>
+<th>Persona</th>
+<th>Perro</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Tipos de conos</td>
+<td>3</td>
+<td>2</td>
+</tr>
+<tr>
+<td>Nitidez estimada</td>
+<td>20/20</td>
+<td>unos 20/75</td>
+</tr>
+<tr>
+<td>Campo de visión</td>
+<td>unos 180°</td>
+<td>unos 250° (estimado)</td>
+</tr>
+<tr>
+<td>Zona que ven los dos ojos a la vez</td>
+<td>unos 140°</td>
+<td>30° a 60°</td>
+</tr>
+<tr>
+<td>Fibras del nervio óptico</td>
+<td>1,2 millones</td>
+<td>167.000</td>
+</tr>
+<tr>
+<td>Parpadeo que llegan a notar (con luz intensa)</td>
+<td>unos 50 a 60 por segundo, algunas personas hasta 70</td>
+<td>unos 70 por segundo</td>
+</tr>
+</tbody></table>
+</div><details class="embed">
+<summary>Añade esta tabla a tu web</summary>
+<p class="small">Puedes usarla gratis en tu web, blog o boletín. Copia el código y pégalo en tu página como HTML. Muestra la misma tabla con un enlace a esta página como fuente.</p>
+<label class="small" for="embed-t1">Código HTML</label>
+<textarea id="embed-t1" class="embed-code" readonly rows="6" spellcheck="false">&lt;figure style=&quot;margin:1.5em 0;max-width:640px&quot;&gt;
+&lt;figcaption style=&quot;font-weight:bold;margin:0 0 .5em&quot;&gt;Perro y persona, cara a cara&lt;/figcaption&gt;
+&lt;table style=&quot;border-collapse:collapse;width:100%;font-size:15px&quot;&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&quot;border:1px solid #bbb;padding:6px 8px;text-align:left;background:#f3f3f3;color:#222&quot;&gt;&lt;/th&gt;
+&lt;th style=&quot;border:1px solid #bbb;padding:6px 8px;text-align:left;background:#f3f3f3;color:#222&quot;&gt;Persona&lt;/th&gt;
+&lt;th style=&quot;border:1px solid #bbb;padding:6px 8px;text-align:left;background:#f3f3f3;color:#222&quot;&gt;Perro&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;&lt;tr&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;Tipos de conos&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;3&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;2&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;Nitidez estimada&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;20/20&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;unos 20/75&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;Campo de visión&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;unos 180°&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;unos 250° (estimado)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;Zona que ven los dos ojos a la vez&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;unos 140°&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;30° a 60°&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;Fibras del nervio óptico&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;1,2 millones&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;167.000&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;Parpadeo que llegan a notar (con luz intensa)&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;unos 50 a 60 por segundo, algunas personas hasta 70&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;unos 70 por segundo&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+&lt;p style=&quot;font-size:13px;margin:.5em 0 0&quot;&gt;Fuente: &lt;a href=&quot;https://books.clovermoor.com/es/perros/como-ven-los-perros/&quot; style=&quot;color:inherit;text-decoration:underline&quot;&gt;Quiet Days Books&lt;/a&gt;. La página indica las fuentes de estos datos.&lt;/p&gt;
+&lt;/figure&gt;</textarea>
+<p><button type="button" class="button embed-copy" data-for="embed-t1" data-done="Copiado" hidden>Copiar código</button></p>
+</details><p>Todos los datos son de la revisión de Miller y Murphy. El campo de visión del perro es un cálculo a partir de la forma de su cabeza, y cambia según la raza y lo largo del hocico.</p>
+<h2 id="ven-los-perros-bien-de-lejos">¿Ven los perros bien de lejos?</h2>
+<p>Ven los detalles peor que nosotros. La estimación más citada es de 20/75: lo que una persona con vista normal distingue a 75 pies, un perro empieza a distinguirlo a 20. Miller y Murphy avisan de que las cifras varían mucho entre estudios, desde unos 20/50 hasta unos 20/100, según cómo se midan. El equipo de Bari calcula que, en general, un perro ve los detalles entre cuatro y ocho veces peor que una persona.</p>
+<p>A cambio, se fija muchísimo en el movimiento. En un estudio de 1936 con 14 perros policía, los más sensibles reconocían un objeto en movimiento a entre 810 y 900 metros, y el mismo objeto quieto solo a 585 metros o menos. Por eso un perro puede alertarse por algo que se mueve muy lejos y pasar por alto lo mismo cuando está quieto.</p>
+<p>Hay razas con más tendencia a la miopía. La revisión cita al pastor alemán, el rottweiler y el schnauzer miniatura.</p>
+<h2 id="ven-los-perros-en-la-oscuridad">¿Ven los perros en la oscuridad?</h2>
+<p>Mejor que nosotros, aunque no a oscuras del todo. La zona central de su retina está ocupada sobre todo por bastones, las células que funcionan con poca luz; en las personas, esa zona es sobre todo de conos. Detrás de la retina tienen además el tapetum lucidum, una capa que refleja la luz y la hace pasar por la retina una segunda vez.</p>
+<p>Ese diseño tiene un precio. Muchos bastones conectados a la misma célula nerviosa captan más luz, pero dan una imagen menos nítida, y eso explica parte de la peor nitidez del perro. La revisión lo compara con una película fotográfica muy sensible, que sale con grano a pleno sol.</p>
+<h2 id="lo-que-tienen-delante-de-la-nariz-lo-ven-borroso">Lo que tienen delante de la nariz lo ven borroso</h2>
+<p>Este detalle casi nunca aparece. Los perros tienen poca capacidad de enfoque: el Manual MSD explica que los cambios de forma del cristalino, que en nosotros sirven para enfocar, son limitados en los perros. Según Miller y Murphy, un perro enfoca bien lo que está a partir de unos 33 a 50 centímetros de sus ojos. Más cerca, lo ve borroso y tira del olfato y del gusto.</p>
+<p>Así se entiende por qué olfatea la galleta que le pones delante del hocico antes de cogerla, o por qué no encuentra con la vista el trozo de comida que se le ha caído justo entre las patas. Lo ve, pero desenfocado.</p>
+<p>La altura de los ojos también cuenta. Un perro mira el mundo desde mucho más abajo que tú, y la revisión pone un ejemplo: un campo de hierba alta puede ser una maleza impenetrable para un shih tzu y no suponer ningún problema para un lebrel irlandés.</p>
+<h2 id="como-cambia-la-vista-de-un-perro-mayor">Cómo cambia la vista de un perro mayor</h2>
+<p>Con los años, el cristalino de un perro se espesa y se endurece. El Manual MSD en español insiste en no confundir ese cambio normal de la edad con las cataratas, en las que el cristalino se vuelve turbio u opaco e impide que la luz llegue a la retina. Miller y Murphy mencionan además la presbicia, la pérdida de capacidad de enfoque que afecta a las personas de mediana edad y que probablemente afecta también a los perros, aunque señalan que en perros no se ha medido cuánto.</p>
+<p>Si tu perro mayor empieza a tropezar con los muebles, duda en las escaleras o le cuesta encontrar la pelota, consulta a tu veterinario: solo él puede decir si es la edad o algo que tratar. A veces lo que parece un problema de vista es desorientación, y lo contamos en la página sobre el <a href="/es/perros/perro-viejito/">perro viejito</a>. Con los años también cambia el sueño, como explicamos en <a href="/es/perros/cuantas-horas-duerme-un-perro/">cuántas horas duerme un perro</a>. Cuándo empieza esa etapa en cada raza lo calculamos en <a href="/es/perros/cuanto-vive-un-perro/">cuánto vive un perro</a>.</p>
+<h2 id="que-cambia-saber-todo-esto">Qué cambia saber todo esto</h2>
+<p>Algunas cosas sencillas salen de lo anterior:</p>
+<ol>
+<li>Elige juguetes azules o amarillos para jugar sobre la hierba; el rojo y el naranja se confunden con el verde.</li>
+<li>Para llamar su atención de lejos, muévete o mueve el juguete. Quieto, le cuesta más verte.</li>
+<li>Cuando le ofrezcas algo con la mano, deja que lo huela: a esa distancia no lo enfoca.</li>
+<li>Si un juguete rojo se le pierde en el césped, no hace falta pensar en terquedad: entre el color y la poca nitidez, puede que le cueste verlo.</li>
+<li>Con un perro mayor que empieza a ver peor, pregunta a tu veterinario antes de dar nada por hecho.</li>
+</ol>
+<p>Nuestro libro <a href="/es/libros/one-day-youll-miss-this/">One Day, You&#39;ll Miss This</a>, que está en inglés, propone dos ratos que tienen que ver con la forma en que mira un perro. «Go Somewhere New» pide llevarlo a un sitio donde ninguno de los dos haya estado y fijarte en los dos primeros minutos, mientras averigua dónde está. «Let Them Have the Window Seat» pide elegir para el próximo viaje en coche la carretera con cosas que mirar en vez de la rápida, con tu perro sujeto como siempre y la ventanilla solo un poco abierta, y apuntar después dónde se incorporó y qué estaba mirando.</p>
+<script>document.querySelectorAll(".embed-copy").forEach(function(b){var t=document.getElementById(b.getAttribute("data-for"));if(!t)return;b.hidden=false;var label=b.textContent;b.addEventListener("click",function(){function done(){b.textContent=b.getAttribute("data-done");setTimeout(function(){b.textContent=label},2500)}t.select();if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(t.value).then(done,function(){document.execCommand("copy");done()})}else{document.execCommand("copy");done()}})});</script></div><div data-read-end aria-hidden="true" style="height:1px"></div></div></div>
+<aside class="room v2" aria-label="De nuestros libros"><svg class="door" viewBox="0 0 48 48" aria-hidden="true"><path d="M2 46V2" stroke="currentColor" stroke-width="2.4"/><path d="M2 2a44 44 0 0 1 44 44" fill="none" stroke="currentColor" stroke-width="1" stroke-dasharray="3 3"/></svg>
+<div class="room-img"><picture><source srcset="/img/books/dog/01_cover.webp" type="image/webp"><img src="/img/books/dog/01_cover.jpg" alt="Portada de One Day, You’ll Miss This" width="1200" height="900" loading="lazy" decoding="async"></picture></div>
+<div><p class="room-kind">Nuestro libro digital</p>
+<p class="room-title"><a href="/es/libros/one-day-youll-miss-this/" lang="en">One Day, You’ll Miss This</a></p>
+<p>Una guía tranquila para crear recuerdos con el perro que todavía está a tu lado.</p>
+<p class="room-fact">50 actividades en cuatro partes: Do (hacer), Capture (captar), Remember (recordar) y Preserve (conservar)</p>
+<p class="small book-lang">El libro está en inglés.</p>
+<p class="room-actions"><a class="button" href="https://www.etsy.com/listing/4584343261/one-day-youll-miss-this-dog-memory-book" rel="noopener" data-goatcounter-click="etsy-dog">Verlo en Etsy</a> <a class="room-more" href="/es/libros/one-day-youll-miss-this/">Qué incluye</a></p></div>
+</aside>
+<section class="faq"><h2 id="questions">Preguntas frecuentes</h2><details><summary>¿Los perros ven en blanco y negro?</summary><p>No. Tienen dos tipos de conos, uno sensible a la luz violeta-azul y otro a la amarilla-verde, así que ven colores, aunque menos que nosotros. La revisión de Miller y Murphy (JAVMA, 1995) concluye que estudios bien controlados han demostrado que los perros tienen y usan la visión del color.</p></details><details><summary>¿Qué colores ven los perros?</summary><p>Sobre todo azules y amarillos. Según Miller y Murphy, los tonos violeta y azul probablemente los ven como azul, y el verde amarillento, el amarillo y el rojo, como amarillo. El azul verdoso les parecería blanco o gris.</p></details><details><summary>¿Los perros ven bien en la oscuridad?</summary><p>Mejor que nosotros. La parte central de su retina está formada sobre todo por bastones, las células de la visión con poca luz, y detrás tienen el tapetum lucidum, una capa que devuelve la luz a la retina.</p></details><details><summary>¿Los perros ven la tele?</summary><p>Pueden verla, pero no como nosotros. Miller y Murphy explican que los conos del perro detectan parpadeos de hasta unos 70 por segundo, así que una pantalla que se refresca 60 veces por segundo podría parecerles intermitente. La revisión es de 1995 y se refería a los televisores de entonces.</p></details><details><summary>¿Por qué mi perro mayor ve peor?</summary><p>Con la edad, el cristalino se espesa y se endurece. El Manual MSD distingue ese cambio normal de las cataratas, en las que el cristalino se vuelve turbio y no deja pasar la luz. Si notas que tropieza o se desorienta, consulta a tu veterinario.</p></details></section>
+<section class="sources"><h2 id="sources">Fuentes</h2><ol><li><a href="https://www.rctn.org/bruno/animal-eyes/dog-vision-miller-murphy.pdf" rel="noopener">Vision in dogs (J Am Vet Med Assoc 1995;207:1623-1634)</a>, Miller y Murphy (Universidad de Wisconsin-Madison)</li><li><a href="https://doi.org/10.1098/rsos.170869" rel="noopener">Are dogs red–green colour blind? (R Soc Open Sci 2017;4:170869)</a>, Siniscalchi, d'Ingeo, Fornelli y Quaranta (Universidad de Bari)</li><li><a href="https://www.msdvetmanual.com/es/propietarios-de-perros/trastornos-oculares-de-los-perros/estructura-y-funci%C3%B3n-del-ojo-en-los-perros" rel="noopener">Estructura y función del ojo en los perros</a>, Manual de veterinaria de MSD</li><li><a href="https://www.msdvetmanual.com/es/propietarios-de-perros/trastornos-oculares-de-los-perros/trastornos-del-cristalino-en-los-perros" rel="noopener">Trastornos del cristalino en los perros</a>, Manual de veterinaria de MSD</li></ol></section>
+<p class="small how">Escribimos estos artículos con ayuda de un modelo de IA. Cada dato se contrasta con las fuentes que aparecen debajo de cada artículo; lo que no pudimos confirmar, se queda fuera. <a href="/es/sobre-nosotros/">Cómo escribimos estas páginas</a>.</p>
+<section class="related"><h2 id="read-next">Sigue leyendo</h2><ul class="register"><li><a href="/es/perros/perro-viejito/"><span class="reg-title">Perro viejito: cuándo se hace mayor y cómo cuidarlo</span><span class="reg-desc">Un perro es viejito en el último 25 % de su vida: desde los 6 o 7 años en perros gigantes y entre los 8 y 11 en pequeños. Señales, cuidados y veterinario.</span></a><time datetime="2026-11-22">22 de noviembre de 2026</time></li><li><a href="/es/perros/cuanto-vive-un-perro/"><span class="reg-title">Cuánto vive un perro: años por raza, tamaño y sexo</span><span class="reg-desc">Un perro vive unos 12 años: la mediana de 584.734 perros británicos fue de 12,5. Por raza va de 5,4 a 15,4 años. Tabla de 26 razas con sus estudios.</span></a><time datetime="2026-11-19">19 de noviembre de 2026</time></li><li><a href="/es/perros/cuantas-horas-duerme-un-perro/"><span class="reg-title">Cuántas horas duerme un perro: lo que dicen los estudios</span><span class="reg-desc">Un perro adulto duerme unas 10 horas al día de media, casi todo de noche, y dormita a ratos por el día. Cifras por edad, siestas y cuándo consultar.</span></a><time datetime="2026-11-11">11 de noviembre de 2026</time></li></ul><p class="section-all"><a href="/es/perros/">Todos los artículos de esta sección (8)</a></p></section>
+</article></main>
+<footer class="site"><div class="bar">
+<p>Libros pequeños para fijarte en el animal con el que vives, mientras está contigo.</p>
+<p><a href="/es/libros/one-day-youll-miss-this/">One Day, You’ll Miss This</a> · <a href="/es/libros/the-house-your-cat-knows/">The House Your Cat Knows</a> · <a href="/es/sobre-nosotros/">Sobre estas páginas</a> · <a href="/es/feed.xml">RSS</a></p>
+<p class="small">Escribimos estos artículos con ayuda de un modelo de IA. Cada dato se contrasta con las fuentes que aparecen debajo de cada artículo; lo que no pudimos confirmar, se queda fuera.</p>
+</div></footer>
+</body>
+</html>
